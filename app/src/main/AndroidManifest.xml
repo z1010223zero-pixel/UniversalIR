@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.TRANSMIT_IR" />
+
+    <uses-feature
+        android:name="android.hardware.consumerir"
+        android:required="false" />
+
+    <application
+        android:name=".UniversalIrApp"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UniversalIR">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- 语音助手/自动化入口：uniir:// 深链接 -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="uniir" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+        </activity>
+
+        <!-- Tasker / MacroDroid 广播入口 -->
+        <receiver
+            android:name=".voice.ExternalTriggerReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.zero.universalir.SEND" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

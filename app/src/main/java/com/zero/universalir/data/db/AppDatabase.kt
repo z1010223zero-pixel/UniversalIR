@@ -1,0 +1,88 @@
+package com.zero.universalir.data.db
+
+import androidx.room.Dao
+import androidx.room.Database
+import androidx.room.Delete
+import androidx.room.Entity
+import androidx.room.Index
+import androidx.room.Insert
+import androidx.room.PrimaryKey
+import androidx.room.Query
+import androidx.room.RoomDatabase
+import androidx.room.Update
+import kotlinx.coroutines.flow.Flow
+
+@Entity(tableName = "devices")
+data class RemoteDeviceEntity(
+    @PrimaryKey(autoGenerate = true) val id: Long = 0,
+    val name: String,
+    val room: String = "",
+    val type: String,
+    val brand: String = "",
+    val model: String = "",
+    /** 码库条目 id（CodeLibrary.Entry.id），flipper 或 smartir_climate。 */
+    val libraryFileId: String? = null,
+    /** flipper 类：试码命中的主信号名（开机/开关）。 */
+    val boundSignalName: String? = null,
+    // 空调当前状态
+    val acPower: Boolean = false,
+    val acMode: String? = null,
+    val acFan: String? = null,
+    val acTemp: Int? = null,
+    val createdAt: Long = System.currentTimeMillis(),
+)
+
+@Entity(tableName = "buttons", indices = [Index("deviceId")])
+data class DeviceButtonEntity(
+    @PrimaryKey(autoGenerate = true) val id: Long = 0,
+    val deviceId: Long,
+    val label: String,
+    /** 库内信号名（flipper 码表）。 */
+    val signalName: String? = null,
+    val sortOrder: Int = 0,
+)
+
+@Dao
+interface RemoteDao {
+    @Query("SELECT * FROM devices ORDER BY createdAt DESC")
+    fun devices(): Flow<List<RemoteDeviceEntity>>
+
+    @Query("SELECT * FROM devices WHERE id = :id")
+    fun deviceFlow(id: Long): Flow<RemoteDeviceEntity?>
+
+    @Query("SELECT * FROM devices WHERE id = :id")
+    suspend fun device(id: Long): RemoteDeviceEntity?
+
+    @Query("SELECT * FROM devices")
+    suspend fun allDevices(): List<RemoteDeviceEntity>
+
+    @Insert
+    suspend fun insertDevice(d: RemoteDeviceEntity): Long
+
+    @Update
+    suspend fun updateDevice(d: RemoteDeviceEntity)
+
+    @Delete
+    suspend fun deleteDevice(d: RemoteDeviceEntity)
+
+    @Query("SELECT * FROM buttons WHERE deviceId = :deviceId ORDER BY sortOrder")
+    suspend fun buttons(deviceId: Long): List<DeviceButtonEntity>
+
+    @Insert
+    suspend fun insertButtons(buttons: List<DeviceButtonEntity>)
+
+    @Delete
+    suspend fun deleteButton(button: DeviceButtonEntity)
+
+    @Query("DELETE FROM buttons WHERE deviceId = :deviceId")
+    suspend fun deleteButtonsOf(deviceId: Long)
+}
+
+@Database(
+    entities = [RemoteDeviceEntity::class, DeviceButtonEntity::class],
+    version = 1,
+    exportSchema = false,
+)
+abstract class AppDatabase : RoomDatabase() {
+    abstract fun dao(): RemoteDao
+}

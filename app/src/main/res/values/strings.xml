@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">万能红外遥控</string>
+    <string name="shortcut_open_label">打开遥控器</string>
+</resources>

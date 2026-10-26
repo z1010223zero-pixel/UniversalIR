@@ -1,0 +1,5283 @@
+{
+ "version": 1,
+ "sources": [
+  {
+   "name": "Flipper-IRDB",
+   "url": "https://github.com/Lucaslhm/Flipper-IRDB",
+   "license": "CC0-1.0"
+  },
+  {
+   "name": "SmartIR",
+   "url": "https://github.com/smartHomeHub/SmartIR",
+   "license": "MIT"
+  }
+ ],
+ "entries": [
+  {
+   "id": "flipper_TVs_Haier_Haier_L42C1180",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Haier",
+   "model": "Haier_L42C1180",
+   "file": "flipper_TVs_Haier_Haier_L42C1180.gz",
+   "signalCount": 48
+  },
+  {
+   "id": "flipper_TVs_Hisense_Hisense_32A4HAU",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Hisense",
+   "model": "Hisense_32A4HAU",
+   "file": "flipper_TVs_Hisense_Hisense_32A4HAU.gz",
+   "signalCount": 48
+  },
+  {
+   "id": "flipper_TVs_Hisense_Hisense_55E7KQ",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Hisense",
+   "model": "Hisense_55E7KQ",
+   "file": "flipper_TVs_Hisense_Hisense_55E7KQ.gz",
+   "signalCount": 23
+  },
+  {
+   "id": "flipper_TVs_Hisense_Hisense_55K3201GUWUS",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Hisense",
+   "model": "Hisense_55K3201GUWUS",
+   "file": "flipper_TVs_Hisense_Hisense_55K3201GUWUS.gz",
+   "signalCount": 44
+  },
+  {
+   "id": "flipper_TVs_Hisense_Hisense_55U6K",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Hisense",
+   "model": "Hisense_55U6K",
+   "file": "flipper_TVs_Hisense_Hisense_55U6K.gz",
+   "signalCount": 27
+  },
+  {
+   "id": "flipper_TVs_Hisense_Hisense_58R5",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Hisense",
+   "model": "Hisense_58R5",
+   "file": "flipper_TVs_Hisense_Hisense_58R5.gz",
+   "signalCount": 23
+  },
+  {
+   "id": "flipper_TVs_Hisense_Hisense_65K3300UW",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Hisense",
+   "model": "Hisense_65K3300UW",
+   "file": "flipper_TVs_Hisense_Hisense_65K3300UW.gz",
+   "signalCount": 44
+  },
+  {
+   "id": "flipper_TVs_Hisense_Hisense_EN3AH39H",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Hisense",
+   "model": "Hisense_EN3AH39H",
+   "file": "flipper_TVs_Hisense_Hisense_EN3AH39H.gz",
+   "signalCount": 51
+  },
+  {
+   "id": "flipper_TVs_Hisense_Hisense_EN3Y39H",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Hisense",
+   "model": "Hisense_EN3Y39H",
+   "file": "flipper_TVs_Hisense_Hisense_EN3Y39H.gz",
+   "signalCount": 51
+  },
+  {
+   "id": "flipper_TVs_Hisense_Hisense_EN_33926A",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Hisense",
+   "model": "Hisense_EN_33926A",
+   "file": "flipper_TVs_Hisense_Hisense_EN_33926A.gz",
+   "signalCount": 38
+  },
+  {
+   "id": "flipper_TVs_Hisense_Hisense_ER22601A",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Hisense",
+   "model": "Hisense_ER22601A",
+   "file": "flipper_TVs_Hisense_Hisense_ER22601A.gz",
+   "signalCount": 13
+  },
+  {
+   "id": "flipper_TVs_Hisense_Hisense_K321UW",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Hisense",
+   "model": "Hisense_K321UW",
+   "file": "flipper_TVs_Hisense_Hisense_K321UW.gz",
+   "signalCount": 22
+  },
+  {
+   "id": "flipper_TVs_Hisense_Hisense_RokuTV",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Hisense",
+   "model": "Hisense_RokuTV",
+   "file": "flipper_TVs_Hisense_Hisense_RokuTV.gz",
+   "signalCount": 19
+  },
+  {
+   "id": "flipper_TVs_LG_LG",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "LG",
+   "model": "LG",
+   "file": "flipper_TVs_LG_LG.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_TVs_LG_LG_24LJ4840",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "LG",
+   "model": "LG_24LJ4840",
+   "file": "flipper_TVs_LG_LG_24LJ4840.gz",
+   "signalCount": 48
+  },
+  {
+   "id": "flipper_TVs_LG_LG_27GR95QE_TV",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "LG",
+   "model": "LG_27GR95QE_TV",
+   "file": "flipper_TVs_LG_LG_27GR95QE_TV.gz",
+   "signalCount": 19
+  },
+  {
+   "id": "flipper_TVs_LG_LG_32LF650V",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "LG",
+   "model": "LG_32LF650V",
+   "file": "flipper_TVs_LG_LG_32LF650V.gz",
+   "signalCount": 51
+  },
+  {
+   "id": "flipper_TVs_LG_LG_32LN5406",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "LG",
+   "model": "LG_32LN5406",
+   "file": "flipper_TVs_LG_LG_32LN5406.gz",
+   "signalCount": 9
+  },
+  {
+   "id": "flipper_TVs_LG_LG_32LW4500",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "LG",
+   "model": "LG_32LW4500",
+   "file": "flipper_TVs_LG_LG_32LW4500.gz",
+   "signalCount": 50
+  },
+  {
+   "id": "flipper_TVs_LG_LG_37LN5403",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "LG",
+   "model": "LG_37LN5403",
+   "file": "flipper_TVs_LG_LG_37LN5403.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_TVs_LG_LG_43NANO779PA",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "LG",
+   "model": "LG_43NANO779PA",
+   "file": "flipper_TVs_LG_LG_43NANO779PA.gz",
+   "signalCount": 33
+  },
+  {
+   "id": "flipper_TVs_LG_LG_48LV340H",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "LG",
+   "model": "LG_48LV340H",
+   "file": "flipper_TVs_LG_LG_48LV340H.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_TVs_LG_LG_4K_TV",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "LG",
+   "model": "LG_4K_TV",
+   "file": "flipper_TVs_LG_LG_4K_TV.gz",
+   "signalCount": 17
+  },
+  {
+   "id": "flipper_TVs_LG_LG_55LB870V_ZA",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "LG",
+   "model": "LG_55LB870V_ZA",
+   "file": "flipper_TVs_LG_LG_55LB870V_ZA.gz",
+   "signalCount": 18
+  },
+  {
+   "id": "flipper_TVs_LG_LG_55UN7300AUD",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "LG",
+   "model": "LG_55UN7300AUD",
+   "file": "flipper_TVs_LG_LG_55UN7300AUD.gz",
+   "signalCount": 15
+  },
+  {
+   "id": "flipper_TVs_Panasonic_N2QAYB001109",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Panasonic",
+   "model": "N2QAYB001109",
+   "file": "flipper_TVs_Panasonic_N2QAYB001109.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_TVs_Panasonic_N2QAYB001109_full",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Panasonic",
+   "model": "N2QAYB001109_full",
+   "file": "flipper_TVs_Panasonic_N2QAYB001109_full.gz",
+   "signalCount": 49
+  },
+  {
+   "id": "flipper_TVs_Panasonic_Panasonic_58JX800_Series",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Panasonic",
+   "model": "Panasonic_58JX800_Series",
+   "file": "flipper_TVs_Panasonic_Panasonic_58JX800_Series.gz",
+   "signalCount": 53
+  },
+  {
+   "id": "flipper_TVs_Panasonic_Panasonic_N2QAYA_152",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Panasonic",
+   "model": "Panasonic_N2QAYA_152",
+   "file": "flipper_TVs_Panasonic_Panasonic_N2QAYA_152.gz",
+   "signalCount": 50
+  },
+  {
+   "id": "flipper_TVs_Panasonic_Panasonic_N2QAYB000352",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Panasonic",
+   "model": "Panasonic_N2QAYB000352",
+   "file": "flipper_TVs_Panasonic_Panasonic_N2QAYB000352.gz",
+   "signalCount": 11
+  },
+  {
+   "id": "flipper_TVs_Panasonic_Panasonic_N2QAYB000705",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Panasonic",
+   "model": "Panasonic_N2QAYB000705",
+   "file": "flipper_TVs_Panasonic_Panasonic_N2QAYB000705.gz",
+   "signalCount": 47
+  },
+  {
+   "id": "flipper_TVs_Panasonic_Panasonic_N2QAYB000715",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Panasonic",
+   "model": "Panasonic_N2QAYB000715",
+   "file": "flipper_TVs_Panasonic_Panasonic_N2QAYB000715.gz",
+   "signalCount": 18
+  },
+  {
+   "id": "flipper_TVs_Panasonic_Panasonic_N2QAYB000752",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Panasonic",
+   "model": "Panasonic_N2QAYB000752",
+   "file": "flipper_TVs_Panasonic_Panasonic_N2QAYB000752.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_TVs_Panasonic_Panasonic_N2QAYB000752_Full",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Panasonic",
+   "model": "Panasonic_N2QAYB000752_Full",
+   "file": "flipper_TVs_Panasonic_Panasonic_N2QAYB000752_Full.gz",
+   "signalCount": 53
+  },
+  {
+   "id": "flipper_TVs_Panasonic_Panasonic_N2QAYB000926",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Panasonic",
+   "model": "Panasonic_N2QAYB000926",
+   "file": "flipper_TVs_Panasonic_Panasonic_N2QAYB000926.gz",
+   "signalCount": 49
+  },
+  {
+   "id": "flipper_TVs_Panasonic_Panasonic_TC-P50S2",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Panasonic",
+   "model": "Panasonic_TC-P50S2",
+   "file": "flipper_TVs_Panasonic_Panasonic_TC-P50S2.gz",
+   "signalCount": 46
+  },
+  {
+   "id": "flipper_TVs_Panasonic_Panasonic_TC-P50U1",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Panasonic",
+   "model": "Panasonic_TC-P50U1",
+   "file": "flipper_TVs_Panasonic_Panasonic_TC-P50U1.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_TVs_Philips_PhilipsTV",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Philips",
+   "model": "PhilipsTV",
+   "file": "flipper_TVs_Philips_PhilipsTV.gz",
+   "signalCount": 12
+  },
+  {
+   "id": "flipper_TVs_Philips_Philips_14GX8510",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Philips",
+   "model": "Philips_14GX8510",
+   "file": "flipper_TVs_Philips_Philips_14GX8510.gz",
+   "signalCount": 23
+  },
+  {
+   "id": "flipper_TVs_Philips_Philips_14PT136B00",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Philips",
+   "model": "Philips_14PT136B00",
+   "file": "flipper_TVs_Philips_Philips_14PT136B00.gz",
+   "signalCount": 22
+  },
+  {
+   "id": "flipper_TVs_Philips_Philips_22IT_TV_Monitor",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Philips",
+   "model": "Philips_22IT_TV_Monitor",
+   "file": "flipper_TVs_Philips_Philips_22IT_TV_Monitor.gz",
+   "signalCount": 13
+  },
+  {
+   "id": "flipper_TVs_Philips_Philips_32PFL4208T",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Philips",
+   "model": "Philips_32PFL4208T",
+   "file": "flipper_TVs_Philips_Philips_32PFL4208T.gz",
+   "signalCount": 43
+  },
+  {
+   "id": "flipper_TVs_Philips_Philips_32PFL7403S",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Philips",
+   "model": "Philips_32PFL7403S",
+   "file": "flipper_TVs_Philips_Philips_32PFL7403S.gz",
+   "signalCount": 36
+  },
+  {
+   "id": "flipper_TVs_Philips_Philips_32PFL7962D12",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Philips",
+   "model": "Philips_32PFL7962D12",
+   "file": "flipper_TVs_Philips_Philips_32PFL7962D12.gz",
+   "signalCount": 31
+  },
+  {
+   "id": "flipper_TVs_Philips_Philips_40HFL3010T12",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Philips",
+   "model": "Philips_40HFL3010T12",
+   "file": "flipper_TVs_Philips_Philips_40HFL3010T12.gz",
+   "signalCount": 25
+  },
+  {
+   "id": "flipper_TVs_Philips_Philips_40PFL6533_F7D",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Philips",
+   "model": "Philips_40PFL6533_F7D",
+   "file": "flipper_TVs_Philips_Philips_40PFL6533_F7D.gz",
+   "signalCount": 21
+  },
+  {
+   "id": "flipper_TVs_Philips_Philips_436M6VBPAB",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Philips",
+   "model": "Philips_436M6VBPAB",
+   "file": "flipper_TVs_Philips_Philips_436M6VBPAB.gz",
+   "signalCount": 27
+  },
+  {
+   "id": "flipper_TVs_Philips_Philips_50PUT6103_79",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Philips",
+   "model": "Philips_50PUT6103_79",
+   "file": "flipper_TVs_Philips_Philips_50PUT6103_79.gz",
+   "signalCount": 45
+  },
+  {
+   "id": "flipper_TVs_Philips_Philips_5766_Series",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Philips",
+   "model": "Philips_5766_Series",
+   "file": "flipper_TVs_Philips_Philips_5766_Series.gz",
+   "signalCount": 25
+  },
+  {
+   "id": "flipper_TVs_Samsung_Samsung",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Samsung",
+   "model": "Samsung",
+   "file": "flipper_TVs_Samsung_Samsung.gz",
+   "signalCount": 27
+  },
+  {
+   "id": "flipper_TVs_Samsung_Samsung_AA-00721A",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Samsung",
+   "model": "Samsung_AA-00721A",
+   "file": "flipper_TVs_Samsung_Samsung_AA-00721A.gz",
+   "signalCount": 44
+  },
+  {
+   "id": "flipper_TVs_Samsung_Samsung_AA59-00443A",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Samsung",
+   "model": "Samsung_AA59-00443A",
+   "file": "flipper_TVs_Samsung_Samsung_AA59-00443A.gz",
+   "signalCount": 48
+  },
+  {
+   "id": "flipper_TVs_Samsung_Samsung_AA59-00484A",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Samsung",
+   "model": "Samsung_AA59-00484A",
+   "file": "flipper_TVs_Samsung_Samsung_AA59-00484A.gz",
+   "signalCount": 49
+  },
+  {
+   "id": "flipper_TVs_Samsung_Samsung_AA59-00580A",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Samsung",
+   "model": "Samsung_AA59-00580A",
+   "file": "flipper_TVs_Samsung_Samsung_AA59-00580A.gz",
+   "signalCount": 48
+  },
+  {
+   "id": "flipper_TVs_Samsung_Samsung_AA59-00602A",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Samsung",
+   "model": "Samsung_AA59-00602A",
+   "file": "flipper_TVs_Samsung_Samsung_AA59-00602A.gz",
+   "signalCount": 3
+  },
+  {
+   "id": "flipper_TVs_Samsung_Samsung_AA59-00714A",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Samsung",
+   "model": "Samsung_AA59-00714A",
+   "file": "flipper_TVs_Samsung_Samsung_AA59-00714A.gz",
+   "signalCount": 42
+  },
+  {
+   "id": "flipper_TVs_Samsung_Samsung_AA59-00741A",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Samsung",
+   "model": "Samsung_AA59-00741A",
+   "file": "flipper_TVs_Samsung_Samsung_AA59-00741A.gz",
+   "signalCount": 44
+  },
+  {
+   "id": "flipper_TVs_Samsung_Samsung_AA59-00786A",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Samsung",
+   "model": "Samsung_AA59-00786A",
+   "file": "flipper_TVs_Samsung_Samsung_AA59-00786A.gz",
+   "signalCount": 11
+  },
+  {
+   "id": "flipper_TVs_Samsung_Samsung_AA59",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Samsung",
+   "model": "Samsung_AA59",
+   "file": "flipper_TVs_Samsung_Samsung_AA59.gz",
+   "signalCount": 29
+  },
+  {
+   "id": "flipper_TVs_Samsung_Samsung_AA81-00243A",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Samsung",
+   "model": "Samsung_AA81-00243A",
+   "file": "flipper_TVs_Samsung_Samsung_AA81-00243A.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_TVs_Samsung_Samsung_BN59-00511A",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Samsung",
+   "model": "Samsung_BN59-00511A",
+   "file": "flipper_TVs_Samsung_Samsung_BN59-00511A.gz",
+   "signalCount": 34
+  },
+  {
+   "id": "flipper_TVs_Sanyo_Sanyo_UR77EC2703-3",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Sanyo",
+   "model": "Sanyo UR77EC2703-3",
+   "file": "flipper_TVs_Sanyo_Sanyo_UR77EC2703-3.gz",
+   "signalCount": 32
+  },
+  {
+   "id": "flipper_TVs_Sanyo_Sanyo_DP26640",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Sanyo",
+   "model": "Sanyo_DP26640",
+   "file": "flipper_TVs_Sanyo_Sanyo_DP26640.gz",
+   "signalCount": 32
+  },
+  {
+   "id": "flipper_TVs_Sanyo_Sanyo_FW40R49FC",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Sanyo",
+   "model": "Sanyo_FW40R49FC",
+   "file": "flipper_TVs_Sanyo_Sanyo_FW40R49FC.gz",
+   "signalCount": 21
+  },
+  {
+   "id": "flipper_TVs_Sanyo_Sanyo_ds32224",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Sanyo",
+   "model": "Sanyo_ds32224",
+   "file": "flipper_TVs_Sanyo_Sanyo_ds32224.gz",
+   "signalCount": 24
+  },
+  {
+   "id": "flipper_TVs_Sharp_Aquos",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Sharp",
+   "model": "Aquos",
+   "file": "flipper_TVs_Sharp_Aquos.gz",
+   "signalCount": 15
+  },
+  {
+   "id": "flipper_TVs_Sharp_Sharp_13VT-L100",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Sharp",
+   "model": "Sharp_13VT-L100",
+   "file": "flipper_TVs_Sharp_Sharp_13VT-L100.gz",
+   "signalCount": 13
+  },
+  {
+   "id": "flipper_TVs_Sharp_Sharp_Aquos_32BG3E",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Sharp",
+   "model": "Sharp_Aquos_32BG3E",
+   "file": "flipper_TVs_Sharp_Sharp_Aquos_32BG3E.gz",
+   "signalCount": 15
+  },
+  {
+   "id": "flipper_TVs_Sharp_Sharp_Aquos_JP",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Sharp",
+   "model": "Sharp_Aquos_JP",
+   "file": "flipper_TVs_Sharp_Sharp_Aquos_JP.gz",
+   "signalCount": 59
+  },
+  {
+   "id": "flipper_TVs_Sharp_Sharp_LC-42LB261U",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Sharp",
+   "model": "Sharp_LC-42LB261U",
+   "file": "flipper_TVs_Sharp_Sharp_LC-42LB261U.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_TVs_Sharp_Sharp_LC-RC1-16",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Sharp",
+   "model": "Sharp_LC-RC1-16",
+   "file": "flipper_TVs_Sharp_Sharp_LC-RC1-16.gz",
+   "signalCount": 43
+  },
+  {
+   "id": "flipper_TVs_Sharp_Sharp_Roku_TV",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Sharp",
+   "model": "Sharp_Roku_TV",
+   "file": "flipper_TVs_Sharp_Sharp_Roku_TV.gz",
+   "signalCount": 21
+  },
+  {
+   "id": "flipper_TVs_Sharp_Sharp_TV2",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Sharp",
+   "model": "Sharp_TV2",
+   "file": "flipper_TVs_Sharp_Sharp_TV2.gz",
+   "signalCount": 18
+  },
+  {
+   "id": "flipper_TVs_Sharp_Sharp_g0684cesa_NES_TV",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Sharp",
+   "model": "Sharp_g0684cesa_NES_TV",
+   "file": "flipper_TVs_Sharp_Sharp_g0684cesa_NES_TV.gz",
+   "signalCount": 23
+  },
+  {
+   "id": "flipper_TVs_Sharp_Sharp_tv",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Sharp",
+   "model": "Sharp_tv",
+   "file": "flipper_TVs_Sharp_Sharp_tv.gz",
+   "signalCount": 3
+  },
+  {
+   "id": "flipper_TVs_Sony_SonyTV",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Sony",
+   "model": "SonyTV",
+   "file": "flipper_TVs_Sony_SonyTV.gz",
+   "signalCount": 13
+  },
+  {
+   "id": "flipper_TVs_Sony_Sony_Bravia",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Sony",
+   "model": "Sony_Bravia",
+   "file": "flipper_TVs_Sony_Sony_Bravia.gz",
+   "signalCount": 13
+  },
+  {
+   "id": "flipper_TVs_Sony_Sony_Bravia_KD-55XF80xx-49XF80xx-43XF80xx",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Sony",
+   "model": "Sony_Bravia_KD-55XF80xx-49XF80xx-43XF80xx",
+   "file": "flipper_TVs_Sony_Sony_Bravia_KD-55XF80xx-49XF80xx-43XF80xx.gz",
+   "signalCount": 53
+  },
+  {
+   "id": "flipper_TVs_Sony_Sony_Bravia_KDL-46W905A",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Sony",
+   "model": "Sony_Bravia_KDL-46W905A",
+   "file": "flipper_TVs_Sony_Sony_Bravia_KDL-46W905A.gz",
+   "signalCount": 19
+  },
+  {
+   "id": "flipper_TVs_Sony_Sony_FW_75BZ40H",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Sony",
+   "model": "Sony_FW_75BZ40H",
+   "file": "flipper_TVs_Sony_Sony_FW_75BZ40H.gz",
+   "signalCount": 46
+  },
+  {
+   "id": "flipper_TVs_Sony_Sony_KD-55X80CK",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Sony",
+   "model": "Sony_KD-55X80CK",
+   "file": "flipper_TVs_Sony_Sony_KD-55X80CK.gz",
+   "signalCount": 12
+  },
+  {
+   "id": "flipper_TVs_Sony_Sony_KD",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Sony",
+   "model": "Sony_KD",
+   "file": "flipper_TVs_Sony_Sony_KD.gz",
+   "signalCount": 12
+  },
+  {
+   "id": "flipper_TVs_Sony_Sony_KDL-55HX850",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Sony",
+   "model": "Sony_KDL-55HX850",
+   "file": "flipper_TVs_Sony_Sony_KDL-55HX850.gz",
+   "signalCount": 1
+  },
+  {
+   "id": "flipper_TVs_Sony_Sony_RM-GD014",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Sony",
+   "model": "Sony_RM-GD014",
+   "file": "flipper_TVs_Sony_Sony_RM-GD014.gz",
+   "signalCount": 49
+  },
+  {
+   "id": "flipper_TVs_Sony_Sony_RM-V310",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Sony",
+   "model": "Sony_RM-V310",
+   "file": "flipper_TVs_Sony_Sony_RM-V310.gz",
+   "signalCount": 24
+  },
+  {
+   "id": "flipper_TVs_Sony_Sony_RM-YD017",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Sony",
+   "model": "Sony_RM-YD017",
+   "file": "flipper_TVs_Sony_Sony_RM-YD017.gz",
+   "signalCount": 13
+  },
+  {
+   "id": "flipper_TVs_Sony_Sony_RM-YD018",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Sony",
+   "model": "Sony_RM-YD018",
+   "file": "flipper_TVs_Sony_Sony_RM-YD018.gz",
+   "signalCount": 35
+  },
+  {
+   "id": "flipper_TVs_TCL_TCL_32S327",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "TCL",
+   "model": "TCL_32S327",
+   "file": "flipper_TVs_TCL_TCL_32S327.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_TVs_TCL_TCL_40S615",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "TCL",
+   "model": "TCL_40S615",
+   "file": "flipper_TVs_TCL_TCL_40S615.gz",
+   "signalCount": 22
+  },
+  {
+   "id": "flipper_TVs_TCL_TCL_43S446",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "TCL",
+   "model": "TCL_43S446",
+   "file": "flipper_TVs_TCL_TCL_43S446.gz",
+   "signalCount": 23
+  },
+  {
+   "id": "flipper_TVs_TCL_TCL_50S423",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "TCL",
+   "model": "TCL_50S423",
+   "file": "flipper_TVs_TCL_TCL_50S423.gz",
+   "signalCount": 20
+  },
+  {
+   "id": "flipper_TVs_TCL_TCL_65C635K",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "TCL",
+   "model": "TCL_65C635K",
+   "file": "flipper_TVs_TCL_TCL_65C635K.gz",
+   "signalCount": 45
+  },
+  {
+   "id": "flipper_TVs_TCL_TCL_LED49D2930",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "TCL",
+   "model": "TCL_LED49D2930",
+   "file": "flipper_TVs_TCL_TCL_LED49D2930.gz",
+   "signalCount": 37
+  },
+  {
+   "id": "flipper_TVs_TCL_TCL_ROKU_US",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "TCL",
+   "model": "TCL_ROKU_US",
+   "file": "flipper_TVs_TCL_TCL_ROKU_US.gz",
+   "signalCount": 8
+  },
+  {
+   "id": "flipper_TVs_TCL_TCL_Roku_TV",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "TCL",
+   "model": "TCL_Roku_TV",
+   "file": "flipper_TVs_TCL_TCL_Roku_TV.gz",
+   "signalCount": 24
+  },
+  {
+   "id": "flipper_TVs_TCL_TCL_Roku_TV_55S405",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "TCL",
+   "model": "TCL_Roku_TV_55S405",
+   "file": "flipper_TVs_TCL_TCL_Roku_TV_55S405.gz",
+   "signalCount": 20
+  },
+  {
+   "id": "flipper_TVs_TCL_TCL_UnknownModel1",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "TCL",
+   "model": "TCL_UnknownModel1",
+   "file": "flipper_TVs_TCL_TCL_UnknownModel1.gz",
+   "signalCount": 16
+  },
+  {
+   "id": "flipper_TVs_TCL_TCL_UnknownModel2",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "TCL",
+   "model": "TCL_UnknownModel2",
+   "file": "flipper_TVs_TCL_TCL_UnknownModel2.gz",
+   "signalCount": 8
+  },
+  {
+   "id": "flipper_TVs_TCL_TCL_UnknownModel3",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "TCL",
+   "model": "TCL_UnknownModel3",
+   "file": "flipper_TVs_TCL_TCL_UnknownModel3.gz",
+   "signalCount": 8
+  },
+  {
+   "id": "flipper_TVs_Toshiba_Toshiba_CT_8560",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Toshiba",
+   "model": "Toshiba CT 8560",
+   "file": "flipper_TVs_Toshiba_Toshiba_CT_8560.gz",
+   "signalCount": 20
+  },
+  {
+   "id": "flipper_TVs_Toshiba_Toshiba_32AV502U",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Toshiba",
+   "model": "Toshiba_32AV502U",
+   "file": "flipper_TVs_Toshiba_Toshiba_32AV502U.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_TVs_Toshiba_Toshiba_43LF421U21",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Toshiba",
+   "model": "Toshiba_43LF421U21",
+   "file": "flipper_TVs_Toshiba_Toshiba_43LF421U21.gz",
+   "signalCount": 1
+  },
+  {
+   "id": "flipper_TVs_Toshiba_Toshiba_50C350LC",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Toshiba",
+   "model": "Toshiba_50C350LC",
+   "file": "flipper_TVs_Toshiba_Toshiba_50C350LC.gz",
+   "signalCount": 26
+  },
+  {
+   "id": "flipper_TVs_Toshiba_Toshiba_CT-32F2",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Toshiba",
+   "model": "Toshiba_CT-32F2",
+   "file": "flipper_TVs_Toshiba_Toshiba_CT-32F2.gz",
+   "signalCount": 44
+  },
+  {
+   "id": "flipper_TVs_Toshiba_Toshiba_CT-90325",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Toshiba",
+   "model": "Toshiba_CT-90325",
+   "file": "flipper_TVs_Toshiba_Toshiba_CT-90325.gz",
+   "signalCount": 27
+  },
+  {
+   "id": "flipper_TVs_Toshiba_Toshiba_CT-9922",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Toshiba",
+   "model": "Toshiba_CT-9922",
+   "file": "flipper_TVs_Toshiba_Toshiba_CT-9922.gz",
+   "signalCount": 25
+  },
+  {
+   "id": "flipper_TVs_Toshiba_Toshiba_Ct-8563",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Toshiba",
+   "model": "Toshiba_Ct-8563",
+   "file": "flipper_TVs_Toshiba_Toshiba_Ct-8563.gz",
+   "signalCount": 29
+  },
+  {
+   "id": "flipper_TVs_Toshiba_Toshiba_FireTV",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Toshiba",
+   "model": "Toshiba_FireTV",
+   "file": "flipper_TVs_Toshiba_Toshiba_FireTV.gz",
+   "signalCount": 1
+  },
+  {
+   "id": "flipper_TVs_Toshiba_Toshiba_SE_R0305_32CV100U",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Toshiba",
+   "model": "Toshiba_SE_R0305_32CV100U",
+   "file": "flipper_TVs_Toshiba_Toshiba_SE_R0305_32CV100U.gz",
+   "signalCount": 49
+  },
+  {
+   "id": "flipper_TVs_Toshiba_toshiba_firetv_v2",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Toshiba",
+   "model": "toshiba_firetv_v2",
+   "file": "flipper_TVs_Toshiba_toshiba_firetv_v2.gz",
+   "signalCount": 17
+  },
+  {
+   "id": "flipper_TVs_Xiaomi_Xiaomi_TV",
+   "kind": "flipper",
+   "deviceType": "tv",
+   "brand": "Xiaomi",
+   "model": "Xiaomi_TV",
+   "file": "flipper_TVs_Xiaomi_Xiaomi_TV.gz",
+   "signalCount": 11
+  },
+  {
+   "id": "flipper_LED_Lighting_ADJ_ADJ_UC-IR",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "ADJ",
+   "model": "ADJ_UC-IR",
+   "file": "flipper_LED_Lighting_ADJ_ADJ_UC-IR.gz",
+   "signalCount": 19
+  },
+  {
+   "id": "flipper_LED_Lighting_AIRUEEK_Sonic_LED_Lamp_AIRUEEK_Sonic_LED_Lamp",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "AIRUEEK_Sonic_LED_Lamp",
+   "model": "AIRUEEK_Sonic_LED_Lamp",
+   "file": "flipper_LED_Lighting_AIRUEEK_Sonic_LED_Lamp_AIRUEEK_Sonic_LED_Lamp.gz",
+   "signalCount": 12
+  },
+  {
+   "id": "flipper_LED_Lighting_Airivo_AIRIVO_NorthernLights",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Airivo",
+   "model": "AIRIVO_NorthernLights",
+   "file": "flipper_LED_Lighting_Airivo_AIRIVO_NorthernLights.gz",
+   "signalCount": 21
+  },
+  {
+   "id": "flipper_LED_Lighting_Amazon_Amazon_LED_Lights",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Amazon",
+   "model": "Amazon_LED_Lights",
+   "file": "flipper_LED_Lighting_Amazon_Amazon_LED_Lights.gz",
+   "signalCount": 17
+  },
+  {
+   "id": "flipper_LED_Lighting_American_Lighting_American_Lighting_LED",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "American_Lighting",
+   "model": "American_Lighting_LED",
+   "file": "flipper_LED_Lighting_American_Lighting_American_Lighting_LED.gz",
+   "signalCount": 17
+  },
+  {
+   "id": "flipper_LED_Lighting_American_Lighting_American_Lighting_Neon_Flex_Light",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "American_Lighting",
+   "model": "American_Lighting_Neon_Flex_Light",
+   "file": "flipper_LED_Lighting_American_Lighting_American_Lighting_Neon_Flex_Light.gz",
+   "signalCount": 25
+  },
+  {
+   "id": "flipper_LED_Lighting_Antizer_Flameless_Candles_Antizer_Flameless_Candles",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Antizer_Flameless_Candles",
+   "model": "Antizer_Flameless_Candles",
+   "file": "flipper_LED_Lighting_Antizer_Flameless_Candles_Antizer_Flameless_Candles.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_LED_Lighting_Aoguerbe_Aoguerbe_BRSW04",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Aoguerbe",
+   "model": "Aoguerbe_BRSW04",
+   "file": "flipper_LED_Lighting_Aoguerbe_Aoguerbe_BRSW04.gz",
+   "signalCount": 24
+  },
+  {
+   "id": "flipper_LED_Lighting_Arlec_Arlec_LVX964",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Arlec",
+   "model": "Arlec_LVX964",
+   "file": "flipper_LED_Lighting_Arlec_Arlec_LVX964.gz",
+   "signalCount": 12
+  },
+  {
+   "id": "flipper_LED_Lighting_Artika_Europa_21in_chrome",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Artika",
+   "model": "Europa_21in_chrome",
+   "file": "flipper_LED_Lighting_Artika_Europa_21in_chrome.gz",
+   "signalCount": 13
+  },
+  {
+   "id": "flipper_LED_Lighting_AuraGlow_AuraGlowLED",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "AuraGlow",
+   "model": "AuraGlowLED",
+   "file": "flipper_LED_Lighting_AuraGlow_AuraGlowLED.gz",
+   "signalCount": 12
+  },
+  {
+   "id": "flipper_LED_Lighting_AuraLED_AuraLED_ColorStrip",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "AuraLED",
+   "model": "AuraLED_ColorStrip",
+   "file": "flipper_LED_Lighting_AuraLED_AuraLED_ColorStrip.gz",
+   "signalCount": 24
+  },
+  {
+   "id": "flipper_LED_Lighting_Baltimore_Baltimore_LED_Light_Strip",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Baltimore",
+   "model": "Baltimore_LED_Light_Strip",
+   "file": "flipper_LED_Lighting_Baltimore_Baltimore_LED_Light_Strip.gz",
+   "signalCount": 14
+  },
+  {
+   "id": "flipper_LED_Lighting_Bawoo_Bawoo_LED",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Bawoo",
+   "model": "Bawoo_LED",
+   "file": "flipper_LED_Lighting_Bawoo_Bawoo_LED.gz",
+   "signalCount": 12
+  },
+  {
+   "id": "flipper_LED_Lighting_BeamZ_BeamZ_ShowBar_Laser",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "BeamZ",
+   "model": "BeamZ_ShowBar_Laser",
+   "file": "flipper_LED_Lighting_BeamZ_BeamZ_ShowBar_Laser.gz",
+   "signalCount": 27
+  },
+  {
+   "id": "flipper_LED_Lighting_BeamZ_BeamZ_Skynight",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "BeamZ",
+   "model": "BeamZ_Skynight",
+   "file": "flipper_LED_Lighting_BeamZ_BeamZ_Skynight.gz",
+   "signalCount": 20
+  },
+  {
+   "id": "flipper_LED_Lighting_BoomTone_DJ_LEDPAR_7x10W_5in1_DJ_LEDPAR_7x10W_5in1",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "BoomTone",
+   "model": "DJ_LEDPAR_7x10W_5in1/DJ_LEDPAR_7x10W_5in1",
+   "file": "flipper_LED_Lighting_BoomTone_DJ_LEDPAR_7x10W_5in1_DJ_LEDPAR_7x10W_5in1.gz",
+   "signalCount": 16
+  },
+  {
+   "id": "flipper_LED_Lighting_Bower_Bower_ring_1",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Bower",
+   "model": "Bower_ring_1",
+   "file": "flipper_LED_Lighting_Bower_Bower_ring_1.gz",
+   "signalCount": 9
+  },
+  {
+   "id": "flipper_LED_Lighting_Briloner_BRILONER_BN254818",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Briloner",
+   "model": "BRILONER_BN254818",
+   "file": "flipper_LED_Lighting_Briloner_BRILONER_BN254818.gz",
+   "signalCount": 12
+  },
+  {
+   "id": "flipper_LED_Lighting_Briloner_Briloner_14118006L",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Briloner",
+   "model": "Briloner_14118006L",
+   "file": "flipper_LED_Lighting_Briloner_Briloner_14118006L.gz",
+   "signalCount": 23
+  },
+  {
+   "id": "flipper_LED_Lighting_Briloner_Briloner_Ceiling_Light",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Briloner",
+   "model": "Briloner_Ceiling_Light",
+   "file": "flipper_LED_Lighting_Briloner_Briloner_Ceiling_Light.gz",
+   "signalCount": 9
+  },
+  {
+   "id": "flipper_LED_Lighting_Briloner_Briloner_Leuchten_14133506L",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Briloner",
+   "model": "Briloner_Leuchten_14133506L",
+   "file": "flipper_LED_Lighting_Briloner_Briloner_Leuchten_14133506L.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_LED_Lighting_Briloner_Briloner_Leuchten_LED",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Briloner",
+   "model": "Briloner_Leuchten_LED",
+   "file": "flipper_LED_Lighting_Briloner_Briloner_Leuchten_LED.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_LED_Lighting_Briloner_Briloner_leuchten",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Briloner",
+   "model": "Briloner_leuchten",
+   "file": "flipper_LED_Lighting_Briloner_Briloner_leuchten.gz",
+   "signalCount": 2
+  },
+  {
+   "id": "flipper_LED_Lighting_Briloner_LED_Ceiling_Light_Briloner_Leuchten",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Briloner",
+   "model": "LED_Ceiling_Light_Briloner_Leuchten",
+   "file": "flipper_LED_Lighting_Briloner_LED_Ceiling_Light_Briloner_Leuchten.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_LED_Lighting_Brizled_LED_Icicle_Lights_Brizled_Christmas_Icicle_Lights",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Brizled_LED_Icicle_Lights",
+   "model": "Brizled_Christmas_Icicle_Lights",
+   "file": "flipper_LED_Lighting_Brizled_LED_Icicle_Lights_Brizled_Christmas_Icicle_Lights.gz",
+   "signalCount": 19
+  },
+  {
+   "id": "flipper_LED_Lighting_Cadrim_Cadrim_Puck_Lights",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Cadrim",
+   "model": "Cadrim_Puck_Lights",
+   "file": "flipper_LED_Lighting_Cadrim_Cadrim_Puck_Lights.gz",
+   "signalCount": 19
+  },
+  {
+   "id": "flipper_LED_Lighting_Calex_Calex_LED_strip",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Calex",
+   "model": "Calex_LED_strip",
+   "file": "flipper_LED_Lighting_Calex_Calex_LED_strip.gz",
+   "signalCount": 18
+  },
+  {
+   "id": "flipper_LED_Lighting_Cameo_CLPFLAT1REMOTE",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Cameo",
+   "model": "CLPFLAT1REMOTE",
+   "file": "flipper_LED_Lighting_Cameo_CLPFLAT1REMOTE.gz",
+   "signalCount": 20
+  },
+  {
+   "id": "flipper_LED_Lighting_CandleChoice_LED_CandleChoice",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "CandleChoice_LED",
+   "model": "CandleChoice",
+   "file": "flipper_LED_Lighting_CandleChoice_LED_CandleChoice.gz",
+   "signalCount": 8
+  },
+  {
+   "id": "flipper_LED_Lighting_Century_Century_SRSOL509040",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Century",
+   "model": "Century_SRSOL509040",
+   "file": "flipper_LED_Lighting_Century_Century_SRSOL509040.gz",
+   "signalCount": 12
+  },
+  {
+   "id": "flipper_LED_Lighting_Chauvet_ChauvetDJ_IRC6",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Chauvet",
+   "model": "ChauvetDJ_IRC6",
+   "file": "flipper_LED_Lighting_Chauvet_ChauvetDJ_IRC6.gz",
+   "signalCount": 26
+  },
+  {
+   "id": "flipper_LED_Lighting_Combuh_COM-T070",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Combuh",
+   "model": "COM-T070",
+   "file": "flipper_LED_Lighting_Combuh_COM-T070.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_LED_Lighting_CooPark_CooPark_LED",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "CooPark",
+   "model": "CooPark_LED",
+   "file": "flipper_LED_Lighting_CooPark_CooPark_LED.gz",
+   "signalCount": 24
+  },
+  {
+   "id": "flipper_LED_Lighting_CountryField_CountryField_LED_Lamp",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "CountryField",
+   "model": "CountryField_LED_Lamp",
+   "file": "flipper_LED_Lighting_CountryField_CountryField_LED_Lamp.gz",
+   "signalCount": 2
+  },
+  {
+   "id": "flipper_LED_Lighting_Dasinko_Dasinko_LED",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Dasinko",
+   "model": "Dasinko_LED",
+   "file": "flipper_LED_Lighting_Dasinko_Dasinko_LED.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_LED_Lighting_Defiant_Defiant_17FL0102",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Defiant",
+   "model": "Defiant_17FL0102",
+   "file": "flipper_LED_Lighting_Defiant_Defiant_17FL0102.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_LED_Lighting_Deluxe_Homeart_Deluxe_Homeart_FB-00001",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Deluxe_Homeart",
+   "model": "Deluxe_Homeart_FB-00001",
+   "file": "flipper_LED_Lighting_Deluxe_Homeart_Deluxe_Homeart_FB-00001.gz",
+   "signalCount": 8
+  },
+  {
+   "id": "flipper_LED_Lighting_Duni_DUNI_MP12ECOLOR",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Duni",
+   "model": "DUNI_MP12ECOLOR",
+   "file": "flipper_LED_Lighting_Duni_DUNI_MP12ECOLOR.gz",
+   "signalCount": 22
+  },
+  {
+   "id": "flipper_LED_Lighting_EAMBRITE_EAMBRITE_100LT_Fairy_Lights",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "EAMBRITE",
+   "model": "EAMBRITE_100LT_Fairy_Lights",
+   "file": "flipper_LED_Lighting_EAMBRITE_EAMBRITE_100LT_Fairy_Lights.gz",
+   "signalCount": 35
+  },
+  {
+   "id": "flipper_LED_Lighting_ECOLITE_LED_Light_ECOLITE_HB333",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "ECOLITE",
+   "model": "LED_Light_ECOLITE_HB333",
+   "file": "flipper_LED_Lighting_ECOLITE_LED_Light_ECOLITE_HB333.gz",
+   "signalCount": 7
+  },
+  {
+   "id": "flipper_LED_Lighting_EGLO_EGLO_light",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "EGLO",
+   "model": "EGLO_light",
+   "file": "flipper_LED_Lighting_EGLO_EGLO_light.gz",
+   "signalCount": 20
+  },
+  {
+   "id": "flipper_LED_Lighting_EVE_EVE_LED_SOLAR_PI1901",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "EVE",
+   "model": "EVE_LED_SOLAR_PI1901",
+   "file": "flipper_LED_Lighting_EVE_EVE_LED_SOLAR_PI1901.gz",
+   "signalCount": 8
+  },
+  {
+   "id": "flipper_LED_Lighting_Emerson_Emerson_NH303UD",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Emerson",
+   "model": "Emerson_NH303UD",
+   "file": "flipper_LED_Lighting_Emerson_Emerson_NH303UD.gz",
+   "signalCount": 32
+  },
+  {
+   "id": "flipper_LED_Lighting_Feron_Feron_AL5000_Starlight",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Feron",
+   "model": "Feron_AL5000_Starlight",
+   "file": "flipper_LED_Lighting_Feron_Feron_AL5000_Starlight.gz",
+   "signalCount": 3
+  },
+  {
+   "id": "flipper_LED_Lighting_FlarX_FlarX",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "FlarX",
+   "model": "FlarX",
+   "file": "flipper_LED_Lighting_FlarX_FlarX.gz",
+   "signalCount": 4
+  },
+  {
+   "id": "flipper_LED_Lighting_Gako_RGB_CONTROLLER_5050SMD",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Gako",
+   "model": "RGB_CONTROLLER_5050SMD",
+   "file": "flipper_LED_Lighting_Gako_RGB_CONTROLLER_5050SMD.gz",
+   "signalCount": 24
+  },
+  {
+   "id": "flipper_LED_Lighting_Globo_Globo_Connor_Ceiling_LED_Lamp",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Globo",
+   "model": "Globo_Connor_Ceiling_LED_Lamp",
+   "file": "flipper_LED_Lighting_Globo_Globo_Connor_Ceiling_LED_Lamp.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_LED_Lighting_Golden_Power_Christmas_lights_Gp",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Golden_Power",
+   "model": "Christmas_lights_Gp",
+   "file": "flipper_LED_Lighting_Golden_Power_Christmas_lights_Gp.gz",
+   "signalCount": 19
+  },
+  {
+   "id": "flipper_LED_Lighting_Golden_Power_GoldenPower_XmasLights",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Golden_Power",
+   "model": "GoldenPower_XmasLights",
+   "file": "flipper_LED_Lighting_Golden_Power_GoldenPower_XmasLights.gz",
+   "signalCount": 19
+  },
+  {
+   "id": "flipper_LED_Lighting_Govee_Govee_Striplights",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Govee",
+   "model": "Govee_Striplights",
+   "file": "flipper_LED_Lighting_Govee_Govee_Striplights.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_LED_Lighting_Govee_Govee_TV_Backlights",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Govee",
+   "model": "Govee_TV_Backlights",
+   "file": "flipper_LED_Lighting_Govee_Govee_TV_Backlights.gz",
+   "signalCount": 16
+  },
+  {
+   "id": "flipper_LED_Lighting_HGomx_HGomx_Saturn_LED_Lamp",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "HGomx",
+   "model": "HGomx_Saturn_LED_Lamp",
+   "file": "flipper_LED_Lighting_HGomx_HGomx_Saturn_LED_Lamp.gz",
+   "signalCount": 24
+  },
+  {
+   "id": "flipper_LED_Lighting_HLKZine_Astronaut_Star_Projector",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "HLKZine",
+   "model": "Astronaut_Star_Projector",
+   "file": "flipper_LED_Lighting_HLKZine_Astronaut_Star_Projector.gz",
+   "signalCount": 12
+  },
+  {
+   "id": "flipper_LED_Lighting_HomeMost_LED_HomeMostLight",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "HomeMost_LED",
+   "model": "HomeMostLight",
+   "file": "flipper_LED_Lighting_HomeMost_LED_HomeMostLight.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_LED_Lighting_Hovvida_Hovvida_LED",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Hovvida",
+   "model": "Hovvida_LED",
+   "file": "flipper_LED_Lighting_Hovvida_Hovvida_LED.gz",
+   "signalCount": 44
+  },
+  {
+   "id": "flipper_LED_Lighting_Hxweiye_HXWEIYE_300LED_Fairy_Curtain_Lights",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Hxweiye",
+   "model": "HXWEIYE_300LED_Fairy_Curtain_Lights",
+   "file": "flipper_LED_Lighting_Hxweiye_HXWEIYE_300LED_Fairy_Curtain_Lights.gz",
+   "signalCount": 17
+  },
+  {
+   "id": "flipper_LED_Lighting_ION_ION_HolidayPartyPlus",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "ION",
+   "model": "ION_HolidayPartyPlus",
+   "file": "flipper_LED_Lighting_ION_ION_HolidayPartyPlus.gz",
+   "signalCount": 24
+  },
+  {
+   "id": "flipper_LED_Lighting_ISY_ISY_UNKOWN",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "ISY",
+   "model": "ISY_UNKOWN",
+   "file": "flipper_LED_Lighting_ISY_ISY_UNKOWN.gz",
+   "signalCount": 24
+  },
+  {
+   "id": "flipper_LED_Lighting_JYSK_Kristjan_LED_candle",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "JYSK",
+   "model": "Kristjan_LED_candle",
+   "file": "flipper_LED_Lighting_JYSK_Kristjan_LED_candle.gz",
+   "signalCount": 8
+  },
+  {
+   "id": "flipper_LED_Lighting_Jialine_Candle_10-key_Candle",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Jialine_Candle",
+   "model": "10-key_Candle",
+   "file": "flipper_LED_Lighting_Jialine_Candle_10-key_Candle.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_LED_Lighting_KODA_KODA_LM030008-1",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "KODA",
+   "model": "KODA_LM030008-1",
+   "file": "flipper_LED_Lighting_KODA_KODA_LM030008-1.gz",
+   "signalCount": 23
+  },
+  {
+   "id": "flipper_LED_Lighting_Keepsmile_Led_lights",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Keepsmile",
+   "model": "Led_lights",
+   "file": "flipper_LED_Lighting_Keepsmile_Led_lights.gz",
+   "signalCount": 14
+  },
+  {
+   "id": "flipper_LED_Lighting_Kernowo_Kernowo_Solar_LED_Light",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Kernowo",
+   "model": "Kernowo_Solar_LED_Light",
+   "file": "flipper_LED_Lighting_Kernowo_Kernowo_Solar_LED_Light.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_LED_Lighting_Kikilive_Jelly_Lamp",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Kikilive",
+   "model": "Jelly_Lamp",
+   "file": "flipper_LED_Lighting_Kikilive_Jelly_Lamp.gz",
+   "signalCount": 25
+  },
+  {
+   "id": "flipper_LED_Lighting_Kiwong_333SolarLedLight",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Kiwong",
+   "model": "333SolarLedLight",
+   "file": "flipper_LED_Lighting_Kiwong_333SolarLedLight.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_LED_Lighting_Kohree_Kohree_LED_Lights",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Kohree",
+   "model": "Kohree_LED_Lights",
+   "file": "flipper_LED_Lighting_Kohree_Kohree_LED_Lights.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_LED_Lighting_KooPower_Koopower_hg4011_LED_Light_String",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "KooPower",
+   "model": "Koopower_hg4011_LED_Light_String",
+   "file": "flipper_LED_Lighting_KooPower_Koopower_hg4011_LED_Light_String.gz",
+   "signalCount": 12
+  },
+  {
+   "id": "flipper_LED_Lighting_L8Star_L8Star_LED_Lights",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "L8Star",
+   "model": "L8Star_LED_Lights",
+   "file": "flipper_LED_Lighting_L8Star_L8Star_LED_Lights.gz",
+   "signalCount": 20
+  },
+  {
+   "id": "flipper_LED_Lighting_Lethe_Lethe_RGB_LED",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Lethe",
+   "model": "Lethe_RGB_LED",
+   "file": "flipper_LED_Lighting_Lethe_Lethe_RGB_LED.gz",
+   "signalCount": 2
+  },
+  {
+   "id": "flipper_LED_Lighting_Lethe_Lethe_RGB_LED_full",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Lethe",
+   "model": "Lethe_RGB_LED_full",
+   "file": "flipper_LED_Lighting_Lethe_Lethe_RGB_LED_full.gz",
+   "signalCount": 24
+  },
+  {
+   "id": "flipper_LED_Lighting_LinahiLED_LINAHI_NO_80_1200CH",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "LinahiLED",
+   "model": "LINAHI_NO_80_1200CH",
+   "file": "flipper_LED_Lighting_LinahiLED_LINAHI_NO_80_1200CH.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_LED_Lighting_LolaLED_LOLA_LED",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "LolaLED",
+   "model": "LOLA_LED",
+   "file": "flipper_LED_Lighting_LolaLED_LOLA_LED.gz",
+   "signalCount": 2
+  },
+  {
+   "id": "flipper_LED_Lighting_Lotti_LED_Remote_XT-RC1",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Lotti_LED",
+   "model": "Remote_XT-RC1",
+   "file": "flipper_LED_Lighting_Lotti_LED_Remote_XT-RC1.gz",
+   "signalCount": 2
+  },
+  {
+   "id": "flipper_LED_Lighting_Lucoza_LUCOZA_Candle1",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Lucoza",
+   "model": "LUCOZA_Candle1",
+   "file": "flipper_LED_Lighting_Lucoza_LUCOZA_Candle1.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_LED_Lighting_Lucoza_LUCOZA_Candle2",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Lucoza",
+   "model": "LUCOZA_Candle2",
+   "file": "flipper_LED_Lighting_Lucoza_LUCOZA_Candle2.gz",
+   "signalCount": 8
+  },
+  {
+   "id": "flipper_LED_Lighting_Luminara_Luminara_Candle",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Luminara",
+   "model": "Luminara_Candle",
+   "file": "flipper_LED_Lighting_Luminara_Luminara_Candle.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_LED_Lighting_Luminarte_Luminarte",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Luminarte",
+   "model": "Luminarte",
+   "file": "flipper_LED_Lighting_Luminarte_Luminarte.gz",
+   "signalCount": 11
+  },
+  {
+   "id": "flipper_LED_Lighting_Mirage_Mirage_Candle",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Mirage",
+   "model": "Mirage_Candle",
+   "file": "flipper_LED_Lighting_Mirage_Mirage_Candle.gz",
+   "signalCount": 4
+  },
+  {
+   "id": "flipper_LED_Lighting_MonsterIlluminessence_MonsterIlluminessence_LED",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "MonsterIlluminessence",
+   "model": "MonsterIlluminessence_LED",
+   "file": "flipper_LED_Lighting_MonsterIlluminessence_MonsterIlluminessence_LED.gz",
+   "signalCount": 24
+  },
+  {
+   "id": "flipper_LED_Lighting_Monster_Basics_LED_MONSTER_BASICS",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Monster_Basics",
+   "model": "LED_MONSTER_BASICS",
+   "file": "flipper_LED_Lighting_Monster_Basics_LED_MONSTER_BASICS.gz",
+   "signalCount": 20
+  },
+  {
+   "id": "flipper_LED_Lighting_Monster_Basics_Monster_Color_Flow_Neon",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Monster_Basics",
+   "model": "Monster_Color_Flow_Neon",
+   "file": "flipper_LED_Lighting_Monster_Basics_Monster_Color_Flow_Neon.gz",
+   "signalCount": 15
+  },
+  {
+   "id": "flipper_LED_Lighting_Monster_Basics_Monster_LED_Touch_Light",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Monster_Basics",
+   "model": "Monster_LED_Touch_Light",
+   "file": "flipper_LED_Lighting_Monster_Basics_Monster_LED_Touch_Light.gz",
+   "signalCount": 24
+  },
+  {
+   "id": "flipper_LED_Lighting_Moredig_MOREDIG_LED_PROTECTOR",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Moredig",
+   "model": "MOREDIG_LED_PROTECTOR",
+   "file": "flipper_LED_Lighting_Moredig_MOREDIG_LED_PROTECTOR.gz",
+   "signalCount": 8
+  },
+  {
+   "id": "flipper_LED_Lighting_Msmkeji_MSMKEJI_Grow_Light_100w",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Msmkeji",
+   "model": "MSMKEJI_Grow_Light_100w",
+   "file": "flipper_LED_Lighting_Msmkeji_MSMKEJI_Grow_Light_100w.gz",
+   "signalCount": 27
+  },
+  {
+   "id": "flipper_LED_Lighting_Neewer_Neewer_nw_22b",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Neewer",
+   "model": "Neewer_nw_22b",
+   "file": "flipper_LED_Lighting_Neewer_Neewer_nw_22b.gz",
+   "signalCount": 16
+  },
+  {
+   "id": "flipper_LED_Lighting_Neuhaus_Neuhaus_Leuchten_Direkt",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Neuhaus",
+   "model": "Neuhaus_Leuchten_Direkt",
+   "file": "flipper_LED_Lighting_Neuhaus_Neuhaus_Leuchten_Direkt.gz",
+   "signalCount": 11
+  },
+  {
+   "id": "flipper_LED_Lighting_Neuhaus_Neuhaus_Leuchten_Direkt_LOLA",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Neuhaus",
+   "model": "Neuhaus_Leuchten_Direkt_LOLA",
+   "file": "flipper_LED_Lighting_Neuhaus_Neuhaus_Leuchten_Direkt_LOLA.gz",
+   "signalCount": 9
+  },
+  {
+   "id": "flipper_LED_Lighting_Neuhaus_Neuhaus_Leuchten_Direkt_sparkle_LED",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Neuhaus",
+   "model": "Neuhaus_Leuchten_Direkt_sparkle_LED",
+   "file": "flipper_LED_Lighting_Neuhaus_Neuhaus_Leuchten_Direkt_sparkle_LED.gz",
+   "signalCount": 8
+  },
+  {
+   "id": "flipper_LED_Lighting_Nexillumi_Nexillumi_LED",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Nexillumi",
+   "model": "Nexillumi_LED",
+   "file": "flipper_LED_Lighting_Nexillumi_Nexillumi_LED.gz",
+   "signalCount": 22
+  },
+  {
+   "id": "flipper_LED_Lighting_Noma_NOMA_LED_STRING_LIGHTS",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Noma",
+   "model": "NOMA_LED_STRING_LIGHTS",
+   "file": "flipper_LED_Lighting_Noma_NOMA_LED_STRING_LIGHTS.gz",
+   "signalCount": 32
+  },
+  {
+   "id": "flipper_LED_Lighting_Northerns_Light_Northerns_Light_Chain",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Northerns_Light",
+   "model": "Northerns_Light_Chain",
+   "file": "flipper_LED_Lighting_Northerns_Light_Northerns_Light_Chain.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_LED_Lighting_OLLNY_OLLNY_HG29V212C",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "OLLNY",
+   "model": "OLLNY_HG29V212C",
+   "file": "flipper_LED_Lighting_OLLNY_OLLNY_HG29V212C.gz",
+   "signalCount": 19
+  },
+  {
+   "id": "flipper_LED_Lighting_OLLNY_OLLNY_LED",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "OLLNY",
+   "model": "OLLNY_LED",
+   "file": "flipper_LED_Lighting_OLLNY_OLLNY_LED.gz",
+   "signalCount": 13
+  },
+  {
+   "id": "flipper_LED_Lighting_ONN-Lighting_ONN_LED",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "ONN-Lighting",
+   "model": "ONN_LED",
+   "file": "flipper_LED_Lighting_ONN-Lighting_ONN_LED.gz",
+   "signalCount": 43
+  },
+  {
+   "id": "flipper_LED_Lighting_OShine_Oshine_Flameles_Candles",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "OShine",
+   "model": "Oshine_Flameles_Candles",
+   "file": "flipper_LED_Lighting_OShine_Oshine_Flameles_Candles.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_LED_Lighting_Oremi_Oremi_sunset_lamp",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Oremi",
+   "model": "Oremi_sunset_lamp",
+   "file": "flipper_LED_Lighting_Oremi_Oremi_sunset_lamp.gz",
+   "signalCount": 24
+  },
+  {
+   "id": "flipper_LED_Lighting_Osram_Osram_24_Button_LED",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Osram",
+   "model": "Osram_24_Button_LED",
+   "file": "flipper_LED_Lighting_Osram_Osram_24_Button_LED.gz",
+   "signalCount": 24
+  },
+  {
+   "id": "flipper_LED_Lighting_Ove_Ove_Strip_Lights",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Ove",
+   "model": "Ove_Strip_Lights",
+   "file": "flipper_LED_Lighting_Ove_Ove_Strip_Lights.gz",
+   "signalCount": 13
+  },
+  {
+   "id": "flipper_LED_Lighting_Panasonic_Panasonic_HK9494_LED",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Panasonic",
+   "model": "Panasonic_HK9494_LED",
+   "file": "flipper_LED_Lighting_Panasonic_Panasonic_HK9494_LED.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_LED_Lighting_Panasonic_Panasonic_PBUM11070_RGB_Bulb_7w",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Panasonic",
+   "model": "Panasonic_PBUM11070_RGB_Bulb_7w",
+   "file": "flipper_LED_Lighting_Panasonic_Panasonic_PBUM11070_RGB_Bulb_7w.gz",
+   "signalCount": 12
+  },
+  {
+   "id": "flipper_LED_Lighting_Paulman_Paulman_LED",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Paulman",
+   "model": "Paulman_LED",
+   "file": "flipper_LED_Lighting_Paulman_Paulman_LED.gz",
+   "signalCount": 2
+  },
+  {
+   "id": "flipper_LED_Lighting_Piaozoo_Piaozoo_fairy_lights",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Piaozoo",
+   "model": "Piaozoo_fairy_lights",
+   "file": "flipper_LED_Lighting_Piaozoo_Piaozoo_fairy_lights.gz",
+   "signalCount": 24
+  },
+  {
+   "id": "flipper_LED_Lighting_PixMob_PixMob_all_colors",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "PixMob",
+   "model": "PixMob_all_colors",
+   "file": "flipper_LED_Lighting_PixMob_PixMob_all_colors.gz",
+   "signalCount": 74
+  },
+  {
+   "id": "flipper_LED_Lighting_PixMob_PixMob_main",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "PixMob",
+   "model": "PixMob_main",
+   "file": "flipper_LED_Lighting_PixMob_PixMob_main.gz",
+   "signalCount": 84
+  },
+  {
+   "id": "flipper_LED_Lighting_PixMob_PixMob_special",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "PixMob",
+   "model": "PixMob_special",
+   "file": "flipper_LED_Lighting_PixMob_PixMob_special.gz",
+   "signalCount": 161
+  },
+  {
+   "id": "flipper_LED_Lighting_Power_Lighting_Power_Lighting_Meteor_VI",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Power_Lighting",
+   "model": "Power_Lighting_Meteor_VI",
+   "file": "flipper_LED_Lighting_Power_Lighting_Power_Lighting_Meteor_VI.gz",
+   "signalCount": 12
+  },
+  {
+   "id": "flipper_LED_Lighting_Prolights_Prolights_LUMIPARIRCH",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Prolights",
+   "model": "Prolights_LUMIPARIRCH",
+   "file": "flipper_LED_Lighting_Prolights_Prolights_LUMIPARIRCH.gz",
+   "signalCount": 27
+  },
+  {
+   "id": "flipper_LED_Lighting_Puck_Button_Sooair_Puck_LED",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Puck_Button",
+   "model": "Sooair_Puck_LED",
+   "file": "flipper_LED_Lighting_Puck_Button_Sooair_Puck_LED.gz",
+   "signalCount": 19
+  },
+  {
+   "id": "flipper_LED_Lighting_Pumpkin_Lights_Pumpkin_Lights",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Pumpkin_Lights",
+   "model": "Pumpkin Lights",
+   "file": "flipper_LED_Lighting_Pumpkin_Lights_Pumpkin_Lights.gz",
+   "signalCount": 9
+  },
+  {
+   "id": "flipper_LED_Lighting_QTX_Qtx_led_par",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "QTX",
+   "model": "Qtx_led_par",
+   "file": "flipper_LED_Lighting_QTX_Qtx_led_par.gz",
+   "signalCount": 16
+  },
+  {
+   "id": "flipper_LED_Lighting_RY_King_RY_King_Flameless_Candles",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "RY_King",
+   "model": "RY_King_Flameless_Candles",
+   "file": "flipper_LED_Lighting_RY_King_RY_King_Flameless_Candles.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_LED_Lighting_Rusta_Christmas_Tree_Candle_Rusta_Xmas_Candle",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Rusta_Christmas_Tree_Candle",
+   "model": "Rusta_Xmas_Candle",
+   "file": "flipper_LED_Lighting_Rusta_Christmas_Tree_Candle_Rusta_Xmas_Candle.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_LED_Lighting_Sonoff_Sonoff_LED",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Sonoff",
+   "model": "Sonoff_LED",
+   "file": "flipper_LED_Lighting_Sonoff_Sonoff_LED.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_LED_Lighting_Sunset_Lamp_Sunset_Lamp",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Sunset_Lamp",
+   "model": "Sunset_Lamp",
+   "file": "flipper_LED_Lighting_Sunset_Lamp_Sunset_Lamp.gz",
+   "signalCount": 24
+  },
+  {
+   "id": "flipper_LED_Lighting_Sylvania_Sylvania_24_Button_LED",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Sylvania",
+   "model": "Sylvania_24_Button_LED",
+   "file": "flipper_LED_Lighting_Sylvania_Sylvania_24_Button_LED.gz",
+   "signalCount": 24
+  },
+  {
+   "id": "flipper_LED_Lighting_Sylvania_Sylvania_LED",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Sylvania",
+   "model": "Sylvania_LED",
+   "file": "flipper_LED_Lighting_Sylvania_Sylvania_LED.gz",
+   "signalCount": 16
+  },
+  {
+   "id": "flipper_LED_Lighting_T-SUN_T-SUN_TiL_LED_24W",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "T-SUN",
+   "model": "T-SUN_TiL_LED_24W",
+   "file": "flipper_LED_Lighting_T-SUN_T-SUN_TiL_LED_24W.gz",
+   "signalCount": 12
+  },
+  {
+   "id": "flipper_LED_Lighting_TAO_TAO_A60BHV-RGB_LightBulb",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "TAO",
+   "model": "TAO_A60BHV-RGB_LightBulb",
+   "file": "flipper_LED_Lighting_TAO_TAO_A60BHV-RGB_LightBulb.gz",
+   "signalCount": 25
+  },
+  {
+   "id": "flipper_LED_Lighting_Tridonic_REMOTECONTROL_IR6",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Tridonic",
+   "model": "REMOTECONTROL_IR6",
+   "file": "flipper_LED_Lighting_Tridonic_REMOTECONTROL_IR6.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_LED_Lighting_Tridonic_basicDIM_DCG_PROGRAMMER",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Tridonic",
+   "model": "basicDIM_DCG_PROGRAMMER",
+   "file": "flipper_LED_Lighting_Tridonic_basicDIM_DCG_PROGRAMMER.gz",
+   "signalCount": 44
+  },
+  {
+   "id": "flipper_LED_Lighting_Tuya_Tuya_Sunset_LED_Lamp",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Tuya",
+   "model": "Tuya_Sunset_LED_Lamp",
+   "file": "flipper_LED_Lighting_Tuya_Tuya_Sunset_LED_Lamp.gz",
+   "signalCount": 12
+  },
+  {
+   "id": "flipper_LED_Lighting_Tween_Tween_Light_Oria",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Tween",
+   "model": "Tween_Light_Oria",
+   "file": "flipper_LED_Lighting_Tween_Tween_Light_Oria.gz",
+   "signalCount": 11
+  },
+  {
+   "id": "flipper_LED_Lighting_Tween_lights_Tween_light",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Tween_lights",
+   "model": "Tween_light",
+   "file": "flipper_LED_Lighting_Tween_lights_Tween_light.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_LED_Lighting_Tween_lights_Tzumi_Auraled_Colorstrip_12ft",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Tween_lights",
+   "model": "Tzumi_Auraled_Colorstrip_12ft",
+   "file": "flipper_LED_Lighting_Tween_lights_Tzumi_Auraled_Colorstrip_12ft.gz",
+   "signalCount": 24
+  },
+  {
+   "id": "flipper_LED_Lighting_Tzumi_Tzumi_AuraLED",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Tzumi",
+   "model": "Tzumi_AuraLED",
+   "file": "flipper_LED_Lighting_Tzumi_Tzumi_AuraLED.gz",
+   "signalCount": 24
+  },
+  {
+   "id": "flipper_LED_Lighting_Tzumi_Tzumi_LED_Colorbar",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Tzumi",
+   "model": "Tzumi_LED_Colorbar",
+   "file": "flipper_LED_Lighting_Tzumi_Tzumi_LED_Colorbar.gz",
+   "signalCount": 24
+  },
+  {
+   "id": "flipper_LED_Lighting_UFO_Sunset_Lamp_UFO_Sunset_Lamp",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "UFO_Sunset_Lamp",
+   "model": "UFO_Sunset_Lamp",
+   "file": "flipper_LED_Lighting_UFO_Sunset_Lamp_UFO_Sunset_Lamp.gz",
+   "signalCount": 8
+  },
+  {
+   "id": "flipper_LED_Lighting_Unknown_44_Button_Generic_LED",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Unknown",
+   "model": "44_Button_Generic_LED",
+   "file": "flipper_LED_Lighting_Unknown_44_Button_Generic_LED.gz",
+   "signalCount": 43
+  },
+  {
+   "id": "flipper_LED_Lighting_Unknown_44_Button_LED",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Unknown",
+   "model": "44_Button_LED",
+   "file": "flipper_LED_Lighting_Unknown_44_Button_LED.gz",
+   "signalCount": 41
+  },
+  {
+   "id": "flipper_LED_Lighting_Unknown_44_LED_Strip",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Unknown",
+   "model": "44_LED_Strip",
+   "file": "flipper_LED_Lighting_Unknown_44_LED_Strip.gz",
+   "signalCount": 44
+  },
+  {
+   "id": "flipper_LED_Lighting_Unknown_Christmastree_candle",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Unknown",
+   "model": "Christmastree_candle",
+   "file": "flipper_LED_Lighting_Unknown_Christmastree_candle.gz",
+   "signalCount": 2
+  },
+  {
+   "id": "flipper_LED_Lighting_Unknown_Closet_LED_3W",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Unknown",
+   "model": "Closet_LED_3W",
+   "file": "flipper_LED_Lighting_Unknown_Closet_LED_3W.gz",
+   "signalCount": 4
+  },
+  {
+   "id": "flipper_LED_Lighting_Unknown_Color_Change_Bulb_Remote",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Unknown",
+   "model": "Color_Change_Bulb_Remote",
+   "file": "flipper_LED_Lighting_Unknown_Color_Change_Bulb_Remote.gz",
+   "signalCount": 17
+  },
+  {
+   "id": "flipper_LED_Lighting_Unknown_Conzept_LED_VoksKogle",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Unknown",
+   "model": "Conzept_LED_VoksKogle",
+   "file": "flipper_LED_Lighting_Unknown_Conzept_LED_VoksKogle.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_LED_Lighting_Unknown_DMX_Light",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Unknown",
+   "model": "DMX_Light",
+   "file": "flipper_LED_Lighting_Unknown_DMX_Light.gz",
+   "signalCount": 16
+  },
+  {
+   "id": "flipper_LED_Lighting_Unknown_Generic_LED_light_strip",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Unknown",
+   "model": "Generic_LED_light_strip",
+   "file": "flipper_LED_Lighting_Unknown_Generic_LED_light_strip.gz",
+   "signalCount": 24
+  },
+  {
+   "id": "flipper_LED_Lighting_Unknown_LEDStrip",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Unknown",
+   "model": "LEDStrip",
+   "file": "flipper_LED_Lighting_Unknown_LEDStrip.gz",
+   "signalCount": 256
+  },
+  {
+   "id": "flipper_LED_Lighting_Unknown_LED_44Key",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Unknown",
+   "model": "LED_44Key",
+   "file": "flipper_LED_Lighting_Unknown_LED_44Key.gz",
+   "signalCount": 44
+  },
+  {
+   "id": "flipper_LED_Lighting_Unknown_LED_Cat",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Unknown",
+   "model": "LED_Cat",
+   "file": "flipper_LED_Lighting_Unknown_LED_Cat.gz",
+   "signalCount": 13
+  },
+  {
+   "id": "flipper_LED_Lighting_Unknown_LED_Curtain",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Unknown",
+   "model": "LED_Curtain",
+   "file": "flipper_LED_Lighting_Unknown_LED_Curtain.gz",
+   "signalCount": 13
+  },
+  {
+   "id": "flipper_LED_Lighting_Unknown_LED_Disco_Light",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Unknown",
+   "model": "LED_Disco_Light",
+   "file": "flipper_LED_Lighting_Unknown_LED_Disco_Light.gz",
+   "signalCount": 15
+  },
+  {
+   "id": "flipper_LED_Lighting_Unknown_LED_Generic",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Unknown",
+   "model": "LED_Generic",
+   "file": "flipper_LED_Lighting_Unknown_LED_Generic.gz",
+   "signalCount": 8
+  },
+  {
+   "id": "flipper_LED_Lighting_Unknown_LED_Lightbar",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Unknown",
+   "model": "LED_Lightbar",
+   "file": "flipper_LED_Lighting_Unknown_LED_Lightbar.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_LED_Lighting_Unknown_LED_RGB",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Unknown",
+   "model": "LED_RGB",
+   "file": "flipper_LED_Lighting_Unknown_LED_RGB.gz",
+   "signalCount": 24
+  },
+  {
+   "id": "flipper_LED_Lighting_Unknown_LED_Sign",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Unknown",
+   "model": "LED_Sign",
+   "file": "flipper_LED_Lighting_Unknown_LED_Sign.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_LED_Lighting_Unknown_Led_Remote",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Unknown",
+   "model": "Led_Remote",
+   "file": "flipper_LED_Lighting_Unknown_Led_Remote.gz",
+   "signalCount": 44
+  },
+  {
+   "id": "flipper_LED_Lighting_Unknown_Light_Strip",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Unknown",
+   "model": "Light_Strip",
+   "file": "flipper_LED_Lighting_Unknown_Light_Strip.gz",
+   "signalCount": 24
+  },
+  {
+   "id": "flipper_LED_Lighting_Unknown_Magic_Lighting_Remote",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Unknown",
+   "model": "Magic_Lighting_Remote",
+   "file": "flipper_LED_Lighting_Unknown_Magic_Lighting_Remote.gz",
+   "signalCount": 17
+  },
+  {
+   "id": "flipper_LED_Lighting_Unknown_Moon_Lamp",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Unknown",
+   "model": "Moon_Lamp",
+   "file": "flipper_LED_Lighting_Unknown_Moon_Lamp.gz",
+   "signalCount": 23
+  },
+  {
+   "id": "flipper_LED_Lighting_Unknown_Neon_LED",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Unknown",
+   "model": "Neon_LED",
+   "file": "flipper_LED_Lighting_Unknown_Neon_LED.gz",
+   "signalCount": 2
+  },
+  {
+   "id": "flipper_LED_Lighting_Unknown_Practical_Series_2",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Unknown",
+   "model": "Practical_Series_2",
+   "file": "flipper_LED_Lighting_Unknown_Practical_Series_2.gz",
+   "signalCount": 22
+  },
+  {
+   "id": "flipper_LED_Lighting_Unknown_RGB",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Unknown",
+   "model": "RGB",
+   "file": "flipper_LED_Lighting_Unknown_RGB.gz",
+   "signalCount": 24
+  },
+  {
+   "id": "flipper_LED_Lighting_Unknown_RGB_Lightbulb_NoName",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Unknown",
+   "model": "RGB_Lightbulb_NoName",
+   "file": "flipper_LED_Lighting_Unknown_RGB_Lightbulb_NoName.gz",
+   "signalCount": 24
+  },
+  {
+   "id": "flipper_LED_Lighting_Unknown_Submersible_LED_Light",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Unknown",
+   "model": "Submersible_LED_Light",
+   "file": "flipper_LED_Lighting_Unknown_Submersible_LED_Light.gz",
+   "signalCount": 24
+  },
+  {
+   "id": "flipper_LED_Lighting_Unknown_Sunlamp",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Unknown",
+   "model": "Sunlamp",
+   "file": "flipper_LED_Lighting_Unknown_Sunlamp.gz",
+   "signalCount": 8
+  },
+  {
+   "id": "flipper_LED_Lighting_Unknown_Unknown_LED_remote",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Unknown",
+   "model": "Unknown_LED_remote",
+   "file": "flipper_LED_Lighting_Unknown_Unknown_LED_remote.gz",
+   "signalCount": 8
+  },
+  {
+   "id": "flipper_LED_Lighting_Unknown_mlambert_rope_light",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Unknown",
+   "model": "mlambert_rope_light",
+   "file": "flipper_LED_Lighting_Unknown_mlambert_rope_light.gz",
+   "signalCount": 28
+  },
+  {
+   "id": "flipper_LED_Lighting_Unknown_nightlampRGB",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Unknown",
+   "model": "nightlampRGB",
+   "file": "flipper_LED_Lighting_Unknown_nightlampRGB.gz",
+   "signalCount": 8
+  },
+  {
+   "id": "flipper_LED_Lighting_V-TAC_V-TAC_VT5050_LED_Strip",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "V-TAC",
+   "model": "V-TAC_VT5050_LED_Strip",
+   "file": "flipper_LED_Lighting_V-TAC_V-TAC_VT5050_LED_Strip.gz",
+   "signalCount": 9
+  },
+  {
+   "id": "flipper_LED_Lighting_Varilux_Varilux_Lightme_LED_Bulb",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Varilux",
+   "model": "Varilux_Lightme_LED_Bulb",
+   "file": "flipper_LED_Lighting_Varilux_Varilux_Lightme_LED_Bulb.gz",
+   "signalCount": 24
+  },
+  {
+   "id": "flipper_LED_Lighting_Veezio_Veezio_Light_Bulb",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Veezio",
+   "model": "Veezio_Light_Bulb",
+   "file": "flipper_LED_Lighting_Veezio_Veezio_Light_Bulb.gz",
+   "signalCount": 19
+  },
+  {
+   "id": "flipper_LED_Lighting_Warmoon_Warmoon_RGB",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Warmoon",
+   "model": "Warmoon_RGB",
+   "file": "flipper_LED_Lighting_Warmoon_Warmoon_RGB.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_LED_Lighting_Xtreme_Lit_LEDs_XTREME_3_2FT_LED_strip",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "Xtreme_Lit_LEDs",
+   "model": "XTREME_3_2FT_LED_strip",
+   "file": "flipper_LED_Lighting_Xtreme_Lit_LEDs_XTREME_3_2FT_LED_strip.gz",
+   "signalCount": 15
+  },
+  {
+   "id": "flipper_LED_Lighting_iDual_iDual",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "iDual",
+   "model": "iDual",
+   "file": "flipper_LED_Lighting_iDual_iDual.gz",
+   "signalCount": 24
+  },
+  {
+   "id": "flipper_LED_Lighting_iDual_iDual_JEDI_Lighting_LED_Light",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "iDual",
+   "model": "iDual_JEDI_Lighting_LED_Light",
+   "file": "flipper_LED_Lighting_iDual_iDual_JEDI_Lighting_LED_Light.gz",
+   "signalCount": 26
+  },
+  {
+   "id": "flipper_LED_Lighting_iTrekkings_iTrekkings_Quechua_Camping_Lamp_Click",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "iTrekkings",
+   "model": "iTrekkings_Quechua_Camping_Lamp_Click",
+   "file": "flipper_LED_Lighting_iTrekkings_iTrekkings_Quechua_Camping_Lamp_Click.gz",
+   "signalCount": 1
+  },
+  {
+   "id": "flipper_LED_Lighting_tuffenough_tuffenough_all_models",
+   "kind": "flipper",
+   "deviceType": "light",
+   "brand": "tuffenough",
+   "model": "tuffenough_all_models",
+   "file": "flipper_LED_Lighting_tuffenough_tuffenough_all_models.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_Acoolir_Acoolir_AC-018",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Acoolir",
+   "model": "Acoolir_AC-018",
+   "file": "flipper_Fans_Acoolir_Acoolir_AC-018.gz",
+   "signalCount": 8
+  },
+  {
+   "id": "flipper_Fans_AlohaBreeze_AlohaBreeze_84001",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "AlohaBreeze",
+   "model": "AlohaBreeze_84001",
+   "file": "flipper_Fans_AlohaBreeze_AlohaBreeze_84001.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_Amazon_Amazon_Basics_Fan",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Amazon",
+   "model": "Amazon_Basics_Fan",
+   "file": "flipper_Fans_Amazon_Amazon_Basics_Fan.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_Ansio_Ansio_Fan_30inch_Tower",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Ansio",
+   "model": "Ansio_Fan_30inch_Tower",
+   "file": "flipper_Fans_Ansio_Ansio_Fan_30inch_Tower.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_Anslut_Anslut_Tower_Fan_95cm",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Anslut",
+   "model": "Anslut_Tower_Fan_95cm",
+   "file": "flipper_Fans_Anslut_Anslut_Tower_Fan_95cm.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_Atomberg_Atomberg_fan",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Atomberg",
+   "model": "Atomberg_fan",
+   "file": "flipper_Fans_Atomberg_Atomberg_fan.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_Fans_Bell_Howell_Socket_Fan_Light_8563",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Bell+Howell",
+   "model": "Socket_Fan_Light_8563",
+   "file": "flipper_Fans_Bell_Howell_Socket_Fan_Light_8563.gz",
+   "signalCount": 4
+  },
+  {
+   "id": "flipper_Fans_Better_Homes_and_Gardens_Better_Homes_and_Gardens_Fan",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Better_Homes_and_Gardens",
+   "model": "Better_Homes_and_Gardens_Fan",
+   "file": "flipper_Fans_Better_Homes_and_Gardens_Better_Homes_and_Gardens_Fan.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_Big_Ass_Fans_Big_Ass_Fans_Haiku",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Big_Ass_Fans",
+   "model": "Big_Ass_Fans_Haiku",
+   "file": "flipper_Fans_Big_Ass_Fans_Big_Ass_Fans_Haiku.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_Fans_Bionaire_BASF1016GRC",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Bionaire",
+   "model": "BASF1016GRC",
+   "file": "flipper_Fans_Bionaire_BASF1016GRC.gz",
+   "signalCount": 4
+  },
+  {
+   "id": "flipper_Fans_Bionaire_Bionaire",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Bionaire",
+   "model": "Bionaire",
+   "file": "flipper_Fans_Bionaire_Bionaire.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_Bionaire_Bionaire_BW2100R",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Bionaire",
+   "model": "Bionaire_BW2100R",
+   "file": "flipper_Fans_Bionaire_Bionaire_BW2100R.gz",
+   "signalCount": 4
+  },
+  {
+   "id": "flipper_Fans_Black_and_Decker_Black_and_Decker_BFSR16W",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Black_and_Decker",
+   "model": "Black_and_Decker_BFSR16W",
+   "file": "flipper_Fans_Black_and_Decker_Black_and_Decker_BFSR16W.gz",
+   "signalCount": 3
+  },
+  {
+   "id": "flipper_Fans_Brandson_Brandson_Fan_304997",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Brandson",
+   "model": "Brandson_Fan_304997",
+   "file": "flipper_Fans_Brandson_Brandson_Fan_304997.gz",
+   "signalCount": 7
+  },
+  {
+   "id": "flipper_Fans_Brandson_Brandson_fan_303352",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Brandson",
+   "model": "Brandson_fan_303352",
+   "file": "flipper_Fans_Brandson_Brandson_fan_303352.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_Fans_Cascade_Cascade_Tower_Fan",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Cascade",
+   "model": "Cascade_Tower_Fan",
+   "file": "flipper_Fans_Cascade_Cascade_Tower_Fan.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_Cecotec_CECOTEC_1010_EXTREMECONNECT",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Cecotec",
+   "model": "CECOTEC_1010_EXTREMECONNECT",
+   "file": "flipper_Fans_Cecotec_CECOTEC_1010_EXTREMECONNECT.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_Fans_Co_Tech_CO_TECH_towerfan",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Co_Tech",
+   "model": "CO_TECH_towerfan",
+   "file": "flipper_Fans_Co_Tech_CO_TECH_towerfan.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_ComfortZone_ComfortZone_CZ106",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "ComfortZone",
+   "model": "ComfortZone_CZ106",
+   "file": "flipper_Fans_ComfortZone_ComfortZone_CZ106.gz",
+   "signalCount": 4
+  },
+  {
+   "id": "flipper_Fans_Costco_OmniBreeze",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Costco",
+   "model": "OmniBreeze",
+   "file": "flipper_Fans_Costco_OmniBreeze.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_Daewoo_Daewoo_DDV200",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Daewoo",
+   "model": "Daewoo_DDV200",
+   "file": "flipper_Fans_Daewoo_Daewoo_DDV200.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_Deka_Deka_G3_Fan",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Deka",
+   "model": "Deka_G3_Fan",
+   "file": "flipper_Fans_Deka_Deka_G3_Fan.gz",
+   "signalCount": 7
+  },
+  {
+   "id": "flipper_Fans_Deka_Deka_MS16",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Deka",
+   "model": "Deka_MS16",
+   "file": "flipper_Fans_Deka_Deka_MS16.gz",
+   "signalCount": 8
+  },
+  {
+   "id": "flipper_Fans_Dimplex_Dimplex_Mont_Blanc_dxmbcf",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Dimplex",
+   "model": "Dimplex_Mont_Blanc_dxmbcf",
+   "file": "flipper_Fans_Dimplex_Dimplex_Mont_Blanc_dxmbcf.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_Domo_DOMO_DO8149",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Domo",
+   "model": "DOMO_DO8149",
+   "file": "flipper_Fans_Domo_DOMO_DO8149.gz",
+   "signalCount": 7
+  },
+  {
+   "id": "flipper_Fans_Domo_DOMO_Fan",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Domo",
+   "model": "DOMO_Fan",
+   "file": "flipper_Fans_Domo_DOMO_Fan.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_Dreo_Dreo_Cruiser_Pro_T1S_Fan",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Dreo",
+   "model": "Dreo_Cruiser Pro_T1S_Fan",
+   "file": "flipper_Fans_Dreo_Dreo_Cruiser_Pro_T1S_Fan.gz",
+   "signalCount": 7
+  },
+  {
+   "id": "flipper_Fans_Dreo_Dreo_DR-HTF007",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Dreo",
+   "model": "Dreo_DR-HTF007",
+   "file": "flipper_Fans_Dreo_Dreo_DR-HTF007.gz",
+   "signalCount": 7
+  },
+  {
+   "id": "flipper_Fans_Dreo_Dreo_Nomad_One_DOTF07",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Dreo",
+   "model": "Dreo_Nomad_One_DOTF07",
+   "file": "flipper_Fans_Dreo_Dreo_Nomad_One_DOTF07.gz",
+   "signalCount": 7
+  },
+  {
+   "id": "flipper_Fans_Dreo_Dreo_WDR-TF007-9275A",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Dreo",
+   "model": "Dreo_WDR-TF007-9275A",
+   "file": "flipper_Fans_Dreo_Dreo_WDR-TF007-9275A.gz",
+   "signalCount": 7
+  },
+  {
+   "id": "flipper_Fans_Dyson_Dyson_AM04",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Dyson",
+   "model": "Dyson_AM04",
+   "file": "flipper_Fans_Dyson_Dyson_AM04.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_Fans_Dyson_Dyson_AM05_Hot_Cool",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Dyson",
+   "model": "Dyson_AM05_Hot_Cool",
+   "file": "flipper_Fans_Dyson_Dyson_AM05_Hot_Cool.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_Fans_Dyson_Dyson_AM06_33_Fan",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Dyson",
+   "model": "Dyson_AM06_33_Fan",
+   "file": "flipper_Fans_Dyson_Dyson_AM06_33_Fan.gz",
+   "signalCount": 7
+  },
+  {
+   "id": "flipper_Fans_Dyson_Dyson_AM07",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Dyson",
+   "model": "Dyson_AM07",
+   "file": "flipper_Fans_Dyson_Dyson_AM07.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_Fans_Dyson_Dyson_AM09",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Dyson",
+   "model": "Dyson_AM09",
+   "file": "flipper_Fans_Dyson_Dyson_AM09.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_Fans_Dyson_Dyson_AM11",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Dyson",
+   "model": "Dyson_AM11",
+   "file": "flipper_Fans_Dyson_Dyson_AM11.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_Fans_Dyson_Dyson_Air_Multiplier",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Dyson",
+   "model": "Dyson_Air_Multiplier",
+   "file": "flipper_Fans_Dyson_Dyson_Air_Multiplier.gz",
+   "signalCount": 8
+  },
+  {
+   "id": "flipper_Fans_Dyson_Dyson_Air_Purifier_Fan",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Dyson",
+   "model": "Dyson_Air_Purifier_Fan",
+   "file": "flipper_Fans_Dyson_Dyson_Air_Purifier_Fan.gz",
+   "signalCount": 8
+  },
+  {
+   "id": "flipper_Fans_Dyson_Dyson_Cool_Fan",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Dyson",
+   "model": "Dyson_Cool_Fan",
+   "file": "flipper_Fans_Dyson_Dyson_Cool_Fan.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_Fans_Dyson_Dyson_Cool_Unknown_Model",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Dyson",
+   "model": "Dyson_Cool_Unknown_Model",
+   "file": "flipper_Fans_Dyson_Dyson_Cool_Unknown_Model.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_Fans_Dyson_Dyson_Fan_HP04",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Dyson",
+   "model": "Dyson_Fan_HP04",
+   "file": "flipper_Fans_Dyson_Dyson_Fan_HP04.gz",
+   "signalCount": 12
+  },
+  {
+   "id": "flipper_Fans_Dyson_Dyson_HP01",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Dyson",
+   "model": "Dyson_HP01",
+   "file": "flipper_Fans_Dyson_Dyson_HP01.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_Fans_Dyson_Dyson_HP02",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Dyson",
+   "model": "Dyson_HP02",
+   "file": "flipper_Fans_Dyson_Dyson_HP02.gz",
+   "signalCount": 12
+  },
+  {
+   "id": "flipper_Fans_Dyson_Dyson_HP09",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Dyson",
+   "model": "Dyson_HP09",
+   "file": "flipper_Fans_Dyson_Dyson_HP09.gz",
+   "signalCount": 12
+  },
+  {
+   "id": "flipper_Fans_Dyson_Dyson_Pure_Cool_Link",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Dyson",
+   "model": "Dyson_Pure_Cool_Link",
+   "file": "flipper_Fans_Dyson_Dyson_Pure_Cool_Link.gz",
+   "signalCount": 8
+  },
+  {
+   "id": "flipper_Fans_Dyson_Dyson_Pure_Cool_Me_Fan",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Dyson",
+   "model": "Dyson_Pure_Cool_Me_Fan",
+   "file": "flipper_Fans_Dyson_Dyson_Pure_Cool_Me_Fan.gz",
+   "signalCount": 4
+  },
+  {
+   "id": "flipper_Fans_Dyson_Dyson_Pure_Cool_TP02",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Dyson",
+   "model": "Dyson_Pure_Cool_TP02",
+   "file": "flipper_Fans_Dyson_Dyson_Pure_Cool_TP02.gz",
+   "signalCount": 4
+  },
+  {
+   "id": "flipper_Fans_Dyson_Dyson_Pure_Cool_TP4A",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Dyson",
+   "model": "Dyson_Pure_Cool_TP4A",
+   "file": "flipper_Fans_Dyson_Dyson_Pure_Cool_TP4A.gz",
+   "signalCount": 8
+  },
+  {
+   "id": "flipper_Fans_Dyson_Dyson_Pure_Cool_TP4B",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Dyson",
+   "model": "Dyson_Pure_Cool_TP4B",
+   "file": "flipper_Fans_Dyson_Dyson_Pure_Cool_TP4B.gz",
+   "signalCount": 8
+  },
+  {
+   "id": "flipper_Fans_Dyson_Dyson_Pure_HotCool_HP02",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Dyson",
+   "model": "Dyson_Pure_HotCool_HP02",
+   "file": "flipper_Fans_Dyson_Dyson_Pure_HotCool_HP02.gz",
+   "signalCount": 12
+  },
+  {
+   "id": "flipper_Fans_Dyson_Dyson_TP7A",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Dyson",
+   "model": "Dyson_TP7A",
+   "file": "flipper_Fans_Dyson_Dyson_TP7A.gz",
+   "signalCount": 8
+  },
+  {
+   "id": "flipper_Fans_EasyHome_EasyHome_PFR40RT",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "EasyHome",
+   "model": "EasyHome_PFR40RT",
+   "file": "flipper_Fans_EasyHome_EasyHome_PFR40RT.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_Fans_Elmark_Elmark_LMD-24",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Elmark",
+   "model": "Elmark_LMD-24",
+   "file": "flipper_Fans_Elmark_Elmark_LMD-24.gz",
+   "signalCount": 7
+  },
+  {
+   "id": "flipper_Fans_Equatlon_Equatlon_Fan",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Equatlon",
+   "model": "Equatlon_Fan",
+   "file": "flipper_Fans_Equatlon_Equatlon_Fan.gz",
+   "signalCount": 3
+  },
+  {
+   "id": "flipper_Fans_Eton_Eton_NDY-DT2-Portable-Evaporative-Tower-Fan",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Eton",
+   "model": "Eton_NDY-DT2-Portable-Evaporative-Tower-Fan",
+   "file": "flipper_Fans_Eton_Eton_NDY-DT2-Portable-Evaporative-Tower-Fan.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_Fans_Fakir_Fakir_VC60_DC_2019",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Fakir",
+   "model": "Fakir_VC60_DC_2019",
+   "file": "flipper_Fans_Fakir_Fakir_VC60_DC_2019.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_Fans_Fakir_Fakir_VC60_DC_2020",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Fakir",
+   "model": "Fakir_VC60_DC_2020",
+   "file": "flipper_Fans_Fakir_Fakir_VC60_DC_2020.gz",
+   "signalCount": 7
+  },
+  {
+   "id": "flipper_Fans_Fust_Fust_Primotecq_Tower_Fan_TF4201TR-L",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Fust",
+   "model": "Fust_Primotecq_Tower_Fan_TF4201TR-L",
+   "file": "flipper_Fans_Fust_Fust_Primotecq_Tower_Fan_TF4201TR-L.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_Fans_Hatari_HatariL1Fan",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Hatari",
+   "model": "HatariL1Fan",
+   "file": "flipper_Fans_Hatari_HatariL1Fan.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_Hitachi_Hitachi_HEF_RM1_Fan",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Hitachi",
+   "model": "Hitachi_HEF_RM1_Fan",
+   "file": "flipper_Fans_Hitachi_Hitachi_HEF_RM1_Fan.gz",
+   "signalCount": 8
+  },
+  {
+   "id": "flipper_Fans_Holmes_Holmes_Fan_HTF3610AR",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Holmes",
+   "model": "Holmes_Fan_HTF3610AR",
+   "file": "flipper_Fans_Holmes_Holmes_Fan_HTF3610AR.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_Homezest_Homezest_LWTF-04",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Homezest",
+   "model": "Homezest_LWTF-04",
+   "file": "flipper_Fans_Homezest_Homezest_LWTF-04.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_Honeywell_Honeywell_Fan_C152",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Honeywell",
+   "model": "Honeywell_Fan_C152",
+   "file": "flipper_Fans_Honeywell_Honeywell_Fan_C152.gz",
+   "signalCount": 7
+  },
+  {
+   "id": "flipper_Fans_Honeywell_Honeywell_Fan_CL18PE",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Honeywell",
+   "model": "Honeywell_Fan_CL18PE",
+   "file": "flipper_Fans_Honeywell_Honeywell_Fan_CL18PE.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_Fans_Honeywell_Honeywell_Fan_HY041w",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Honeywell",
+   "model": "Honeywell_Fan_HY041w",
+   "file": "flipper_Fans_Honeywell_Honeywell_Fan_HY041w.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_Honeywell_Honeywell_Fan_HYF290B",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Honeywell",
+   "model": "Honeywell_Fan_HYF290B",
+   "file": "flipper_Fans_Honeywell_Honeywell_Fan_HYF290B.gz",
+   "signalCount": 3
+  },
+  {
+   "id": "flipper_Fans_Honeywell_Honeywell_Fan_HYF290E4",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Honeywell",
+   "model": "Honeywell_Fan_HYF290E4",
+   "file": "flipper_Fans_Honeywell_Honeywell_Fan_HYF290E4.gz",
+   "signalCount": 3
+  },
+  {
+   "id": "flipper_Fans_Honeywell_Honeywell_HO-5500RE",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Honeywell",
+   "model": "Honeywell_HO-5500RE",
+   "file": "flipper_Fans_Honeywell_Honeywell_HO-5500RE.gz",
+   "signalCount": 4
+  },
+  {
+   "id": "flipper_Fans_Honeywell_Honeywell_HO-5500RE_1",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Honeywell",
+   "model": "Honeywell_HO-5500RE_1",
+   "file": "flipper_Fans_Honeywell_Honeywell_HO-5500RE_1.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_Honeywell_Honeywell_HO-5500RE_2",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Honeywell",
+   "model": "Honeywell_HO-5500RE_2",
+   "file": "flipper_Fans_Honeywell_Honeywell_HO-5500RE_2.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_Igenix_Igenix_DF0035TBL",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Igenix",
+   "model": "Igenix_DF0035TBL",
+   "file": "flipper_Fans_Igenix_Igenix_DF0035TBL.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_KDK_KDK_Fan_K14X5_K14Y5",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "KDK",
+   "model": "KDK_Fan_K14X5_K14Y5",
+   "file": "flipper_Fans_KDK_KDK_Fan_K14X5_K14Y5.gz",
+   "signalCount": 9
+  },
+  {
+   "id": "flipper_Fans_KDK_KDK_Fan_KC4GR",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "KDK",
+   "model": "KDK_Fan_KC4GR",
+   "file": "flipper_Fans_KDK_KDK_Fan_KC4GR.gz",
+   "signalCount": 4
+  },
+  {
+   "id": "flipper_Fans_KOENIC_KOENIC_KSFW_40322_TRC",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "KOENIC",
+   "model": "KOENIC_KSFW_40322_TRC",
+   "file": "flipper_Fans_KOENIC_KOENIC_KSFW_40322_TRC.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_Fans_KOENIC_KOENIC_KTF100",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "KOENIC",
+   "model": "KOENIC_KTF100",
+   "file": "flipper_Fans_KOENIC_KOENIC_KTF100.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_KOENIC_KOENIC_KTFC_602722",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "KOENIC",
+   "model": "KOENIC_KTFC_602722",
+   "file": "flipper_Fans_KOENIC_KOENIC_KTFC_602722.gz",
+   "signalCount": 7
+  },
+  {
+   "id": "flipper_Fans_Kinzo_Kinzo_LQ-AC02S_Fan",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Kinzo",
+   "model": "Kinzo_LQ-AC02S_Fan",
+   "file": "flipper_Fans_Kinzo_Kinzo_LQ-AC02S_Fan.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_Fans_Klarstein_Klarstein_Sommwerwind",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Klarstein",
+   "model": "Klarstein_Sommwerwind",
+   "file": "flipper_Fans_Klarstein_Klarstein_Sommwerwind.gz",
+   "signalCount": 7
+  },
+  {
+   "id": "flipper_Fans_Lasko_Lasko_1885",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Lasko",
+   "model": "Lasko_1885",
+   "file": "flipper_Fans_Lasko_Lasko_1885.gz",
+   "signalCount": 3
+  },
+  {
+   "id": "flipper_Fans_Lasko_Lasko_Fan",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Lasko",
+   "model": "Lasko_Fan",
+   "file": "flipper_Fans_Lasko_Lasko_Fan.gz",
+   "signalCount": 3
+  },
+  {
+   "id": "flipper_Fans_Lasko_Lasko_Fan_2108",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Lasko",
+   "model": "Lasko_Fan_2108",
+   "file": "flipper_Fans_Lasko_Lasko_Fan_2108.gz",
+   "signalCount": 4
+  },
+  {
+   "id": "flipper_Fans_Lasko_Lasko_Fan_2551",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Lasko",
+   "model": "Lasko_Fan_2551",
+   "file": "flipper_Fans_Lasko_Lasko_Fan_2551.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_Lasko_Lasko_Fan_S18612",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Lasko",
+   "model": "Lasko_Fan_S18612",
+   "file": "flipper_Fans_Lasko_Lasko_Fan_S18612.gz",
+   "signalCount": 4
+  },
+  {
+   "id": "flipper_Fans_Lasko_Lasko_Fan_S18640",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Lasko",
+   "model": "Lasko_Fan_S18640",
+   "file": "flipper_Fans_Lasko_Lasko_Fan_S18640.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_Lasko_Lasko_Fan_Simple",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Lasko",
+   "model": "Lasko_Fan_Simple",
+   "file": "flipper_Fans_Lasko_Lasko_Fan_Simple.gz",
+   "signalCount": 3
+  },
+  {
+   "id": "flipper_Fans_Lasko_Lasko_T48310",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Lasko",
+   "model": "Lasko_T48310",
+   "file": "flipper_Fans_Lasko_Lasko_T48310.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_LeaderPro_LeaderPro_DC_Motor_Floor_Fan",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "LeaderPro",
+   "model": "LeaderPro_DC_Motor_Floor_Fan",
+   "file": "flipper_Fans_LeaderPro_LeaderPro_DC_Motor_Floor_Fan.gz",
+   "signalCount": 7
+  },
+  {
+   "id": "flipper_Fans_LeaderPro_LeaderPro_Desk_Fan",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "LeaderPro",
+   "model": "LeaderPro_Desk_Fan",
+   "file": "flipper_Fans_LeaderPro_LeaderPro_Desk_Fan.gz",
+   "signalCount": 7
+  },
+  {
+   "id": "flipper_Fans_LeaderPro_LeaderPro_Floor-Fan",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "LeaderPro",
+   "model": "LeaderPro_Floor-Fan",
+   "file": "flipper_Fans_LeaderPro_LeaderPro_Floor-Fan.gz",
+   "signalCount": 7
+  },
+  {
+   "id": "flipper_Fans_Lutron_Lutron_Maestro_Fan",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Lutron",
+   "model": "Lutron_Maestro_Fan",
+   "file": "flipper_Fans_Lutron_Lutron_Maestro_Fan.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_MainStays_MainStays_Fan_FZ10-19JR",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "MainStays",
+   "model": "MainStays_Fan_FZ10-19JR",
+   "file": "flipper_Fans_MainStays_MainStays_Fan_FZ10-19JR.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_MaxxAir_MaxxAir_Airxcel",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "MaxxAir",
+   "model": "MaxxAir_Airxcel",
+   "file": "flipper_Fans_MaxxAir_MaxxAir_Airxcel.gz",
+   "signalCount": 9
+  },
+  {
+   "id": "flipper_Fans_Meaco_MeacoFan_1056_P",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Meaco",
+   "model": "MeacoFan_1056_P",
+   "file": "flipper_Fans_Meaco_MeacoFan_1056_P.gz",
+   "signalCount": 9
+  },
+  {
+   "id": "flipper_Fans_Mistral_Mistral_MTFYG07R",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Mistral",
+   "model": "Mistral_MTFYG07R",
+   "file": "flipper_Fans_Mistral_Mistral_MTFYG07R.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_Fans_Mitsubishi_Mitsubishi_R30J-HRV",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Mitsubishi",
+   "model": "Mitsubishi_R30J-HRV",
+   "file": "flipper_Fans_Mitsubishi_Mitsubishi_R30J-HRV.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_Mycarbon_Mycarbon_Fan",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Mycarbon",
+   "model": "Mycarbon_Fan",
+   "file": "flipper_Fans_Mycarbon_Mycarbon_Fan.gz",
+   "signalCount": 7
+  },
+  {
+   "id": "flipper_Fans_OmniBreeze_OmniBreeze_DC2018",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "OmniBreeze",
+   "model": "OmniBreeze_DC2018",
+   "file": "flipper_Fans_OmniBreeze_OmniBreeze_DC2018.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_Orbrgozo_Orbegozo_SF0243",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Orbrgozo",
+   "model": "Orbegozo_SF0243",
+   "file": "flipper_Fans_Orbrgozo_Orbegozo_SF0243.gz",
+   "signalCount": 4
+  },
+  {
+   "id": "flipper_Fans_Ozeri_Ozeri_UltraWind_OZF1",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Ozeri",
+   "model": "Ozeri_UltraWind_OZF1",
+   "file": "flipper_Fans_Ozeri_Ozeri_UltraWind_OZF1.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_Fans_Panasonic_Panasonic_FV-30BG1x",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Panasonic",
+   "model": "Panasonic_FV-30BG1x",
+   "file": "flipper_Fans_Panasonic_Panasonic_FV-30BG1x.gz",
+   "signalCount": 23
+  },
+  {
+   "id": "flipper_Fans_Pelonis_Pelonis_PFS40D6ABB_Fan",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Pelonis",
+   "model": "Pelonis_PFS40D6ABB_Fan",
+   "file": "flipper_Fans_Pelonis_Pelonis_PFS40D6ABB_Fan.gz",
+   "signalCount": 4
+  },
+  {
+   "id": "flipper_Fans_Pepeo_Pepeo_Raja_DC_122_Fan",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Pepeo",
+   "model": "Pepeo_Raja_DC_122_Fan",
+   "file": "flipper_Fans_Pepeo_Pepeo_Raja_DC_122_Fan.gz",
+   "signalCount": 12
+  },
+  {
+   "id": "flipper_Fans_Platinum_Platinum_Home_Fan",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Platinum",
+   "model": "Platinum_Home_Fan",
+   "file": "flipper_Fans_Platinum_Platinum_Home_Fan.gz",
+   "signalCount": 2
+  },
+  {
+   "id": "flipper_Fans_ProBreeze_ProBreeze_PBF04",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "ProBreeze",
+   "model": "ProBreeze_PBF04",
+   "file": "flipper_Fans_ProBreeze_ProBreeze_PBF04.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_Fans_Profi_Care_Profi_Care_PC-VL_3069",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Profi_Care",
+   "model": "Profi_Care_PC-VL_3069",
+   "file": "flipper_Fans_Profi_Care_Profi_Care_PC-VL_3069.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_Fans_Quads_Quads_QS303_Fan",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Quads",
+   "model": "Quads_QS303_Fan",
+   "file": "flipper_Fans_Quads_Quads_QS303_Fan.gz",
+   "signalCount": 8
+  },
+  {
+   "id": "flipper_Fans_Rowenta_Rowenta_VU5670",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Rowenta",
+   "model": "Rowenta VU5670",
+   "file": "flipper_Fans_Rowenta_Rowenta_VU5670.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_Fans_Rowenta_Rowenta_5870",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Rowenta",
+   "model": "Rowenta_5870",
+   "file": "flipper_Fans_Rowenta_Rowenta_5870.gz",
+   "signalCount": 7
+  },
+  {
+   "id": "flipper_Fans_Rowenta_Rowenta_Eole_Infinite",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Rowenta",
+   "model": "Rowenta_Eole_Infinite",
+   "file": "flipper_Fans_Rowenta_Rowenta_Eole_Infinite.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_Rowenta_Rowenta_Mosquito_Silence_VU6410FD",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Rowenta",
+   "model": "Rowenta_Mosquito_Silence_VU6410FD",
+   "file": "flipper_Fans_Rowenta_Rowenta_Mosquito_Silence_VU6410FD.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_Fans_Rubine_Rubine_RCF-FORZA45-5BL-GM",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Rubine",
+   "model": "Rubine_RCF-FORZA45-5BL-GM",
+   "file": "flipper_Fans_Rubine_Rubine_RCF-FORZA45-5BL-GM.gz",
+   "signalCount": 8
+  },
+  {
+   "id": "flipper_Fans_SHE_SHE_Fan_SHE40ST1801F",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "SHE",
+   "model": "SHE_Fan_SHE40ST1801F",
+   "file": "flipper_Fans_SHE_SHE_Fan_SHE40ST1801F.gz",
+   "signalCount": 4
+  },
+  {
+   "id": "flipper_Fans_Satellite_Electronics_Fan",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Satellite_Electronics",
+   "model": "Fan",
+   "file": "flipper_Fans_Satellite_Electronics_Fan.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_Fans_Sencor_Sencor_SFN_5040BL",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Sencor",
+   "model": "Sencor_SFN_5040BL",
+   "file": "flipper_Fans_Sencor_Sencor_SFN_5040BL.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_Fans_Senko_Senko_TR828",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Senko",
+   "model": "Senko_TR828",
+   "file": "flipper_Fans_Senko_Senko_TR828.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_Fans_ServilleClassics_SC-UltraSlimLine-Oscillating-Tower-Fan",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "ServilleClassics",
+   "model": "SC-UltraSlimLine-Oscillating-Tower-Fan",
+   "file": "flipper_Fans_ServilleClassics_SC-UltraSlimLine-Oscillating-Tower-Fan.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_Seville_Classics_SC-UltraSlimLine-Oscillating-Tower-Fan-5-Buttons-EHF10119PB",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Seville_Classics",
+   "model": "SC-UltraSlimLine-Oscillating-Tower-Fan-5-Buttons-EHF10119PB",
+   "file": "flipper_Fans_Seville_Classics_SC-UltraSlimLine-Oscillating-Tower-Fan-5-Buttons-EHF10119PB.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_Seville_Classics_SC-UltraSlimLine-Oscillating-Tower-Fan-Touch-Controls-EHF10201T",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Seville_Classics",
+   "model": "SC-UltraSlimLine-Oscillating-Tower-Fan-Touch-Controls-EHF10201T",
+   "file": "flipper_Fans_Seville_Classics_SC-UltraSlimLine-Oscillating-Tower-Fan-Touch-Controls-EHF10201T.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_Seville_Classics_SC-UltraSlimLine-Oscillating-Tower-Fan",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Seville_Classics",
+   "model": "SC-UltraSlimLine-Oscillating-Tower-Fan",
+   "file": "flipper_Fans_Seville_Classics_SC-UltraSlimLine-Oscillating-Tower-Fan.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Fans_Shami_Shami_Fan-4333E",
+   "kind": "flipper",
+   "deviceType": "fan",
+   "brand": "Shami",
+   "model": "Shami_Fan-4333E",
+   "file": "flipper_Fans_Shami_Shami_Fan-4333E.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Projectors_Anker_NebulaMarsLite",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "Anker",
+   "model": "NebulaMarsLite",
+   "file": "flipper_Projectors_Anker_NebulaMarsLite.gz",
+   "signalCount": 12
+  },
+  {
+   "id": "flipper_Projectors_Anker_Nebula_Capsule_Mini_Projector",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "Anker",
+   "model": "Nebula_Capsule_Mini_Projector",
+   "file": "flipper_Projectors_Anker_Nebula_Capsule_Mini_Projector.gz",
+   "signalCount": 12
+  },
+  {
+   "id": "flipper_Projectors_BenQ_BenQ",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "BenQ",
+   "model": "BenQ",
+   "file": "flipper_Projectors_BenQ_BenQ.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_Projectors_BenQ_BenQ_MH856UST",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "BenQ",
+   "model": "BenQ_MH856UST",
+   "file": "flipper_Projectors_BenQ_BenQ_MH856UST.gz",
+   "signalCount": 19
+  },
+  {
+   "id": "flipper_Projectors_BenQ_BenQ_TH671ST",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "BenQ",
+   "model": "BenQ_TH671ST",
+   "file": "flipper_Projectors_BenQ_BenQ_TH671ST.gz",
+   "signalCount": 25
+  },
+  {
+   "id": "flipper_Projectors_BenQ_BenQ_TK800M",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "BenQ",
+   "model": "BenQ_TK800M",
+   "file": "flipper_Projectors_BenQ_BenQ_TK800M.gz",
+   "signalCount": 37
+  },
+  {
+   "id": "flipper_Projectors_BenQ_BenQ_TRY01",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "BenQ",
+   "model": "BenQ_TRY01",
+   "file": "flipper_Projectors_BenQ_BenQ_TRY01.gz",
+   "signalCount": 1
+  },
+  {
+   "id": "flipper_Projectors_BenQ_BenQ_W1050",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "BenQ",
+   "model": "BenQ_W1050",
+   "file": "flipper_Projectors_BenQ_BenQ_W1050.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_Projectors_BenQ_BenQ_W1070",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "BenQ",
+   "model": "BenQ_W1070",
+   "file": "flipper_Projectors_BenQ_BenQ_W1070.gz",
+   "signalCount": 35
+  },
+  {
+   "id": "flipper_Projectors_BenQ_BenQ_W1110",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "BenQ",
+   "model": "BenQ_W1110",
+   "file": "flipper_Projectors_BenQ_BenQ_W1110.gz",
+   "signalCount": 34
+  },
+  {
+   "id": "flipper_Projectors_BenQ_BenQ_W2000w",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "BenQ",
+   "model": "BenQ_W2000w",
+   "file": "flipper_Projectors_BenQ_BenQ_W2000w.gz",
+   "signalCount": 13
+  },
+  {
+   "id": "flipper_Projectors_BenQ_BenQ_W2700",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "BenQ",
+   "model": "BenQ_W2700",
+   "file": "flipper_Projectors_BenQ_BenQ_W2700.gz",
+   "signalCount": 31
+  },
+  {
+   "id": "flipper_Projectors_Epson_Epson-EB-X12",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "Epson",
+   "model": "Epson-EB-X12",
+   "file": "flipper_Projectors_Epson_Epson-EB-X12.gz",
+   "signalCount": 11
+  },
+  {
+   "id": "flipper_Projectors_Epson_Epson-EB-X49",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "Epson",
+   "model": "Epson-EB-X49",
+   "file": "flipper_Projectors_Epson_Epson-EB-X49.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_Projectors_Epson_Epson",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "Epson",
+   "model": "Epson",
+   "file": "flipper_Projectors_Epson_Epson.gz",
+   "signalCount": 18
+  },
+  {
+   "id": "flipper_Projectors_Epson_Epson2",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "Epson",
+   "model": "Epson2",
+   "file": "flipper_Projectors_Epson_Epson2.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_Projectors_Epson_Epson_4650",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "Epson",
+   "model": "Epson_4650",
+   "file": "flipper_Projectors_Epson_Epson_4650.gz",
+   "signalCount": 35
+  },
+  {
+   "id": "flipper_Projectors_Epson_Epson_EB-450",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "Epson",
+   "model": "Epson_EB-450",
+   "file": "flipper_Projectors_Epson_Epson_EB-450.gz",
+   "signalCount": 1
+  },
+  {
+   "id": "flipper_Projectors_Epson_Epson_EB-575wi",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "Epson",
+   "model": "Epson_EB-575wi",
+   "file": "flipper_Projectors_Epson_Epson_EB-575wi.gz",
+   "signalCount": 1
+  },
+  {
+   "id": "flipper_Projectors_Epson_Epson_EB-595WI",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "Epson",
+   "model": "Epson_EB-595WI",
+   "file": "flipper_Projectors_Epson_Epson_EB-595WI.gz",
+   "signalCount": 3
+  },
+  {
+   "id": "flipper_Projectors_Epson_Epson_EB-685Wi",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "Epson",
+   "model": "Epson_EB-685Wi",
+   "file": "flipper_Projectors_Epson_Epson_EB-685Wi.gz",
+   "signalCount": 36
+  },
+  {
+   "id": "flipper_Projectors_Epson_Epson_EB-695Wi",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "Epson",
+   "model": "Epson_EB-695Wi",
+   "file": "flipper_Projectors_Epson_Epson_EB-695Wi.gz",
+   "signalCount": 30
+  },
+  {
+   "id": "flipper_Projectors_Optoma_OPTOMA_HD65",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "Optoma",
+   "model": "OPTOMA_HD65",
+   "file": "flipper_Projectors_Optoma_OPTOMA_HD65.gz",
+   "signalCount": 23
+  },
+  {
+   "id": "flipper_Projectors_Optoma_Optoma_DH1011",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "Optoma",
+   "model": "Optoma_DH1011",
+   "file": "flipper_Projectors_Optoma_Optoma_DH1011.gz",
+   "signalCount": 29
+  },
+  {
+   "id": "flipper_Projectors_Optoma_Optoma_IAR_Projector",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "Optoma",
+   "model": "Optoma_IAR_Projector",
+   "file": "flipper_Projectors_Optoma_Optoma_IAR_Projector.gz",
+   "signalCount": 7
+  },
+  {
+   "id": "flipper_Projectors_Optoma_Optoma_Profomo_L-27-5KEY",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "Optoma",
+   "model": "Optoma_Profomo_L-27-5KEY",
+   "file": "flipper_Projectors_Optoma_Optoma_Profomo_L-27-5KEY.gz",
+   "signalCount": 26
+  },
+  {
+   "id": "flipper_Projectors_Optoma_Optoma_Remote_HOF04K276D6",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "Optoma",
+   "model": "Optoma_Remote_HOF04K276D6",
+   "file": "flipper_Projectors_Optoma_Optoma_Remote_HOF04K276D6.gz",
+   "signalCount": 28
+  },
+  {
+   "id": "flipper_Projectors_Optoma_Optoma_UHZ45",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "Optoma",
+   "model": "Optoma_UHZ45",
+   "file": "flipper_Projectors_Optoma_Optoma_UHZ45.gz",
+   "signalCount": 16
+  },
+  {
+   "id": "flipper_Projectors_Optoma_Optoma_projector",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "Optoma",
+   "model": "Optoma_projector",
+   "file": "flipper_Projectors_Optoma_Optoma_projector.gz",
+   "signalCount": 28
+  },
+  {
+   "id": "flipper_Projectors_ViewSonic_ViewSonic_M1_Mini_Plus",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "ViewSonic",
+   "model": "ViewSonic_M1_Mini_Plus",
+   "file": "flipper_Projectors_ViewSonic_ViewSonic_M1_Mini_Plus.gz",
+   "signalCount": 12
+  },
+  {
+   "id": "flipper_Projectors_ViewSonic_ViewSonic_Projector_PA503W-2",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "ViewSonic",
+   "model": "ViewSonic_Projector_PA503W-2",
+   "file": "flipper_Projectors_ViewSonic_ViewSonic_Projector_PA503W-2.gz",
+   "signalCount": 28
+  },
+  {
+   "id": "flipper_Projectors_ViewSonic_ViewSonic_X1_Projector",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "ViewSonic",
+   "model": "ViewSonic_X1_Projector",
+   "file": "flipper_Projectors_ViewSonic_ViewSonic_X1_Projector.gz",
+   "signalCount": 16
+  },
+  {
+   "id": "flipper_Projectors_Wanbo_Wanbo_T6_Max",
+   "kind": "flipper",
+   "deviceType": "projector",
+   "brand": "Wanbo",
+   "model": "Wanbo_T6_Max",
+   "file": "flipper_Projectors_Wanbo_Wanbo_T6_Max.gz",
+   "signalCount": 14
+  },
+  {
+   "id": "flipper_ACs_Chigo_Chigo_CS-21H3A-B155AF",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Chigo",
+   "model": "Chigo_CS-21H3A-B155AF",
+   "file": "flipper_ACs_Chigo_Chigo_CS-21H3A-B155AF.gz",
+   "signalCount": 49
+  },
+  {
+   "id": "flipper_ACs_Chigo_Chigo_KRF-51G_79F",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Chigo",
+   "model": "Chigo_KRF-51G_79F",
+   "file": "flipper_ACs_Chigo_Chigo_KRF-51G_79F.gz",
+   "signalCount": 24
+  },
+  {
+   "id": "flipper_ACs_Daikin_Daikin_AC",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Daikin",
+   "model": "Daikin_AC",
+   "file": "flipper_ACs_Daikin_Daikin_AC.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_ACs_Daikin_Daikin_AC_industrial_TB",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Daikin",
+   "model": "Daikin_AC_industrial_TB",
+   "file": "flipper_ACs_Daikin_Daikin_AC_industrial_TB.gz",
+   "signalCount": 2
+  },
+  {
+   "id": "flipper_ACs_Daikin_Daikin_AC_unknownModel",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Daikin",
+   "model": "Daikin_AC_unknownModel",
+   "file": "flipper_ACs_Daikin_Daikin_AC_unknownModel.gz",
+   "signalCount": 4
+  },
+  {
+   "id": "flipper_ACs_Daikin_Daikin_ARC480A41",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Daikin",
+   "model": "Daikin_ARC480A41",
+   "file": "flipper_ACs_Daikin_Daikin_ARC480A41.gz",
+   "signalCount": 19
+  },
+  {
+   "id": "flipper_ACs_Daikin_Daikin_ARC480A53",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Daikin",
+   "model": "Daikin_ARC480A53",
+   "file": "flipper_ACs_Daikin_Daikin_ARC480A53.gz",
+   "signalCount": 17
+  },
+  {
+   "id": "flipper_ACs_Daikin_Daikin_FTE35KV1",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Daikin",
+   "model": "Daikin_FTE35KV1",
+   "file": "flipper_ACs_Daikin_Daikin_FTE35KV1.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_ACs_Daikin_Daikin_FTX50GV1B",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Daikin",
+   "model": "Daikin_FTX50GV1B",
+   "file": "flipper_ACs_Daikin_Daikin_FTX50GV1B.gz",
+   "signalCount": 4
+  },
+  {
+   "id": "flipper_ACs_Daikin_Daikin_FTXM95PVMA",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Daikin",
+   "model": "Daikin_FTXM95PVMA",
+   "file": "flipper_ACs_Daikin_Daikin_FTXM95PVMA.gz",
+   "signalCount": 14
+  },
+  {
+   "id": "flipper_ACs_Daikin_Daikin_FTXS25KVMA",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Daikin",
+   "model": "Daikin_FTXS25KVMA",
+   "file": "flipper_ACs_Daikin_Daikin_FTXS25KVMA.gz",
+   "signalCount": 13
+  },
+  {
+   "id": "flipper_ACs_Fujitsu_Fujitsu_AC",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Fujitsu",
+   "model": "Fujitsu_AC",
+   "file": "flipper_ACs_Fujitsu_Fujitsu_AC.gz",
+   "signalCount": 7
+  },
+  {
+   "id": "flipper_ACs_Fujitsu_Fujitsu_AC_ASU18RLF",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Fujitsu",
+   "model": "Fujitsu_AC_ASU18RLF",
+   "file": "flipper_ACs_Fujitsu_Fujitsu_AC_ASU18RLF.gz",
+   "signalCount": 44
+  },
+  {
+   "id": "flipper_ACs_GREE_GREE_YAPOF",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "GREE",
+   "model": "GREE_YAPOF",
+   "file": "flipper_ACs_GREE_GREE_YAPOF.gz",
+   "signalCount": 8
+  },
+  {
+   "id": "flipper_ACs_GREE_Gree_KFR-70G-A1",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "GREE",
+   "model": "Gree_KFR-70G-A1",
+   "file": "flipper_ACs_GREE_Gree_KFR-70G-A1.gz",
+   "signalCount": 8
+  },
+  {
+   "id": "flipper_ACs_GREE_Gree_airco",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "GREE",
+   "model": "Gree_airco",
+   "file": "flipper_ACs_GREE_Gree_airco.gz",
+   "signalCount": 7
+  },
+  {
+   "id": "flipper_ACs_GREE_Gree_airco_lightoff",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "GREE",
+   "model": "Gree_airco_lightoff",
+   "file": "flipper_ACs_GREE_Gree_airco_lightoff.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_ACs_Haier_Haier_AC_AS18GD3HRA",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Haier",
+   "model": "Haier_AC_AS18GD3HRA",
+   "file": "flipper_ACs_Haier_Haier_AC_AS18GD3HRA.gz",
+   "signalCount": 8
+  },
+  {
+   "id": "flipper_ACs_Haier_Haier_AC_HPD10XCM-LW",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Haier",
+   "model": "Haier_AC_HPD10XCM-LW",
+   "file": "flipper_ACs_Haier_Haier_AC_HPD10XCM-LW.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_ACs_Haier_Haier_AC_HWE08XCR-L",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Haier",
+   "model": "Haier_AC_HWE08XCR-L",
+   "file": "flipper_ACs_Haier_Haier_AC_HWE08XCR-L.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_ACs_Hisense_Hisense_DG11J1-99_celsius",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Hisense",
+   "model": "Hisense_DG11J1-99_celsius",
+   "file": "flipper_ACs_Hisense_Hisense_DG11J1-99_celsius.gz",
+   "signalCount": 35
+  },
+  {
+   "id": "flipper_ACs_Hisense_Hisense_DG11J1-99_fahrenheit",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Hisense",
+   "model": "Hisense_DG11J1-99_fahrenheit",
+   "file": "flipper_ACs_Hisense_Hisense_DG11J1-99_fahrenheit.gz",
+   "signalCount": 46
+  },
+  {
+   "id": "flipper_ACs_Hisense_Hisense_room_AC",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Hisense",
+   "model": "Hisense_room_AC",
+   "file": "flipper_ACs_Hisense_Hisense_room_AC.gz",
+   "signalCount": 9
+  },
+  {
+   "id": "flipper_ACs_Hisense_Hisense_window_AC",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Hisense",
+   "model": "Hisense_window_AC",
+   "file": "flipper_ACs_Hisense_Hisense_window_AC.gz",
+   "signalCount": 9
+  },
+  {
+   "id": "flipper_ACs_Midea_Midea_AC_MAW05R1WBL",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Midea",
+   "model": "Midea_AC_MAW05R1WBL",
+   "file": "flipper_ACs_Midea_Midea_AC_MAW05R1WBL.gz",
+   "signalCount": 12
+  },
+  {
+   "id": "flipper_ACs_Midea_Midea_MP12SVKBA3RCM",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Midea",
+   "model": "Midea_MP12SVKBA3RCM",
+   "file": "flipper_ACs_Midea_Midea_MP12SVKBA3RCM.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_ACs_Midea_Midea_WWK08CR81N",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Midea",
+   "model": "Midea_WWK08CR81N",
+   "file": "flipper_ACs_Midea_Midea_WWK08CR81N.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_ACs_Midea_Midea_silent_cool_26_pro",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Midea",
+   "model": "Midea_silent_cool_26_pro",
+   "file": "flipper_ACs_Midea_Midea_silent_cool_26_pro.gz",
+   "signalCount": 11
+  },
+  {
+   "id": "flipper_ACs_Mitsubishi_Mitsubishi_MSH-30RV",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Mitsubishi",
+   "model": "Mitsubishi_MSH-30RV",
+   "file": "flipper_ACs_Mitsubishi_Mitsubishi_MSH-30RV.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_ACs_Mitsubishi_Mitsubishi_MSH_GA71VB",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Mitsubishi",
+   "model": "Mitsubishi_MSH_GA71VB",
+   "file": "flipper_ACs_Mitsubishi_Mitsubishi_MSH_GA71VB.gz",
+   "signalCount": 7
+  },
+  {
+   "id": "flipper_ACs_Mitsubishi_Mitsubishi_SRK20ZJ-S",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Mitsubishi",
+   "model": "Mitsubishi_SRK20ZJ-S",
+   "file": "flipper_ACs_Mitsubishi_Mitsubishi_SRK20ZJ-S.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_ACs_Mitsubishi_Mitsubishi_SRK35ZS-W",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Mitsubishi",
+   "model": "Mitsubishi_SRK35ZS-W",
+   "file": "flipper_ACs_Mitsubishi_Mitsubishi_SRK35ZS-W.gz",
+   "signalCount": 14
+  },
+  {
+   "id": "flipper_ACs_Mitsubishi_mitsubishi-MSY-GE10VA",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Mitsubishi",
+   "model": "mitsubishi-MSY-GE10VA",
+   "file": "flipper_ACs_Mitsubishi_mitsubishi-MSY-GE10VA.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_ACs_Panasonic_Panasonic_A75C4187",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Panasonic",
+   "model": "Panasonic_A75C4187",
+   "file": "flipper_ACs_Panasonic_Panasonic_A75C4187.gz",
+   "signalCount": 9
+  },
+  {
+   "id": "flipper_ACs_Panasonic_Panasonic_CS-E9HKR",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Panasonic",
+   "model": "Panasonic_CS-E9HKR",
+   "file": "flipper_ACs_Panasonic_Panasonic_CS-E9HKR.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_ACs_Panasonic_Panasonic_CS-UE12RKE",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Panasonic",
+   "model": "Panasonic_CS-UE12RKE",
+   "file": "flipper_ACs_Panasonic_Panasonic_CS-UE12RKE.gz",
+   "signalCount": 7
+  },
+  {
+   "id": "flipper_ACs_Panasonic_Panasonic_CWA75C4179",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Panasonic",
+   "model": "Panasonic_CWA75C4179",
+   "file": "flipper_ACs_Panasonic_Panasonic_CWA75C4179.gz",
+   "signalCount": 13
+  },
+  {
+   "id": "flipper_ACs_Panasonic_Panasonic_Climate_A75C2600",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Panasonic",
+   "model": "Panasonic_Climate_A75C2600",
+   "file": "flipper_ACs_Panasonic_Panasonic_Climate_A75C2600.gz",
+   "signalCount": 7
+  },
+  {
+   "id": "flipper_ACs_TCL_Tcl",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "TCL",
+   "model": "Tcl",
+   "file": "flipper_ACs_TCL_Tcl.gz",
+   "signalCount": 11
+  },
+  {
+   "id": "flipper_ACs_Toshiba_Toshiba_AC",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Toshiba",
+   "model": "Toshiba_AC",
+   "file": "flipper_ACs_Toshiba_Toshiba_AC.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_ACs_Toshiba_Toshiba_RAS13SKV2E",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Toshiba",
+   "model": "Toshiba_RAS13SKV2E",
+   "file": "flipper_ACs_Toshiba_Toshiba_RAS13SKV2E.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_ACs_Toshiba_Toshiba_RASB10BKVG-E",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Toshiba",
+   "model": "Toshiba_RASB10BKVG-E",
+   "file": "flipper_ACs_Toshiba_Toshiba_RASB10BKVG-E.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_ACs_Toshiba_Toshiba_RG57H4",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Toshiba",
+   "model": "Toshiba_RG57H4",
+   "file": "flipper_ACs_Toshiba_Toshiba_RG57H4.gz",
+   "signalCount": 13
+  },
+  {
+   "id": "flipper_ACs_Xiaomi_Xiaomi_AC",
+   "kind": "flipper",
+   "deviceType": "ac",
+   "brand": "Xiaomi",
+   "model": "Xiaomi_AC",
+   "file": "flipper_ACs_Xiaomi_Xiaomi_AC.gz",
+   "signalCount": 7
+  },
+  {
+   "id": "flipper_Streaming_Devices_Amazon_Alexa_Voice_2ndGen",
+   "kind": "flipper",
+   "deviceType": "box",
+   "brand": "Amazon",
+   "model": "Alexa_Voice_2ndGen",
+   "file": "flipper_Streaming_Devices_Amazon_Alexa_Voice_2ndGen.gz",
+   "signalCount": 4
+  },
+  {
+   "id": "flipper_Streaming_Devices_Amazon_FireTV_Stick_4K_Max",
+   "kind": "flipper",
+   "deviceType": "box",
+   "brand": "Amazon",
+   "model": "FireTV_Stick_4K_Max",
+   "file": "flipper_Streaming_Devices_Amazon_FireTV_Stick_4K_Max.gz",
+   "signalCount": 4
+  },
+  {
+   "id": "flipper_Streaming_Devices_Apple_Apple_TV",
+   "kind": "flipper",
+   "deviceType": "box",
+   "brand": "Apple",
+   "model": "Apple_TV",
+   "file": "flipper_Streaming_Devices_Apple_Apple_TV.gz",
+   "signalCount": 7
+  },
+  {
+   "id": "flipper_Streaming_Devices_Apple_Apple_TV_4K_Gen2",
+   "kind": "flipper",
+   "deviceType": "box",
+   "brand": "Apple",
+   "model": "Apple_TV_4K_Gen2",
+   "file": "flipper_Streaming_Devices_Apple_Apple_TV_4K_Gen2.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_Streaming_Devices_Apple_Apple_TV_Gen2",
+   "kind": "flipper",
+   "deviceType": "box",
+   "brand": "Apple",
+   "model": "Apple_TV_Gen2",
+   "file": "flipper_Streaming_Devices_Apple_Apple_TV_Gen2.gz",
+   "signalCount": 8
+  },
+  {
+   "id": "flipper_Streaming_Devices_Apple_Apple_TV_Gen3",
+   "kind": "flipper",
+   "deviceType": "box",
+   "brand": "Apple",
+   "model": "Apple_TV_Gen3",
+   "file": "flipper_Streaming_Devices_Apple_Apple_TV_Gen3.gz",
+   "signalCount": 8
+  },
+  {
+   "id": "flipper_Streaming_Devices_Apple_Apple_TV_Gen3_v2",
+   "kind": "flipper",
+   "deviceType": "box",
+   "brand": "Apple",
+   "model": "Apple_TV_Gen3_v2",
+   "file": "flipper_Streaming_Devices_Apple_Apple_TV_Gen3_v2.gz",
+   "signalCount": 8
+  },
+  {
+   "id": "flipper_Streaming_Devices_Roku_Roku",
+   "kind": "flipper",
+   "deviceType": "box",
+   "brand": "Roku",
+   "model": "Roku",
+   "file": "flipper_Streaming_Devices_Roku_Roku.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_Streaming_Devices_Roku_Roku2",
+   "kind": "flipper",
+   "deviceType": "box",
+   "brand": "Roku",
+   "model": "Roku2",
+   "file": "flipper_Streaming_Devices_Roku_Roku2.gz",
+   "signalCount": 12
+  },
+  {
+   "id": "flipper_Streaming_Devices_Roku_Roku2_channels",
+   "kind": "flipper",
+   "deviceType": "box",
+   "brand": "Roku",
+   "model": "Roku2_channels",
+   "file": "flipper_Streaming_Devices_Roku_Roku2_channels.gz",
+   "signalCount": 30
+  },
+  {
+   "id": "flipper_Streaming_Devices_Roku_Roku3",
+   "kind": "flipper",
+   "deviceType": "box",
+   "brand": "Roku",
+   "model": "Roku3",
+   "file": "flipper_Streaming_Devices_Roku_Roku3.gz",
+   "signalCount": 16
+  },
+  {
+   "id": "flipper_Streaming_Devices_Roku_Roku_4k",
+   "kind": "flipper",
+   "deviceType": "box",
+   "brand": "Roku",
+   "model": "Roku_4k",
+   "file": "flipper_Streaming_Devices_Roku_Roku_4k.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_Streaming_Devices_Roku_Roku_Alternate",
+   "kind": "flipper",
+   "deviceType": "box",
+   "brand": "Roku",
+   "model": "Roku_Alternate",
+   "file": "flipper_Streaming_Devices_Roku_Roku_Alternate.gz",
+   "signalCount": 16
+  },
+  {
+   "id": "flipper_Streaming_Devices_Roku_Roku_SoundBridge",
+   "kind": "flipper",
+   "deviceType": "box",
+   "brand": "Roku",
+   "model": "Roku_SoundBridge",
+   "file": "flipper_Streaming_Devices_Roku_Roku_SoundBridge.gz",
+   "signalCount": 19
+  },
+  {
+   "id": "flipper_Streaming_Devices_Roku_Roku_dxD00pU",
+   "kind": "flipper",
+   "deviceType": "box",
+   "brand": "Roku",
+   "model": "Roku_dxD00pU",
+   "file": "flipper_Streaming_Devices_Roku_Roku_dxD00pU.gz",
+   "signalCount": 11
+  },
+  {
+   "id": "flipper_Streaming_Devices_Roku_TCL_Roku_Remote",
+   "kind": "flipper",
+   "deviceType": "box",
+   "brand": "Roku",
+   "model": "TCL_Roku_Remote",
+   "file": "flipper_Streaming_Devices_Roku_TCL_Roku_Remote.gz",
+   "signalCount": 19
+  },
+  {
+   "id": "flipper_Streaming_Devices_Roku_TCL_Roku_TV",
+   "kind": "flipper",
+   "deviceType": "box",
+   "brand": "Roku",
+   "model": "TCL_Roku_TV",
+   "file": "flipper_Streaming_Devices_Roku_TCL_Roku_TV.gz",
+   "signalCount": 20
+  },
+  {
+   "id": "flipper_Streaming_Devices_Xiaomi_Xiaomi_MiBox1",
+   "kind": "flipper",
+   "deviceType": "box",
+   "brand": "Xiaomi",
+   "model": "Xiaomi_MiBox1",
+   "file": "flipper_Streaming_Devices_Xiaomi_Xiaomi_MiBox1.gz",
+   "signalCount": 11
+  },
+  {
+   "id": "flipper_Streaming_Devices_Xiaomi_Xiaomi_MiBox2",
+   "kind": "flipper",
+   "deviceType": "box",
+   "brand": "Xiaomi",
+   "model": "Xiaomi_MiBox2",
+   "file": "flipper_Streaming_Devices_Xiaomi_Xiaomi_MiBox2.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Denon_Denon_AVR-2113CI_Main",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Denon",
+   "model": "Denon_AVR-2113CI_Main",
+   "file": "flipper_Audio_and_Video_Receivers_Denon_Denon_AVR-2113CI_Main.gz",
+   "signalCount": 38
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Denon_Denon_AVR-2113CI_Zone_2",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Denon",
+   "model": "Denon_AVR-2113CI_Zone_2",
+   "file": "flipper_Audio_and_Video_Receivers_Denon_Denon_AVR-2113CI_Zone_2.gz",
+   "signalCount": 32
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Denon_Denon_AVR_Receiver",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Denon",
+   "model": "Denon_AVR_Receiver",
+   "file": "flipper_Audio_and_Video_Receivers_Denon_Denon_AVR_Receiver.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Denon_Denon_DRA_365R",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Denon",
+   "model": "Denon_DRA_365R",
+   "file": "flipper_Audio_and_Video_Receivers_Denon_Denon_DRA_365R.gz",
+   "signalCount": 18
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Denon_Denon_RC1253",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Denon",
+   "model": "Denon_RC1253",
+   "file": "flipper_Audio_and_Video_Receivers_Denon_Denon_RC1253.gz",
+   "signalCount": 41
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Edifier_Edifier_r1280t",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Edifier",
+   "model": "Edifier_r1280t",
+   "file": "flipper_Audio_and_Video_Receivers_Edifier_Edifier_r1280t.gz",
+   "signalCount": 3
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Edifier_Edifier_r1700bt",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Edifier",
+   "model": "Edifier_r1700bt",
+   "file": "flipper_Audio_and_Video_Receivers_Edifier_Edifier_r1700bt.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Edifier_Edifier_r1855db",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Edifier",
+   "model": "Edifier_r1855db",
+   "file": "flipper_Audio_and_Video_Receivers_Edifier_Edifier_r1855db.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Edifier_Edifier_r2000db",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Edifier",
+   "model": "Edifier_r2000db",
+   "file": "flipper_Audio_and_Video_Receivers_Edifier_Edifier_r2000db.gz",
+   "signalCount": 10
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Marantz_Marantz_RC042SR",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Marantz",
+   "model": "Marantz_RC042SR",
+   "file": "flipper_Audio_and_Video_Receivers_Marantz_Marantz_RC042SR.gz",
+   "signalCount": 39
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Marantz_Marantz_SR_7009__RC026SR_",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Marantz",
+   "model": "Marantz_SR_7009_(RC026SR)",
+   "file": "flipper_Audio_and_Video_Receivers_Marantz_Marantz_SR_7009__RC026SR_.gz",
+   "signalCount": 34
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Onkyo_Onkyo",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Onkyo",
+   "model": "Onkyo",
+   "file": "flipper_Audio_and_Video_Receivers_Onkyo_Onkyo.gz",
+   "signalCount": 25
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Onkyo_Onkyo_RC627S",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Onkyo",
+   "model": "Onkyo_RC627S",
+   "file": "flipper_Audio_and_Video_Receivers_Onkyo_Onkyo_RC627S.gz",
+   "signalCount": 45
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Onkyo_Onkyo_RC866M_Receiver",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Onkyo",
+   "model": "Onkyo_RC866M_Receiver",
+   "file": "flipper_Audio_and_Video_Receivers_Onkyo_Onkyo_RC866M_Receiver.gz",
+   "signalCount": 57
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Onkyo_Onkyo_RC898M",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Onkyo",
+   "model": "Onkyo_RC898M",
+   "file": "flipper_Audio_and_Video_Receivers_Onkyo_Onkyo_RC898M.gz",
+   "signalCount": 50
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Onkyo_Onkyo_RC972R",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Onkyo",
+   "model": "Onkyo_RC972R",
+   "file": "flipper_Audio_and_Video_Receivers_Onkyo_Onkyo_RC972R.gz",
+   "signalCount": 43
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Onkyo_Onkyo_tx_nr686",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Onkyo",
+   "model": "Onkyo_tx_nr686",
+   "file": "flipper_Audio_and_Video_Receivers_Onkyo_Onkyo_tx_nr686.gz",
+   "signalCount": 33
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Pioneer_Pioneer_SX-Q180",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Pioneer",
+   "model": "Pioneer SX-Q180",
+   "file": "flipper_Audio_and_Video_Receivers_Pioneer_Pioneer_SX-Q180.gz",
+   "signalCount": 33
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Pioneer_Pioneer_AXD7741",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Pioneer",
+   "model": "Pioneer_AXD7741",
+   "file": "flipper_Audio_and_Video_Receivers_Pioneer_Pioneer_AXD7741.gz",
+   "signalCount": 18
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Pioneer_Pioneer_RC-974R",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Pioneer",
+   "model": "Pioneer_RC-974R",
+   "file": "flipper_Audio_and_Video_Receivers_Pioneer_Pioneer_RC-974R.gz",
+   "signalCount": 43
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Pioneer_Pioneer_VSX-D1-S",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Pioneer",
+   "model": "Pioneer_VSX-D1-S",
+   "file": "flipper_Audio_and_Video_Receivers_Pioneer_Pioneer_VSX-D1-S.gz",
+   "signalCount": 6
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Pioneer_Pioneer_XXD3089",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Pioneer",
+   "model": "Pioneer_XXD3089",
+   "file": "flipper_Audio_and_Video_Receivers_Pioneer_Pioneer_XXD3089.gz",
+   "signalCount": 51
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Pioneer_Pioneer_XXD3105",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Pioneer",
+   "model": "Pioneer_XXD3105",
+   "file": "flipper_Audio_and_Video_Receivers_Pioneer_Pioneer_XXD3105.gz",
+   "signalCount": 61
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Sony_Sony_Amp",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Sony",
+   "model": "Sony_Amp",
+   "file": "flipper_Audio_and_Video_Receivers_Sony_Sony_Amp.gz",
+   "signalCount": 5
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Sony_Sony_CMT-EH10",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Sony",
+   "model": "Sony_CMT-EH10",
+   "file": "flipper_Audio_and_Video_Receivers_Sony_Sony_CMT-EH10.gz",
+   "signalCount": 26
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Sony_Sony_I-WXH-80",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Sony",
+   "model": "Sony_I-WXH-80",
+   "file": "flipper_Audio_and_Video_Receivers_Sony_Sony_I-WXH-80.gz",
+   "signalCount": 4
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Sony_Sony_MHC-EC69",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Sony",
+   "model": "Sony_MHC-EC69",
+   "file": "flipper_Audio_and_Video_Receivers_Sony_Sony_MHC-EC69.gz",
+   "signalCount": 3
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Sony_Sony_MHC-GS300AV",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Sony",
+   "model": "Sony_MHC-GS300AV",
+   "file": "flipper_Audio_and_Video_Receivers_Sony_Sony_MHC-GS300AV.gz",
+   "signalCount": 33
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Sony_Sony_MHC_GSX75",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Sony",
+   "model": "Sony_MHC_GSX75",
+   "file": "flipper_Audio_and_Video_Receivers_Sony_Sony_MHC_GSX75.gz",
+   "signalCount": 13
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Sony_Sony_RM-AAP103",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Sony",
+   "model": "Sony_RM-AAP103",
+   "file": "flipper_Audio_and_Video_Receivers_Sony_Sony_RM-AAP103.gz",
+   "signalCount": 12
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Sony_Sony_RM-AAU130_AV",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Sony",
+   "model": "Sony_RM-AAU130_AV",
+   "file": "flipper_Audio_and_Video_Receivers_Sony_Sony_RM-AAU130_AV.gz",
+   "signalCount": 44
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Yamaha_YAMAHA_AX-380",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Yamaha",
+   "model": "YAMAHA_AX-380",
+   "file": "flipper_Audio_and_Video_Receivers_Yamaha_YAMAHA_AX-380.gz",
+   "signalCount": 9
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Yamaha_Yamaha_A-S201",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Yamaha",
+   "model": "Yamaha_A-S201",
+   "file": "flipper_Audio_and_Video_Receivers_Yamaha_Yamaha_A-S201.gz",
+   "signalCount": 17
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Yamaha_Yamaha_AX-396",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Yamaha",
+   "model": "Yamaha_AX-396",
+   "file": "flipper_Audio_and_Video_Receivers_Yamaha_Yamaha_AX-396.gz",
+   "signalCount": 27
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Yamaha_Yamaha_HTR3063",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Yamaha",
+   "model": "Yamaha_HTR3063",
+   "file": "flipper_Audio_and_Video_Receivers_Yamaha_Yamaha_HTR3063.gz",
+   "signalCount": 23
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Yamaha_Yamaha_RAS5",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Yamaha",
+   "model": "Yamaha_RAS5",
+   "file": "flipper_Audio_and_Video_Receivers_Yamaha_Yamaha_RAS5.gz",
+   "signalCount": 11
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Yamaha_Yamaha_RAV203_V473170_US",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Yamaha",
+   "model": "Yamaha_RAV203_V473170_US",
+   "file": "flipper_Audio_and_Video_Receivers_Yamaha_Yamaha_RAV203_V473170_US.gz",
+   "signalCount": 29
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Yamaha_Yamaha_RX-V795RDS",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Yamaha",
+   "model": "Yamaha_RX-V795RDS",
+   "file": "flipper_Audio_and_Video_Receivers_Yamaha_Yamaha_RX-V795RDS.gz",
+   "signalCount": 35
+  },
+  {
+   "id": "flipper_Audio_and_Video_Receivers_Yamaha_Yamaha_RXA770",
+   "kind": "flipper",
+   "deviceType": "audio",
+   "brand": "Yamaha",
+   "model": "Yamaha_RXA770",
+   "file": "flipper_Audio_and_Video_Receivers_Yamaha_Yamaha_RXA770.gz",
+   "signalCount": 3
+  },
+  {
+   "id": "smartir_ac_Panasonic_1020",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Panasonic",
+   "model": "1020",
+   "file": "smartir_ac_Panasonic_1020.gz",
+   "minTemperature": 16.0,
+   "maxTemperature": 30.0
+  },
+  {
+   "id": "smartir_ac_Panasonic_1021",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Panasonic",
+   "model": "1021",
+   "file": "smartir_ac_Panasonic_1021.gz",
+   "minTemperature": 16.0,
+   "maxTemperature": 30.0
+  },
+  {
+   "id": "smartir_ac_LG_1060",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "LG",
+   "model": "1060",
+   "file": "smartir_ac_LG_1060.gz",
+   "minTemperature": 18,
+   "maxTemperature": 30
+  },
+  {
+   "id": "smartir_ac_LG_1061",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "LG",
+   "model": "1061",
+   "file": "smartir_ac_LG_1061.gz",
+   "minTemperature": 16.0,
+   "maxTemperature": 30.0
+  },
+  {
+   "id": "smartir_ac_Hitachi_1080",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Hitachi",
+   "model": "1080",
+   "file": "smartir_ac_Hitachi_1080.gz",
+   "minTemperature": 16.0,
+   "maxTemperature": 30.0
+  },
+  {
+   "id": "smartir_ac_Hitachi_1081",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Hitachi",
+   "model": "1081",
+   "file": "smartir_ac_Hitachi_1081.gz",
+   "minTemperature": 16.0,
+   "maxTemperature": 32.0
+  },
+  {
+   "id": "smartir_ac_Daikin_1100",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Daikin",
+   "model": "1100",
+   "file": "smartir_ac_Daikin_1100.gz",
+   "minTemperature": 18,
+   "maxTemperature": 30
+  },
+  {
+   "id": "smartir_ac_Daikin_1101",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Daikin",
+   "model": "1101",
+   "file": "smartir_ac_Daikin_1101.gz",
+   "minTemperature": 18.0,
+   "maxTemperature": 30.0
+  },
+  {
+   "id": "smartir_ac_Mitsubishi_Electric_1120",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Mitsubishi Electric",
+   "model": "1120",
+   "file": "smartir_ac_Mitsubishi_Electric_1120.gz",
+   "minTemperature": 16.0,
+   "maxTemperature": 30.0
+  },
+  {
+   "id": "smartir_ac_Mitsubishi_Electric_1121",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Mitsubishi Electric",
+   "model": "1121",
+   "file": "smartir_ac_Mitsubishi_Electric_1121.gz",
+   "minTemperature": 16.0,
+   "maxTemperature": 31.0
+  },
+  {
+   "id": "smartir_ac_Mitsubishi_1122",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Mitsubishi",
+   "model": "1122",
+   "file": "smartir_ac_Mitsubishi_1122.gz",
+   "minTemperature": 10,
+   "maxTemperature": 31
+  },
+  {
+   "id": "smartir_ac_Mitsubishi_1124",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Mitsubishi",
+   "model": "1124",
+   "file": "smartir_ac_Mitsubishi_1124.gz",
+   "minTemperature": 16,
+   "maxTemperature": 31
+  },
+  {
+   "id": "smartir_ac_Mitsubishi_Electric_Starmex_1133",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Mitsubishi Electric Starmex",
+   "model": "1133",
+   "file": "smartir_ac_Mitsubishi_Electric_Starmex_1133.gz",
+   "minTemperature": 16,
+   "maxTemperature": 31
+  },
+  {
+   "id": "smartir_ac_Carrier_1160",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Carrier",
+   "model": "1160",
+   "file": "smartir_ac_Carrier_1160.gz",
+   "minTemperature": 17.0,
+   "maxTemperature": 30.0
+  },
+  {
+   "id": "smartir_ac_Carrier_1161",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Carrier",
+   "model": "1161",
+   "file": "smartir_ac_Carrier_1161.gz",
+   "minTemperature": 16,
+   "maxTemperature": 30
+  },
+  {
+   "id": "smartir_ac_Gree_1180",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Gree",
+   "model": "1180",
+   "file": "smartir_ac_Gree_1180.gz",
+   "minTemperature": 16.0,
+   "maxTemperature": 30.0
+  },
+  {
+   "id": "smartir_ac_Gree_1181",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Gree",
+   "model": "1181",
+   "file": "smartir_ac_Gree_1181.gz",
+   "minTemperature": 18.0,
+   "maxTemperature": 30.0
+  },
+  {
+   "id": "smartir_ac_Toshiba_1260",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Toshiba",
+   "model": "1260",
+   "file": "smartir_ac_Toshiba_1260.gz",
+   "minTemperature": 17.0,
+   "maxTemperature": 30.0
+  },
+  {
+   "id": "smartir_ac_Toshiba_1261",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Toshiba",
+   "model": "1261",
+   "file": "smartir_ac_Toshiba_1261.gz",
+   "minTemperature": 17,
+   "maxTemperature": 30
+  },
+  {
+   "id": "smartir_ac_Fujitsu_1280",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Fujitsu",
+   "model": "1280",
+   "file": "smartir_ac_Fujitsu_1280.gz",
+   "minTemperature": 18.0,
+   "maxTemperature": 30.0
+  },
+  {
+   "id": "smartir_ac_Fujitsu_1281",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Fujitsu",
+   "model": "1281",
+   "file": "smartir_ac_Fujitsu_1281.gz",
+   "minTemperature": 16.0,
+   "maxTemperature": 29.0
+  },
+  {
+   "id": "smartir_ac_Sharp_1300",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Sharp",
+   "model": "1300",
+   "file": "smartir_ac_Sharp_1300.gz",
+   "minTemperature": 18.0,
+   "maxTemperature": 32.0
+  },
+  {
+   "id": "smartir_ac_Sharp_1301",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Sharp",
+   "model": "1301",
+   "file": "smartir_ac_Sharp_1301.gz",
+   "minTemperature": 18.0,
+   "maxTemperature": 32.0
+  },
+  {
+   "id": "smartir_ac_Haier_1320",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Haier",
+   "model": "1320",
+   "file": "smartir_ac_Haier_1320.gz",
+   "minTemperature": 16.0,
+   "maxTemperature": 30.0
+  },
+  {
+   "id": "smartir_ac_Haier_1321",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Haier",
+   "model": "1321",
+   "file": "smartir_ac_Haier_1321.gz",
+   "minTemperature": 16.0,
+   "maxTemperature": 30.0
+  },
+  {
+   "id": "smartir_ac_Midea_1380",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Midea",
+   "model": "1380",
+   "file": "smartir_ac_Midea_1380.gz",
+   "minTemperature": 18.0,
+   "maxTemperature": 30.0
+  },
+  {
+   "id": "smartir_ac_Midea_1381",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Midea",
+   "model": "1381",
+   "file": "smartir_ac_Midea_1381.gz",
+   "minTemperature": 18.0,
+   "maxTemperature": 28.0
+  },
+  {
+   "id": "smartir_ac_Samsung_1400",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Samsung",
+   "model": "1400",
+   "file": "smartir_ac_Samsung_1400.gz",
+   "minTemperature": 16.0,
+   "maxTemperature": 30.0
+  },
+  {
+   "id": "smartir_ac_Samsung_1401",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Samsung",
+   "model": "1401",
+   "file": "smartir_ac_Samsung_1401.gz",
+   "minTemperature": 16.0,
+   "maxTemperature": 30.0
+  },
+  {
+   "id": "smartir_ac_Hisense_1520",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Hisense",
+   "model": "1520",
+   "file": "smartir_ac_Hisense_1520.gz",
+   "minTemperature": 18.0,
+   "maxTemperature": 30.0
+  },
+  {
+   "id": "smartir_ac_Hisense_1521",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Hisense",
+   "model": "1521",
+   "file": "smartir_ac_Hisense_1521.gz",
+   "minTemperature": 18.0,
+   "maxTemperature": 32.0
+  },
+  {
+   "id": "smartir_ac_Chigo_1580",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Chigo",
+   "model": "1580",
+   "file": "smartir_ac_Chigo_1580.gz",
+   "minTemperature": 18.0,
+   "maxTemperature": 30.0
+  },
+  {
+   "id": "smartir_ac_Chigo_1581",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Chigo",
+   "model": "1581",
+   "file": "smartir_ac_Chigo_1581.gz",
+   "minTemperature": 16,
+   "maxTemperature": 32
+  },
+  {
+   "id": "smartir_ac_Mitsubishi_Heavy_1680",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Mitsubishi Heavy",
+   "model": "1680",
+   "file": "smartir_ac_Mitsubishi_Heavy_1680.gz",
+   "minTemperature": 18.0,
+   "maxTemperature": 30.0
+  },
+  {
+   "id": "smartir_ac_Mitsubishi_Heavy_1681",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Mitsubishi Heavy",
+   "model": "1681",
+   "file": "smartir_ac_Mitsubishi_Heavy_1681.gz",
+   "minTemperature": 18.0,
+   "maxTemperature": 30.0
+  },
+  {
+   "id": "smartir_ac_Mitsubishi_Heavy_Industries_1684",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Mitsubishi Heavy Industries",
+   "model": "1684",
+   "file": "smartir_ac_Mitsubishi_Heavy_Industries_1684.gz",
+   "minTemperature": 16.0,
+   "maxTemperature": 30.0
+  },
+  {
+   "id": "smartir_ac_Ballu_1800",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Ballu",
+   "model": "1800",
+   "file": "smartir_ac_Ballu_1800.gz",
+   "minTemperature": 16,
+   "maxTemperature": 32
+  },
+  {
+   "id": "smartir_ac_Ballu_1801",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Ballu",
+   "model": "1801",
+   "file": "smartir_ac_Ballu_1801.gz",
+   "minTemperature": 17,
+   "maxTemperature": 30
+  },
+  {
+   "id": "smartir_ac_TCL_1900",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "TCL",
+   "model": "1900",
+   "file": "smartir_ac_TCL_1900.gz",
+   "minTemperature": 16.0,
+   "maxTemperature": 31.0
+  },
+  {
+   "id": "smartir_ac_TCL_1901",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "TCL",
+   "model": "1901",
+   "file": "smartir_ac_TCL_1901.gz",
+   "minTemperature": 16.0,
+   "maxTemperature": 31.0
+  },
+  {
+   "id": "smartir_ac_AUX_1960",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "AUX",
+   "model": "1960",
+   "file": "smartir_ac_AUX_1960.gz",
+   "minTemperature": 18.0,
+   "maxTemperature": 30.0
+  },
+  {
+   "id": "smartir_ac_AUX_1961",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "AUX",
+   "model": "1961",
+   "file": "smartir_ac_AUX_1961.gz",
+   "minTemperature": 16.0,
+   "maxTemperature": 32.0
+  },
+  {
+   "id": "smartir_ac_Bosch_2740",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Bosch",
+   "model": "2740",
+   "file": "smartir_ac_Bosch_2740.gz",
+   "minTemperature": 16.0,
+   "maxTemperature": 30.0
+  },
+  {
+   "id": "smartir_ac_Xiaomi_2780",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "Xiaomi",
+   "model": "2780",
+   "file": "smartir_ac_Xiaomi_2780.gz",
+   "minTemperature": 16.0,
+   "maxTemperature": 31.0
+  },
+  {
+   "id": "smartir_ac_ELGIN_2800",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "ELGIN",
+   "model": "2800",
+   "file": "smartir_ac_ELGIN_2800.gz",
+   "minTemperature": 16.0,
+   "maxTemperature": 32.0
+  },
+  {
+   "id": "smartir_ac_ELGIN_2801",
+   "kind": "smartir_climate",
+   "deviceType": "ac",
+   "brand": "ELGIN",
+   "model": "2801",
+   "file": "smartir_ac_ELGIN_2801.gz",
+   "minTemperature": 17.0,
+   "maxTemperature": 30.0
+  }
+ ]
+}

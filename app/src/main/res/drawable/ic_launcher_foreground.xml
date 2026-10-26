@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- 遥控器机身 -->
+    <path
+        android:fillColor="#FF7D5260"
+        android:pathData="M42,30 L66,30 A4,4 0 0 1 70,34 L70,78 A4,4 0 0 1 66,82 L42,82 A4,4 0 0 1 38,78 L38,34 A4,4 0 0 1 42,30 Z" />
+    <!-- 屏幕 -->
+    <path
+        android:fillColor="#FF1B1B1F"
+        android:pathData="M43,35 L65,35 A1,1 0 0 1 66,36 L66,46 A1,1 0 0 1 65,47 L43,47 A1,1 0 0 1 42,46 L42,36 A1,1 0 0 1 43,35 Z" />
+    <!-- 按键 -->
+    <path
+        android:fillColor="#FF1B1B1F"
+        android:pathData="M48,54 m-3,0 a3,3 0 1 1 6,0 a3,3 0 1 1 -6,0" />
+    <path
+        android:fillColor="#FF1B1B1F"
+        android:pathData="M60,54 m-3,0 a3,3 0 1 1 6,0 a3,3 0 1 1 -6,0" />
+    <path
+        android:fillColor="#FF1B1B1F"
+        android:pathData="M54,64 m-3,0 a3,3 0 1 1 6,0 a3,3 0 1 1 -6,0" />
+    <!-- 红外波 -->
+    <path
+        android:strokeColor="#FFFFB59F"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M70,26 A14,14 0 0 1 76,14" />
+    <path
+        android:strokeColor="#FFFFB59F"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M76,30 A22,22 0 0 1 85,12" />
+</vector>

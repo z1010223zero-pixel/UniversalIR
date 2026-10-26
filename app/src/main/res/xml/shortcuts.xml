@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="open_app"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_remote"
+        android:shortcutShortLabel="@string/shortcut_open_label">
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="uniir" android:host="home" />
+        </intent-filter>
+    </shortcut>
+</shortcuts>
