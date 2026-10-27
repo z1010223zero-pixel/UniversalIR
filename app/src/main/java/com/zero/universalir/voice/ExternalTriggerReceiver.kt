@@ -22,11 +22,14 @@ import kotlinx.coroutines.launch
  * - mode    cool/heat/dry/fan_only/auto 或中文（空调）
  * - fan     low/mid/high/auto（空调）
  * - temp    16-30（空调）
+ * - pin     鉴权码；设置页配置后必填且需一致，否则指令被拒
  */
 @AndroidEntryPoint
 class ExternalTriggerReceiver : BroadcastReceiver() {
 
     @Inject lateinit var executor: VoiceExecutor
+    @Inject lateinit var security: TriggerSecurity
+    @Inject lateinit var feedback: FeedbackBus
 
     override fun onReceive(context: Context, intent: Intent) {
         if (intent.action != ACTION_SEND) return
@@ -35,6 +38,10 @@ class ExternalTriggerReceiver : BroadcastReceiver() {
         val scope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
         scope.launch {
             try {
+                if (!TriggerAuth.authOk(security.requiredPin(), intent.getStringExtra(EXTRA_PIN))) {
+                    feedback.post("外部触发被拒绝：PIN 鉴权失败")
+                    return@launch
+                }
                 val temp = intent.getStringExtra(EXTRA_TEMP)?.toIntOrNull()
                 val mode = intent.getStringExtra(EXTRA_MODE)?.let(DeepLinkRouter::normalizeMode)
                 val cmd = if (temp != null || mode != null) {
@@ -69,5 +76,6 @@ class ExternalTriggerReceiver : BroadcastReceiver() {
         const val EXTRA_MODE = "mode"
         const val EXTRA_FAN = "fan"
         const val EXTRA_TEMP = "temp"
+        const val EXTRA_PIN = "pin"
     }
 }

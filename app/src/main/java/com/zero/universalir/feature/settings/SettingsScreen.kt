@@ -19,12 +19,17 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
@@ -37,6 +42,7 @@ import com.zero.universalir.data.codes.CodeLibrary
 import com.zero.universalir.core.model.DeviceType
 import com.zero.universalir.data.db.RemoteDao
 import com.zero.universalir.voice.FeedbackBus
+import com.zero.universalir.voice.TriggerSecurity
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
@@ -75,6 +81,7 @@ class SettingsViewModel @Inject constructor(
     private val library: CodeLibrary,
     private val dao: RemoteDao,
     private val feedback: FeedbackBus,
+    private val security: TriggerSecurity,
     @ApplicationContext private val context: android.content.Context,
 ) : ViewModel() {
 
@@ -84,6 +91,7 @@ class SettingsViewModel @Inject constructor(
         val entryCount: Int = 0,
         val countByType: Map<String, Int> = emptyMap(),
         val sources: List<CodeLibrary.SourceInfo> = emptyList(),
+        val triggerPin: String = "",
     )
 
     private val _state = MutableStateFlow(UiState())
@@ -99,7 +107,16 @@ class SettingsViewModel @Inject constructor(
                 entryCount = idx.entries.size,
                 countByType = idx.entries.groupingBy { it.deviceType }.eachCount(),
                 sources = idx.sources,
+                triggerPin = security.requiredPin(),
             )
+        }
+    }
+
+    fun saveTriggerPin(value: String) {
+        viewModelScope.launch {
+            security.setPin(value)
+            _state.value = _state.value.copy(triggerPin = value.trim())
+            feedback.post(if (value.isBlank()) "外部触发鉴权已关闭" else "外部触发鉴权已启用")
         }
     }
 
@@ -265,6 +282,37 @@ fun SettingsScreen(onBack: () -> Unit, vm: SettingsViewModel = hiltViewModel()) 
                         }
                         OutlinedButton(onClick = { importLauncher.launch(arrayOf("application/json")) }) {
                             Text("导入")
+                        }
+                    }
+                }
+            }
+
+            Card(Modifier.fillMaxWidth()) {
+                Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                    Text("外部触发鉴权", style = MaterialTheme.typography.titleMedium)
+                    Text(
+                        "Tasker/MacroDroid 通过广播触发发射时，任意应用都可能伪造该广播。" +
+                            "设置 PIN 后，广播必须携带 extra「pin」且值一致才执行；留空则不鉴权。",
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                    var pin by remember(state.triggerPin) { mutableStateOf(state.triggerPin) }
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.spacedBy(8.dp),
+                    ) {
+                        OutlinedTextField(
+                            value = pin,
+                            onValueChange = { pin = it },
+                            label = { Text("PIN 码") },
+                            singleLine = true,
+                            modifier = Modifier.weight(1f),
+                        )
+                        Button(
+                            onClick = { vm.saveTriggerPin(pin) },
+                            enabled = pin.trim() != state.triggerPin,
+                        ) {
+                            Text("保存")
                         }
                     }
                 }
