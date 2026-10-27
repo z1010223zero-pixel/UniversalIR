@@ -4,8 +4,9 @@
 
 ## 功能
 
-- **红外发射**：`ConsumerIrManager` 公开 API，小米/Redmi、华为/荣耀带红外机型均可用；载频校验、2s 上限守卫、SIRC 自动连发。
-- **内置离线码库**：Flipper-IRDB（CC0-1.0）+ SmartIR climate（MIT），精选中国品牌，gzip 后约 1-2MB；「试码匹配」流程绑定主开关。
+- **红外发射**：`ConsumerIrManager` 公开 API，小米/Redmi、华为/荣耀带红外机型均可用；逐帧载频/2s 上限校验、SIRC/Pioneer 自动连发。
+- **协议覆盖**：NEC、NECext、RC5、RC5X、SIRC-12/15/20、Samsung32、Kaseikyo、RC6、RCA、Pioneer 共 12 种，内置码库中的信号全部可发射；RC5/RC5X/RC6 发送时按「设备 + 按键」翻转 toggle 位，模拟真实按键。
+- **内置离线码库**：Flipper-IRDB（CC0-1.0）+ SmartIR climate（MIT），580 个码表 / 6544 条信号（534 Flipper + 46 SmartIR），gzip 后约 3.1MB；「试码匹配」流程绑定主开关。
 - **空调全状态**：SmartIR 码表为「模式 × 风速 × 温度」完整矩阵（Broadlink base64 → 微秒换算用真值 tick 2^-15s），面板直接查表整帧重发。
 - **语音/自动化入口**：
   - 深链接 `uniir://device/{id|名称}/on|off|toggle|key/{按键}`、`uniir://ac/{id|名称}?power=on&temp=26&mode=cool&fan=low`
@@ -27,7 +28,7 @@
 python3 tools/fetch_codes.py
 
 ./gradlew assembleDebug        # 或用 Android Studio 直接打开
-./gradlew testDebugUnitTest    # 单元测试（协议编码黄金向量、解析器、路由）
+./gradlew testDebugUnitTest    # 单元测试（60 个：协议黄金向量、解析器、码库、路由）
 ```
 
 `gradle-wrapper.properties` 的发行包地址已指向腾讯镜像；国内网络可直接 `./gradlew`。
@@ -36,9 +37,9 @@ python3 tools/fetch_codes.py
 
 ```
 app/src/main/java/com/zero/universalir/
-├── core/ir        IrSignal 统一码模型、IrLogic（2s 上限/载频选择）、IrTransmitter
-├── core/codec     NEC/NECext/RC5/RC5X/SIRC/Samsung32 编码器、Flipper .ir 解析、
-│                  SmartIR climate 解析、Broadlink base64 → 微秒转换
+├── core/ir        IrSignal 统一码模型、IrLogic（2s 上限/载频选择）、IrTransmitter、RcToggleMemory
+├── core/codec     NEC/NECext/RC5/RC5X/SIRC12/15/20/Samsung32/Kaseikyo/RC6/RCA/Pioneer
+│                  编码器、Flipper .ir 解析、SmartIR climate 解析、Broadlink base64 → 微秒转换
 ├── core/model     DeviceType
 ├── data/codes     CodeLibrary（assets 索引 + 懒加载）
 ├── data/db        Room（devices / buttons）
