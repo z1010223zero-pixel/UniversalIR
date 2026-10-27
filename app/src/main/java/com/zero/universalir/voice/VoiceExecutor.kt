@@ -54,12 +54,12 @@ class VoiceExecutor @Inject constructor(
             return "码库加载失败：${e.message}"
         }
         val target: com.zero.universalir.data.codes.CodeLibrary.LibrarySignal? = when (preferOn) {
-            true -> signals.firstOrNull { isOnName(it.name) }
+            true -> signals.firstOrNull { PowerNames.isOn(it.name) }
                 ?: signals.firstOrNull { it.name == device.boundSignalName }
-            false -> signals.firstOrNull { isOffName(it.name) }
+            false -> signals.firstOrNull { PowerNames.isOff(it.name) }
                 ?: signals.firstOrNull { it.name == device.boundSignalName }
             null -> signals.firstOrNull { it.name == device.boundSignalName }
-                ?: signals.firstOrNull { isOnName(it.name) }
+                ?: signals.firstOrNull { PowerNames.isOn(it.name) }
         } ?: signals.firstOrNull()
         if (target == null) return "码表为空"
         val result = transmitter.transmit(target.signalForPress(device.id))
@@ -94,10 +94,10 @@ class VoiceExecutor @Inject constructor(
         val target = signals.firstOrNull { it.name == label }
             ?: signals.firstOrNull { it.name.contains(label) || label.contains(it.name) }
             ?: signals.firstOrNull {
-                isOnName(it.name) && (label.contains("开") || label.equals("on", true))
+                PowerNames.isOn(it.name) && (label.contains("开") || label.equals("on", true))
             }
             ?: signals.firstOrNull {
-                isOffName(it.name) && (label.contains("关") || label.equals("off", true))
+                PowerNames.isOff(it.name) && (label.contains("关") || label.equals("off", true))
             }
         if (target == null) return "码表没有「$label」按键"
         val result = transmitter.transmit(target.signalForPress(device.id))
@@ -179,17 +179,29 @@ class VoiceExecutor @Inject constructor(
             is IrTransmitter.TransmitResult.Invalid -> "无效红外码：$action"
         }
 
-    private fun isOnName(name: String): Boolean {
-        val n = name.lowercase()
-        return n == "on" || n == "power" || n.contains("开机") || (n.contains("开") && !n.contains("关"))
-    }
-
-    private fun isOffName(name: String): Boolean {
-        val n = name.lowercase()
-        return n == "off" || n.contains("关机") || n.contains("关闭") || n.contains("关")
-    }
-
     private companion object {
         val CLIMATE_MODES = setOf("cool", "heat", "dry", "fan_only", "auto", "off")
     }
+}
+
+/**
+ * 电源类信号名判断。规则按内置码库实测命名校准（Power/Off/Power_on/Power_off/Standby
+ * 占电源类信号的 98%+，几乎无中文命名），精确匹配为主：
+ * - 故意排除 "Powerful"（三菱空调强力模式）、"POWER_Zone2"（功放分区）、"Fan_power" 等陷阱名；
+ * - "ON/OFF" 二合一键归属不明，两个判断都不命中；
+ * - contains 式匹配（如 contains("关")）会把"关闭背光"误判成关机键，已废弃。
+ */
+internal object PowerNames {
+
+    fun isOn(name: String): Boolean = normalize(name) in ON_NAMES
+
+    fun isOff(name: String): Boolean = normalize(name) in OFF_NAMES
+
+    /** 小写化并去掉非字母数字（下划线/空格/斜杠），中文按字母处理保留。 */
+    private fun normalize(name: String): String =
+        name.lowercase().filter { it.isLetterOrDigit() }
+
+    private val ON_NAMES = setOf("on", "power", "poweron", "开机", "开")
+
+    private val OFF_NAMES = setOf("off", "poweroff", "standby", "关机", "关闭", "关闭电源", "关")
 }
