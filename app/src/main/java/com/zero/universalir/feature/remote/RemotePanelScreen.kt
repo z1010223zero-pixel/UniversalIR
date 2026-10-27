@@ -1,29 +1,38 @@
 package com.zero.universalir.feature.remote
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.lazy.grid.GridCells
-import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
-import androidx.compose.foundation.lazy.grid.items
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.KeyboardArrowLeft
+import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
+import androidx.compose.material.icons.automirrored.filled.VolumeOff
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.GraphicEq
+import androidx.compose.material.icons.filled.KeyboardArrowDown
+import androidx.compose.material.icons.filled.KeyboardArrowUp
 import androidx.compose.material.icons.filled.PowerSettingsNew
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Card
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.FilterChip
 import androidx.compose.material3.FilledIconButton
+import androidx.compose.material3.FilledTonalButton
+import androidx.compose.material3.FilterChip
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -40,6 +49,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -200,23 +210,128 @@ fun RemotePanelScreen(
 @Composable
 private fun GridPanel(vm: RemoteViewModel, modifier: Modifier = Modifier) {
     val buttons by vm.buttons.collectAsState()
-    Column(modifier.fillMaxSize().padding(16.dp)) {
-        PowerButton(onClick = vm::sendMain)
-        LazyVerticalGrid(
-            columns = GridCells.Fixed(3),
-            horizontalArrangement = Arrangement.spacedBy(10.dp),
-            verticalArrangement = Arrangement.spacedBy(10.dp),
-            modifier = Modifier.fillMaxWidth().padding(top = 16.dp),
-        ) {
-            items(buttons, key = { it.id }) { button ->
-                Card(onClick = { vm.sendLabel(button.label) }, modifier = Modifier.height(64.dp)) {
-                    Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                        Text(
-                            button.label,
-                            textAlign = TextAlign.Center,
-                            style = MaterialTheme.typography.bodyMedium,
-                        )
+    val labels = buttons.map { it.label }
+
+    val up = findKey(labels, "up", "上", "方向up", "arrowup")
+    val down = findKey(labels, "down", "下", "方向down", "arrowdown")
+    val left = findKey(labels, "left", "左", "方向左", "arrowleft")
+    val right = findKey(labels, "right", "右", "方向右", "arrowright")
+    val ok = findKey(labels, "ok", "okay", "enter", "确定", "确认", "ok键")
+    val mute = findKey(labels, "mute", "静音")
+    val volUp = findKey(labels, "volup", "volumeup", "vol+", "volume+", "音量+", "音量加", "volup键")
+    val volDown = findKey(labels, "voldown", "voldn", "volumedown", "vol-", "volume-", "音量-", "音量减")
+    val chUp = findKey(labels, "chup", "channelup", "ch+", "channel+", "频道+", "频道加")
+    val chDown = findKey(labels, "chdown", "chdn", "channeldown", "ch-", "channel-", "频道-", "频道减")
+
+    val used = setOfNotNull(up, down, left, right, ok, mute, volUp, volDown, chUp, chDown)
+    val powerLabels = labels.filter { isPowerLabel(it) }.toSet()
+    val extras = buttons.filter { it.label !in used && it.label !in powerLabels }
+
+    Column(
+        modifier = modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp),
+        verticalArrangement = Arrangement.spacedBy(20.dp),
+    ) {
+        Row(horizontalArrangement = Arrangement.spacedBy(12.dp), modifier = Modifier.fillMaxWidth()) {
+            FilledTonalButton(
+                onClick = vm::sendMain,
+                modifier = Modifier.weight(1f).height(68.dp),
+            ) {
+                Icon(Icons.Default.PowerSettingsNew, contentDescription = null, modifier = Modifier.size(26.dp))
+                Text("  电源", style = MaterialTheme.typography.titleMedium)
+            }
+            if (mute != null) {
+                OutlinedButton(
+                    onClick = { vm.sendLabel(mute) },
+                    modifier = Modifier.weight(0.55f).height(68.dp),
+                ) {
+                    Icon(Icons.AutoMirrored.Filled.VolumeOff, contentDescription = null)
+                    Text("  静音")
+                }
+            }
+        }
+
+        if (up != null && down != null && left != null && right != null) {
+            DPad(up, down, left, right, ok, vm::sendLabel)
+        }
+
+        if (volUp != null || volDown != null || chUp != null || chDown != null) {
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceEvenly,
+            ) {
+                if (volUp != null || volDown != null) {
+                    Rocker("音量", volUp, volDown, vm::sendLabel)
+                }
+                if (chUp != null || chDown != null) {
+                    Rocker("频道", chUp, chDown, vm::sendLabel)
+                }
+            }
+        }
+
+        if (extras.isNotEmpty()) {
+            Text("其它按键", style = MaterialTheme.typography.titleSmall)
+            extras.chunked(3).forEach { row ->
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.spacedBy(10.dp),
+                ) {
+                    row.forEach { button ->
+                        Card(onClick = { vm.sendLabel(button.label) }, modifier = Modifier.weight(1f).height(56.dp)) {
+                            Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+                                Text(
+                                    button.label,
+                                    textAlign = TextAlign.Center,
+                                    maxLines = 2,
+                                    style = MaterialTheme.typography.bodyMedium,
+                                )
+                            }
+                        }
                     }
+                    repeat(3 - row.size) { Spacer(Modifier.weight(1f)) }
+                }
+            }
+        }
+
+        if (labels.isEmpty()) {
+            Text("码表加载中…", color = MaterialTheme.colorScheme.onSurfaceVariant)
+        }
+    }
+}
+
+@Composable
+private fun DPad(
+    up: String,
+    down: String,
+    left: String,
+    right: String,
+    ok: String?,
+    onSend: (String) -> Unit,
+) {
+    Box(Modifier.fillMaxWidth(), contentAlignment = Alignment.Center) {
+        Box(
+            Modifier
+                .size(220.dp)
+                .clip(CircleShape)
+                .background(MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.45f)),
+        ) {
+            DPadArrow(Icons.Default.KeyboardArrowUp, "上", up, Modifier.align(Alignment.TopCenter).padding(top = 6.dp), onSend)
+            DPadArrow(Icons.Default.KeyboardArrowDown, "下", down, Modifier.align(Alignment.BottomCenter).padding(bottom = 6.dp), onSend)
+            DPadArrow(Icons.AutoMirrored.Filled.KeyboardArrowLeft, "左", left, Modifier.align(Alignment.CenterStart).padding(start = 6.dp), onSend)
+            DPadArrow(Icons.AutoMirrored.Filled.KeyboardArrowRight, "右", right, Modifier.align(Alignment.CenterEnd).padding(end = 6.dp), onSend)
+            Box(
+                Modifier
+                    .align(Alignment.Center)
+                    .size(76.dp)
+                    .clip(CircleShape)
+                    .background(MaterialTheme.colorScheme.primary),
+                contentAlignment = Alignment.Center,
+            ) {
+                TextButton(onClick = { ok?.let(onSend) }, enabled = ok != null) {
+                    Text(
+                        "OK",
+                        style = MaterialTheme.typography.titleMedium,
+                        color = MaterialTheme.colorScheme.onPrimary,
+                    )
                 }
             }
         }
@@ -224,13 +339,64 @@ private fun GridPanel(vm: RemoteViewModel, modifier: Modifier = Modifier) {
 }
 
 @Composable
-private fun PowerButton(onClick: () -> Unit) {
-    FilledIconButton(onClick = onClick, modifier = Modifier.fillMaxWidth().height(72.dp)) {
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            Icon(Icons.Default.PowerSettingsNew, contentDescription = null)
-            Text("  开关 / 电源", style = MaterialTheme.typography.titleMedium)
+private fun DPadArrow(
+    icon: androidx.compose.ui.graphics.vector.ImageVector,
+    desc: String,
+    label: String,
+    modifier: Modifier = Modifier,
+    onSend: (String) -> Unit,
+) {
+    androidx.compose.material3.FilledTonalIconButton(
+        onClick = { onSend(label) },
+        modifier = modifier.size(56.dp),
+    ) {
+        Icon(icon, contentDescription = desc)
+    }
+}
+
+@Composable
+private fun Rocker(title: String, upLabel: String?, downLabel: String?, onSend: (String) -> Unit) {
+    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+        Text(title, style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+        Column(
+            Modifier
+                .padding(top = 6.dp)
+                .width(88.dp)
+                .clip(RoundedCornerShape(28.dp))
+                .background(MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.45f)),
+            horizontalAlignment = Alignment.CenterHorizontally,
+        ) {
+            IconButton(
+                onClick = { upLabel?.let(onSend) },
+                enabled = upLabel != null,
+                modifier = Modifier.fillMaxWidth().height(52.dp),
+            ) {
+                Icon(Icons.Default.KeyboardArrowUp, contentDescription = "$title 加")
+            }
+            HorizontalDivider(Modifier.width(44.dp))
+            IconButton(
+                onClick = { downLabel?.let(onSend) },
+                enabled = downLabel != null,
+                modifier = Modifier.fillMaxWidth().height(52.dp),
+            ) {
+                Icon(Icons.Default.KeyboardArrowDown, contentDescription = "$title 减")
+            }
         }
     }
+}
+
+private fun normalizeLabel(label: String): String =
+    label.lowercase().filter { it.isLetterOrDigit() || it == '+' || it == '-' }
+
+private fun findKey(labels: List<String>, vararg aliases: String): String? {
+    val wanted = aliases.map { normalizeLabel(it) }.toSet()
+    return labels.firstOrNull { normalizeLabel(it) in wanted }
+}
+
+private fun isPowerLabel(label: String): Boolean {
+    val n = normalizeLabel(label)
+    return n == "power" || n == "电源" || n == "开关" || n == "on" || n == "off" ||
+        n.contains("power")
 }
 
 @Composable

@@ -2,6 +2,7 @@ package com.zero.universalir.core.ir
 
 import android.content.Context
 import android.hardware.ConsumerIrManager
+import android.util.Log
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -19,7 +20,7 @@ class IrTransmitter @Inject constructor(
     @ApplicationContext context: Context,
 ) {
     sealed class TransmitResult {
-        data object Sent : TransmitResult()
+        data class Sent(val carrierHz: Int, val frames: Int, val durationUs: Long) : TransmitResult()
         data object NoHardware : TransmitResult()
         data class PatternTooLong(val durationUs: Long) : TransmitResult()
         data class Invalid(val reason: String) : TransmitResult()
@@ -53,10 +54,28 @@ class IrTransmitter @Inject constructor(
                 IrLogic.SendCheck.Ok -> Unit
             }
         }
-        val carrier = IrLogic.pickCarrier(signal.carrierHz, capability().ranges)
-        frames.forEach { frame ->
-            m.transmit(carrier, frame)
+        val cap = capability()
+        val carrier = IrLogic.pickCarrier(signal.carrierHz, cap.ranges)
+        val durationUs = frames.sumOf { frame -> frame.sumOf { it.toLong() } }
+        Log.d(
+            TAG,
+            "transmit hasEmitter=${cap.hasEmitter} ranges=${cap.ranges} " +
+                "carrier=$carrier frames=${frames.size} duration=${durationUs / 1000}ms " +
+                "first=${frames.first().take(24)}",
+        )
+        return@withContext try {
+            frames.forEach { frame ->
+                Log.d(TAG, "transmit frame ${frame.size} entries: ${frame.take(24)}")
+                m.transmit(carrier, frame)
+            }
+            TransmitResult.Sent(carrier, frames.size, durationUs)
+        } catch (t: Throwable) {
+            Log.e(TAG, "transmit failed", t)
+            TransmitResult.Invalid("${t::class.simpleName}: ${t.message}")
         }
-        TransmitResult.Sent
+    }
+
+    private companion object {
+        const val TAG = "UniversalIR.Ir"
     }
 }
