@@ -9,6 +9,7 @@ import androidx.room.Insert
 import androidx.room.PrimaryKey
 import androidx.room.Query
 import androidx.room.RoomDatabase
+import androidx.room.Transaction
 import androidx.room.Update
 import kotlinx.coroutines.flow.Flow
 
@@ -87,6 +88,13 @@ interface RemoteDao {
 
     @Query("DELETE FROM buttons WHERE deviceId = :deviceId")
     suspend fun deleteButtonsOf(deviceId: Long)
+
+    /** 删除设备与其按键：单事务执行，进程中断也不会留下孤儿按键。 */
+    @Transaction
+    suspend fun deleteDeviceWithButtons(device: RemoteDeviceEntity) {
+        deleteButtonsOf(device.id)
+        deleteDevice(device)
+    }
 }
 
 @Database(

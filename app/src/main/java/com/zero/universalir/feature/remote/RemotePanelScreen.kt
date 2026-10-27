@@ -144,8 +144,7 @@ class RemoteViewModel @Inject constructor(
 
     fun deleteDevice(onDone: () -> Unit) {
         viewModelScope.launch {
-            dao.deleteButtonsOf(deviceId)
-            dao.device(deviceId)?.let { dao.deleteDevice(it) }
+            dao.device(deviceId)?.let { dao.deleteDeviceWithButtons(it) }
             onDone()
         }
     }

@@ -96,8 +96,7 @@ class HomeViewModel @Inject constructor(
 
     fun delete(device: RemoteDeviceEntity) {
         viewModelScope.launch {
-            dao.deleteButtonsOf(device.id)
-            dao.deleteDevice(device)
+            dao.deleteDeviceWithButtons(device)
             feedback.post("已删除 ${device.name}")
         }
     }
