@@ -115,11 +115,22 @@ class AddDeviceViewModel @Inject constructor(
 
     private var trialJob: Job? = null
 
-    /** 型号 id → 已加载的信号，轮播来回切换时避免重复解压码表。 */
-    private val signalCache = mutableMapOf<String, List<CodeLibrary.LibrarySignal>>()
+    /**
+     * 型号 id → 已加载的信号，轮播来回切换时避免重复解压码表。
+     * LRU 限容：自动轮播可能扫过整个分类（灯类单品牌可到 60 个文件），
+     * 单个码表解压后有几百个信号数组，不设上限会随浏览无界增长。
+     */
+    private val signalCache = lruCache<String, List<CodeLibrary.LibrarySignal>>(max = 8)
 
-    /** 空调码表缓存（全状态码表解析较慢，轮播来回切换时复用）。 */
-    private val acCache = mutableMapOf<String, SmartIrParser.AcCodeTable>()
+    /** 空调码表缓存（全状态码表解析较慢，轮播来回切换时复用），同样 LRU 限容。 */
+    private val acCache = lruCache<String, SmartIrParser.AcCodeTable>(max = 4)
+
+    /** 访问序 LRU：超出 max 淘汰最久未用的条目。仅在 viewModelScope 单线程访问，无需加锁。 */
+    private fun <K, V> lruCache(max: Int): LinkedHashMap<K, V> =
+        object : LinkedHashMap<K, V>(16, 0.75f, true) {
+            override fun removeEldestEntry(eldest: MutableMap.MutableEntry<K, V>): Boolean =
+                size > max
+        }
 
     init {
         viewModelScope.launch {
