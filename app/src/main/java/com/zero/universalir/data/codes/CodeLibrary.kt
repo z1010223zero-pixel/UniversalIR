@@ -2,6 +2,7 @@ package com.zero.universalir.data.codes
 
 import android.content.Context
 import com.zero.universalir.core.codec.FlipperIrParser
+import com.zero.universalir.core.codec.ProtocolRegistry
 import com.zero.universalir.core.codec.SmartIrParser
 import com.zero.universalir.core.ir.IrSignal
 import com.zero.universalir.core.model.DeviceType
@@ -10,6 +11,8 @@ import java.io.IOException
 import java.util.zip.GZIPInputStream
 import javax.inject.Inject
 import javax.inject.Singleton
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 
@@ -44,17 +47,30 @@ class CodeLibrary @Inject constructor(
         val entries: List<Entry> = emptyList(),
     )
 
-    data class LibrarySignal(val name: String, val signal: IrSignal)
+    /**
+     * 库内信号。[withToggle] 非 null 表示该协议（RC5/RC5X/RC6）支持翻转位，
+     * 发送时可按"新按键"语义翻转后重渲染。
+     */
+    data class LibrarySignal(
+        val name: String,
+        val signal: IrSignal,
+        val withToggle: ((Boolean) -> IrSignal)? = null,
+    )
 
     private val json = Json { ignoreUnknownKeys = true }
 
-    val index: LibraryIndex by lazy {
-        try {
-            json.decodeFromString(LibraryIndex.serializer(), readAsset("index.json"))
-        } catch (_: Exception) {
-            LibraryIndex()
-        }
+    private val indexResult: Result<LibraryIndex> by lazy {
+        runCatching { json.decodeFromString(LibraryIndex.serializer(), readAsset("index.json")) }
     }
+
+    val index: LibraryIndex get() = indexResult.getOrElse { LibraryIndex() }
+
+    /** 在 IO 线程确保索引已加载（142KB JSON 解析不宜在主线程做）。 */
+    suspend fun ensureIndex(): LibraryIndex = withContext(Dispatchers.IO) { index }
+
+    /** 索引加载失败原因；null 表示正常。避免索引损坏时静默退化成空码库。 */
+    val indexError: String? get() =
+        indexResult.exceptionOrNull()?.let { it.message ?: it::class.simpleName }
 
     fun entriesFor(type: DeviceType): List<Entry> =
         index.entries.filter { it.deviceType == type.name.lowercase() }
@@ -70,20 +86,29 @@ class CodeLibrary @Inject constructor(
         }
     }
 
-    /** flipper 条目 → 按键信号列表（parsed 渲染失败回退 raw），同名去重。 */
-    fun loadFlipperSignals(entry: Entry): List<LibrarySignal> {
+    /** flipper 条目 → 按键信号列表（parsed 渲染失败回退 raw），同名去重。磁盘 IO 与解析在 IO 线程。 */
+    suspend fun loadFlipperSignals(entry: Entry): List<LibrarySignal> = withContext(Dispatchers.IO) {
         val parser = FlipperIrParser()
         val out = LinkedHashMap<String, LibrarySignal>()
         parser.parse(readAsset(entry.file)).forEach { s ->
             val signal = FlipperIrParser.render(s) ?: return@forEach
             val label = s.name.ifBlank { "信号" }
-            if (!out.containsKey(label)) out[label] = LibrarySignal(label, signal)
+            if (!out.containsKey(label)) {
+                val withToggle =
+                    if (s.protocol != null && ProtocolRegistry.supportsToggle(s.protocol)) {
+                        { t: Boolean -> FlipperIrParser.renderParsed(s, t) ?: signal }
+                    } else {
+                        null
+                    }
+                out[label] = LibrarySignal(label, signal, withToggle)
+            }
         }
-        return out.values.toList()
+        out.values.toList()
     }
 
-    fun loadAcTable(entry: Entry): SmartIrParser.AcCodeTable? =
+    suspend fun loadAcTable(entry: Entry): SmartIrParser.AcCodeTable? = withContext(Dispatchers.IO) {
         SmartIrParser().parse(readAsset(entry.file), entry.file)
+    }
 
     /** 试码顺序：开关机类信号排最前。 */
     fun trialOrder(signals: List<LibrarySignal>): List<LibrarySignal> =
@@ -101,6 +126,16 @@ class CodeLibrary @Inject constructor(
 
     private fun readAsset(path: String): String =
         context.assets.open("codes/$path").use { input ->
-            GZIPInputStream(input).bufferedReader(Charsets.UTF_8).use { it.readText() }
+            decodeAsset(path, input.readBytes())
         }
+
+    companion object {
+        /** 只有码表文件是 gzip（.gz）；index.json 等索引是明文，按扩展名区分。 */
+        internal fun decodeAsset(path: String, bytes: ByteArray): String =
+            if (path.endsWith(".gz", ignoreCase = true)) {
+                GZIPInputStream(bytes.inputStream()).bufferedReader(Charsets.UTF_8).use { it.readText() }
+            } else {
+                bytes.decodeToString()
+            }
+    }
 }

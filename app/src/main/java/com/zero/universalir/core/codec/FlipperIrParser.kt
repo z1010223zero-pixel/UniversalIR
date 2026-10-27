@@ -91,12 +91,12 @@ class FlipperIrParser {
             return v
         }
 
-        /** parsed 条目 → 信号；协议不支持或缺字段返回 null。 */
-        fun renderParsed(s: FlipperSignal): IrSignal? {
+        /** parsed 条目 → 信号；协议不支持或缺字段返回 null。 [toggle] 仅对 RC5/RC5X/RC6 生效。 */
+        fun renderParsed(s: FlipperSignal, toggle: Boolean = false): IrSignal? {
             val addr = s.addressValue ?: return null
             val cmd = s.commandValue ?: return null
             val protocol = s.protocol ?: return null
-            return ProtocolRegistry.encode(protocol, addr, cmd)?.let {
+            return ProtocolRegistry.encode(protocol, addr, cmd, toggle)?.let {
                 IrSignal(it.carrierHz, it.patternUs, it.repeat, "flipper:${s.name}")
             }
         }

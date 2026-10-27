@@ -4,6 +4,8 @@ import com.zero.universalir.core.codec.BroadlinkCode
 import com.zero.universalir.core.codec.SmartIrParser
 import com.zero.universalir.core.ir.IrSignal
 import com.zero.universalir.core.ir.IrTransmitter
+import com.zero.universalir.core.ir.signalForPress
+import com.zero.universalir.core.model.DeviceType
 import com.zero.universalir.data.codes.CodeLibrary
 import com.zero.universalir.data.db.RemoteDao
 import com.zero.universalir.data.db.RemoteDeviceEntity
@@ -40,8 +42,9 @@ class VoiceExecutor @Inject constructor(
 
     /** 设备主开关：flipper 试码绑定的信号；on/off 时优先精确信号。 */
     suspend fun sendMainKey(device: RemoteDeviceEntity, preferOn: Boolean? = null): String {
-        if (device.type == "ac") {
-            return sendAc(device, power = preferOn ?: true, mode = null, fan = null, temp = null)
+        if (DeviceType.from(device.type) == DeviceType.AC) {
+            // toggle 按当前状态取反，而不是恒开机
+            return sendAc(device, power = preferOn ?: !device.acPower, mode = null, fan = null, temp = null)
         }
         val entry = device.libraryFileId?.let { library.entry(it) }
             ?: return "设备「${device.name}」没有绑定码库"
@@ -59,7 +62,7 @@ class VoiceExecutor @Inject constructor(
                 ?: signals.firstOrNull { isOnName(it.name) }
         } ?: signals.firstOrNull()
         if (target == null) return "码表为空"
-        val result = transmitter.transmit(target.signal)
+        val result = transmitter.transmit(target.signalForPress(device.id))
         return describe(device.name, target.name, result)
     }
 
@@ -69,8 +72,8 @@ class VoiceExecutor @Inject constructor(
         val entry = device.libraryFileId?.let { library.entry(it) }
             ?: return "设备「${device.name}」没有绑定码库"
         if (entry.kind == "smartir_climate") {
-            val mode = DeepLinkRouter.normalizeMode(label)
-            return sendAc(device, power = null, mode = mode.takeIf { it != label }, fan = null, temp = null)
+            // 归一后交给 sendAc 按码表 operationModes 校验（标签本身是规范名时不再被误丢）
+            return sendAc(device, power = null, mode = DeepLinkRouter.normalizeMode(label), fan = null, temp = null)
         }
         val signals = try {
             library.loadFlipperSignals(entry)
@@ -86,7 +89,7 @@ class VoiceExecutor @Inject constructor(
                 isOffName(it.name) && (label.contains("关") || label.equals("off", true))
             }
         if (target == null) return "码表没有「$label」按键"
-        val result = transmitter.transmit(target.signal)
+        val result = transmitter.transmit(target.signalForPress(device.id))
         return describe(device.name, target.name, result)
     }
 
@@ -112,8 +115,15 @@ class VoiceExecutor @Inject constructor(
                 ?: return "码表没有关闭码"
             val signal = BroadlinkCode.toSignal(code) ?: return "关闭码解码失败"
             val result = transmitter.transmit(signal)
-            updateAc(device, acPower = false)
+            // 只写电源列：mode/fan/temp 未被本条指令改动，避免覆盖并发写入
+            dao.updateAcPower(device.id, false)
             return describe(device.name, "关闭", result)
+        }
+        // 模式必须属于码表支持集合（"off" 除外），否则明确报错而不是重发当前状态帧
+        if (mode != null && mode != SmartIrParser.MODE_OFF &&
+            table.operationModes.none { it.equals(mode, ignoreCase = true) }
+        ) {
+            return "码表不支持模式「$mode」"
         }
         val newMode = mode
             ?: device.acMode
@@ -132,20 +142,9 @@ class VoiceExecutor @Inject constructor(
             ?: return "码表没有该组合：模式 $newMode / 风速 $newFan / ${newTemp}℃"
         val signal = BroadlinkCode.toSignal(code) ?: return "码解码失败"
         val result = transmitter.transmit(signal)
-        updateAc(device, acPower = true, acMode = newMode, acFan = newFan, acTemp = newTemp)
+        // 用本次实际发送的状态做定向列更新，避免用发射前的陈旧快照整行覆盖并发写入
+        dao.updateAcState(device.id, acPower = true, acMode = newMode, acFan = newFan, acTemp = newTemp)
         return describe(device.name, "$newMode ${newTemp}℃", result)
-    }
-
-    private suspend fun updateAc(
-        device: RemoteDeviceEntity,
-        acPower: Boolean = device.acPower,
-        acMode: String? = device.acMode,
-        acFan: String? = device.acFan,
-        acTemp: Int? = device.acTemp,
-    ) {
-        dao.updateDevice(
-            device.copy(acPower = acPower, acMode = acMode, acFan = acFan, acTemp = acTemp)
-        )
     }
 
     private fun lookupFlex(

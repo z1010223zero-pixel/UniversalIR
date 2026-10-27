@@ -41,7 +41,7 @@ class ExternalTriggerReceiver : BroadcastReceiver() {
                     VoiceCommand(
                         deviceKey = deviceKey,
                         action = "ac",
-                        power = intent.getStringExtra(EXTRA_POWER)?.let { it == "on" || it == "true" },
+                        power = DeepLinkRouter.parsePower(intent.getStringExtra(EXTRA_POWER)),
                         mode = mode,
                         fan = intent.getStringExtra(EXTRA_FAN)?.lowercase(),
                         temp = temp,

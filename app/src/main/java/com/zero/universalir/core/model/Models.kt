@@ -13,6 +13,6 @@ enum class DeviceType(val label: String) {
 
     companion object {
         fun from(value: String): DeviceType =
-            entries.firstOrNull { it.name == value } ?: GENERIC
+            entries.firstOrNull { it.name.equals(value, ignoreCase = true) } ?: GENERIC
     }
 }

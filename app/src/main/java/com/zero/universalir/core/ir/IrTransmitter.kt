@@ -42,19 +42,20 @@ class IrTransmitter @Inject constructor(
 
     suspend fun transmit(signal: IrSignal): TransmitResult = withContext(Dispatchers.IO) {
         val m = manager ?: return@withContext TransmitResult.NoHardware
-        val check = IrLogic.checkPattern(signal.patternUs)
-        when (check) {
-            is IrLogic.SendCheck.TooLong -> return@withContext TransmitResult.PatternTooLong(check.durationUs)
-            is IrLogic.SendCheck.EmptyPattern -> return@withContext TransmitResult.Invalid("空 pattern")
-            IrLogic.SendCheck.Ok -> Unit
+        val frames = signal.framesWithGap()
+        // 每帧（含帧间 gap）单独校验 2s 单次上限
+        frames.forEach { frame ->
+            when (val check = IrLogic.checkPattern(frame)) {
+                is IrLogic.SendCheck.TooLong ->
+                    return@withContext TransmitResult.PatternTooLong(check.durationUs)
+                is IrLogic.SendCheck.EmptyPattern ->
+                    return@withContext TransmitResult.Invalid("空 pattern")
+                IrLogic.SendCheck.Ok -> Unit
+            }
         }
         val carrier = IrLogic.pickCarrier(signal.carrierHz, capability().ranges)
-        val frames = signal.framesWithGap()
-        frames.forEachIndexed { index, frame ->
+        frames.forEach { frame ->
             m.transmit(carrier, frame)
-            if (index != frames.lastIndex) {
-                // 帧间静默由 pattern 末尾的 gap 提供（framesWithGap 已附加），无需额外 sleep
-            }
         }
         TransmitResult.Sent
     }

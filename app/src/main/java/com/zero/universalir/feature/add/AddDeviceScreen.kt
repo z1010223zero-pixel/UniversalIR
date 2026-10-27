@@ -89,7 +89,16 @@ class AddDeviceViewModel @Inject constructor(
     private var trialJob: Job? = null
 
     init {
-        _state.update { it.copy(libraryEmpty = library.index.entries.isEmpty()) }
+        viewModelScope.launch {
+            val idx = library.ensureIndex()
+            val error = library.indexError
+            _state.update {
+                it.copy(
+                    libraryEmpty = idx.entries.isEmpty(),
+                    message = error?.let { e -> "内置码库索引加载失败：$e" },
+                )
+            }
+        }
     }
 
     fun selectType(type: DeviceType) {

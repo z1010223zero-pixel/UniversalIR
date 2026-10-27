@@ -54,16 +54,11 @@ class DeepLinkRouter @Inject constructor(private val dao: RemoteDao) {
             }
             "ac" -> {
                 val key = uri.pathSegments.firstOrNull() ?: return ParseResult.Unknown
-                val powerParam = uri.getQueryParameter("power")
                 ParseResult.Command(
                     VoiceCommand(
                         deviceKey = key,
                         action = "ac",
-                        power = when {
-                            powerParam == null -> null
-                            powerParam in listOf("on", "true", "1") -> true
-                            else -> false
-                        },
+                        power = parsePower(uri.getQueryParameter("power")),
                         mode = uri.getQueryParameter("mode")?.let(::normalizeMode),
                         fan = uri.getQueryParameter("fan")?.lowercase(),
                         temp = uri.getQueryParameter("temp")?.toIntOrNull(),
@@ -74,21 +69,64 @@ class DeepLinkRouter @Inject constructor(private val dao: RemoteDao) {
         }
     }
 
-    /** 解析设备：数字 id 精确 → 名称精确 → 名称包含 → 房间+名称。 */
+    /** 解析设备：数字 id 精确 → 名称精确 → 名称模糊 → 房间+名称模糊。 */
     suspend fun resolveDevice(key: String): RemoteDeviceEntity? {
         key.toLongOrNull()?.let { id ->
             dao.device(id)?.let { return it }
         }
         val all = dao.allDevices()
         all.firstOrNull { it.name == key }?.let { return it }
-        all.firstOrNull { it.name.contains(key) || key.contains(it.name) }?.let { return it }
-        all.firstOrNull { "${it.room}${it.name}".contains(key) || key.contains("${it.room}${it.name}") }
-            ?.let { return it }
+        fuzzyMatch(key, all.map { it.name })?.let { name ->
+            return all.first { it.name == name }
+        }
+        val fullNames = all.map { "${it.room}${it.name}" }
+        fuzzyMatch(key, fullNames)?.let { name ->
+            return all.first { "${it.room}${it.name}" == name }
+        }
         return null
     }
 
     companion object {
         const val SCHEME = "uniir"
+
+        /**
+         * power 参数归一：大小写不敏感；已知值映射 on/off，
+         * 未知值返回 null（由执行器按当前状态推断，避免外部链接拼错时误关空调）。
+         */
+        fun parsePower(raw: String?): Boolean? = raw?.trim()?.lowercase()?.let {
+            when (it) {
+                "on", "true", "1", "open", "开", "开机" -> true
+                "off", "false", "0", "close", "关", "关机" -> false
+                else -> null
+            }
+        }
+
+        /**
+         * 模糊匹配打分：重叠覆盖率优先（较短串完全落在较长串内的比例），
+         * 覆盖率相同则"设备名包含完整指令"优于"指令包含部分设备名"。
+         * 这样"灯"命中"台灯"（覆盖 1/2）而不是"客厅灯带"（覆盖 1/4），
+         * "客厅灯"命中"客厅灯带"（覆盖 3/4）而不是"台灯"（1/3）。
+         * 返回命中的名字，无命中返回 null。
+         */
+        fun fuzzyMatch(key: String, names: List<String>): String? {
+            var best: String? = null
+            var bestCoverage = -1.0
+            var bestRank = Int.MAX_VALUE
+            for (n in names) {
+                val (coverage, rank) = when {
+                    n == key -> 1.0 to 0
+                    n.contains(key) -> key.length.toDouble() / n.length to 1
+                    key.contains(n) -> n.length.toDouble() / key.length to 2
+                    else -> continue
+                }
+                if (coverage > bestCoverage || (coverage == bestCoverage && rank < bestRank)) {
+                    best = n
+                    bestCoverage = coverage
+                    bestRank = rank
+                }
+            }
+            return best
+        }
 
         /** 模式别名归一：中英文 → SmartIR operationModes 常用值。 */
         fun normalizeMode(raw: String): String {

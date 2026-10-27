@@ -8,6 +8,7 @@ import androidx.core.content.pm.ShortcutManagerCompat
 import androidx.core.graphics.drawable.IconCompat
 import com.zero.universalir.MainActivity
 import com.zero.universalir.R
+import com.zero.universalir.core.model.DeviceType
 import com.zero.universalir.data.db.RemoteDeviceEntity
 
 /** 每个设备生成"开机"动态快捷方式（长按图标直达，语音助手/搜索也可命中）。 */
@@ -16,7 +17,7 @@ object ShortcutsHelper {
 
     fun update(context: Context, devices: List<RemoteDeviceEntity>) {
         val shortcuts = devices.take(MAX_SHORTCUTS).map { device ->
-            val uri = if (device.type == "ac") {
+            val uri = if (DeviceType.from(device.type) == DeviceType.AC) {
                 "uniir://ac/${device.id}?power=on"
             } else {
                 "uniir://device/${device.id}/on"

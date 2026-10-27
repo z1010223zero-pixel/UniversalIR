@@ -49,6 +49,7 @@ import androidx.lifecycle.viewModelScope
 import com.zero.universalir.core.codec.SmartIrParser
 import com.zero.universalir.core.ir.IrSignal
 import com.zero.universalir.core.ir.IrTransmitter
+import com.zero.universalir.core.ir.signalForPress
 import com.zero.universalir.data.codes.CodeLibrary
 import com.zero.universalir.data.db.RemoteDao
 import com.zero.universalir.data.db.RemoteDeviceEntity
@@ -79,8 +80,7 @@ class RemoteViewModel @Inject constructor(
     val buttons = flow { emit(dao.buttons(deviceId)) }
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
 
-    private val signalsByNameFlow = MutableStateFlow<Map<String, IrSignal>>(emptyMap())
-    val signalsByName = signalsByNameFlow.asStateFlow()
+    private val signalsByNameFlow = MutableStateFlow<Map<String, CodeLibrary.LibrarySignal>>(emptyMap())
 
     private val acTableFlow = MutableStateFlow<SmartIrParser.AcCodeTable?>(null)
     val acTable = acTableFlow.asStateFlow()
@@ -92,7 +92,7 @@ class RemoteViewModel @Inject constructor(
             try {
                 when (entry.kind) {
                     "flipper" -> signalsByNameFlow.value =
-                        library.loadFlipperSignals(entry).associate { it.name to it.signal }
+                        library.loadFlipperSignals(entry).associateBy { it.name }
 
                     "smartir_climate" -> acTableFlow.value = library.loadAcTable(entry)
                 }
@@ -115,7 +115,9 @@ class RemoteViewModel @Inject constructor(
 
     fun sendSignal(name: String) {
         viewModelScope.launch {
-            signalsByNameFlow.value[name]?.let { transmitter.transmit(it) }
+            signalsByNameFlow.value[name]?.let { target ->
+                transmitter.transmit(target.signalForPress(deviceId))
+            }
         }
     }
 
@@ -258,14 +260,19 @@ private fun AcPanel(vm: RemoteViewModel, device: RemoteDeviceEntity, modifier: M
             return@Column
         }
 
-        // 温度步进
+        // 温度步进（钳制到码表上下限，到边界禁用按钮）
         val temp = device.acTemp ?: ((t.minTemperature + t.maxTemperature) / 2)
+        val minTemp = t.minTemperature
+        val maxTemp = t.maxTemperature
         Row(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.SpaceEvenly,
             modifier = Modifier.fillMaxWidth(),
         ) {
-            OutlinedButton(onClick = { vm.acTemp(temp - t.precision) }, enabled = device.acPower) {
+            OutlinedButton(
+                onClick = { vm.acTemp((temp - t.precision).coerceIn(minTemp, maxTemp)) },
+                enabled = device.acPower && temp - t.precision >= minTemp,
+            ) {
                 Text("−", style = MaterialTheme.typography.titleLarge)
             }
             Text(
@@ -274,7 +281,10 @@ private fun AcPanel(vm: RemoteViewModel, device: RemoteDeviceEntity, modifier: M
                 textAlign = TextAlign.Center,
                 modifier = Modifier.weight(1f),
             )
-            OutlinedButton(onClick = { vm.acTemp(temp + t.precision) }, enabled = device.acPower) {
+            OutlinedButton(
+                onClick = { vm.acTemp((temp + t.precision).coerceIn(minTemp, maxTemp)) },
+                enabled = device.acPower && temp + t.precision <= maxTemp,
+            ) {
                 Text("+", style = MaterialTheme.typography.titleLarge)
             }
         }

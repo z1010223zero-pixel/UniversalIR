@@ -5,11 +5,11 @@
         android:enabled="true"
         android:icon="@drawable/ic_shortcut_remote"
         android:shortcutShortLabel="@string/shortcut_open_label">
-        <intent-filter>
-            <action android:name="android.intent.action.VIEW" />
-            <category android:name="android.intent.category.DEFAULT" />
-            <category android:name="android.intent.category.BROWSABLE" />
-            <data android:scheme="uniir" android:host="home" />
-        </intent-filter>
+        <!-- 静态快捷方式只认 <intent> 子元素；<intent-filter> 会被 ShortcutParser 直接跳过 -->
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="uniir://home"
+            android:targetPackage="com.zero.universalir"
+            android:targetClass="com.zero.universalir.MainActivity" />
     </shortcut>
 </shortcuts>

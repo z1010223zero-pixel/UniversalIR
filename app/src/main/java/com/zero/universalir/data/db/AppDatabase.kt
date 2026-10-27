@@ -62,6 +62,17 @@ interface RemoteDao {
     @Update
     suspend fun updateDevice(d: RemoteDeviceEntity)
 
+    /** 空调状态定向更新：只写空调列，避免并发下用陈旧快照整行覆盖。 */
+    @Query(
+        "UPDATE devices SET acPower = :acPower, acMode = :acMode, " +
+            "acFan = :acFan, acTemp = :acTemp WHERE id = :id"
+    )
+    suspend fun updateAcState(id: Long, acPower: Boolean, acMode: String?, acFan: String?, acTemp: Int?)
+
+    /** 仅更新空调电源位。 */
+    @Query("UPDATE devices SET acPower = :acPower WHERE id = :id")
+    suspend fun updateAcPower(id: Long, acPower: Boolean)
+
     @Delete
     suspend fun deleteDevice(d: RemoteDeviceEntity)
 

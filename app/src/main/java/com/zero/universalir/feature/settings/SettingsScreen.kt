@@ -40,9 +40,11 @@ import com.zero.universalir.voice.FeedbackBus
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 
@@ -88,15 +90,17 @@ class SettingsViewModel @Inject constructor(
     val state = _state.asStateFlow()
 
     init {
-        val cap = transmitter.capability()
-        val idx = library.index
-        _state.value = UiState(
-            hasEmitter = cap.hasEmitter,
-            ranges = cap.ranges,
-            entryCount = idx.entries.size,
-            countByType = idx.entries.groupingBy { it.deviceType }.eachCount(),
-            sources = idx.sources,
-        )
+        viewModelScope.launch {
+            val cap = withContext(Dispatchers.IO) { transmitter.capability() }
+            val idx = library.ensureIndex()
+            _state.value = UiState(
+                hasEmitter = cap.hasEmitter,
+                ranges = cap.ranges,
+                entryCount = idx.entries.size,
+                countByType = idx.entries.groupingBy { it.deviceType }.eachCount(),
+                sources = idx.sources,
+            )
+        }
     }
 
     suspend fun buildBackup(): String {
@@ -151,8 +155,11 @@ class SettingsViewModel @Inject constructor(
     fun writeBackupTo(uri: android.net.Uri, onDone: (Boolean) -> Unit) {
         viewModelScope.launch {
             try {
-                context.contentResolver.openOutputStream(uri)?.use { out ->
-                    out.write(buildBackup().toByteArray(Charsets.UTF_8))
+                val text = buildBackup()
+                withContext(Dispatchers.IO) {
+                    context.contentResolver.openOutputStream(uri)?.use { out ->
+                        out.write(text.toByteArray(Charsets.UTF_8))
+                    }
                 }
                 feedback.post("备份已保存")
                 onDone(true)
@@ -166,8 +173,10 @@ class SettingsViewModel @Inject constructor(
     fun readBackupFrom(uri: android.net.Uri) {
         viewModelScope.launch {
             try {
-                val text = context.contentResolver.openInputStream(uri)?.use { input ->
-                    input.bufferedReader(Charsets.UTF_8).readText()
+                val text = withContext(Dispatchers.IO) {
+                    context.contentResolver.openInputStream(uri)?.use { input ->
+                        input.bufferedReader(Charsets.UTF_8).readText()
+                    }
                 }
                 if (text != null) importJson(text)
             } catch (e: Exception) {

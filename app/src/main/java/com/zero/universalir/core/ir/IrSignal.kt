@@ -19,8 +19,14 @@ class IrSignal(
     fun framesWithGap(gapUs: Long = DEFAULT_REPEAT_GAP_US): List<IntArray> {
         if (repeat <= 1) return listOf(patternUs)
         return (0 until repeat).map { i ->
-            if (i == repeat - 1) patternUs
-            else patternUs + gapUs.toInt()
+            when {
+                i == repeat - 1 -> patternUs
+                // pattern 以 space 结尾：gap 并入帧尾 space。
+                // 否则 gap 会落在偶数下标，被 ConsumerIrManager 当成 45ms 载波。
+                patternUs.size % 2 == 0 ->
+                    patternUs.copyOf().also { it[it.lastIndex] += gapUs.toInt() }
+                else -> patternUs + gapUs.toInt()
+            }
         }
     }
 
