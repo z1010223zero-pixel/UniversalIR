@@ -9,3 +9,6 @@
 .externalNativeBuild
 .cxx
 tools/.cache/
+
+# 本地构建产物
+*.apk
