@@ -4,7 +4,7 @@
 
 ## 功能
 
-- **红外发射**：`ConsumerIrManager` 公开 API，小米/Redmi、华为/荣耀带红外机型均可用；逐帧载频/2s 上限校验、SIRC/Pioneer 自动连发。
+- **红外发射**：`ConsumerIrManager` 公开 API，小米/Redmi、华为/荣耀带红外机型均可用；逐帧载频/2s 上限校验、SIRC/Pioneer 自动连发。每次发射后界面显示载波、帧数、时长或失败原因，logcat 标签 `UniversalIR.Ir` 可查下发时序。
 - **协议覆盖**：NEC、NECext、RC5、RC5X、SIRC-12/15/20、Samsung32、Kaseikyo、RC6、RCA、Pioneer 共 12 种，内置码库中的信号全部可发射；RC5/RC5X/RC6 发送时按「设备 + 按键」翻转 toggle 位，模拟真实按键。
 - **内置离线码库**：Flipper-IRDB（CC0-1.0）+ SmartIR climate（MIT），580 个码表 / 6544 条信号（534 Flipper + 46 SmartIR），gzip 后约 3.1MB；「试码匹配」流程绑定主开关。
 - **空调全状态**：SmartIR 码表为「模式 × 风速 × 温度」完整矩阵（Broadlink base64 → 微秒换算用真值 tick 2^-15s），面板直接查表整帧重发。
@@ -14,6 +14,15 @@
   - Tasker/MacroDroid 广播 `com.zero.universalir.SEND`（extras：device/key/power/mode/fan/temp）
   - App 内「语音接入向导」生成小爱训练计划话术+链接、小艺使用指引
 - **配置备份**：设置页导出/导入 JSON。
+
+## 添加设备流程（仿小米万能遥控）
+
+1. **选类型 → 品牌 → 型号**：型号卡片显示按键数量。
+2. **试码**：进入后自动发送该型号的主开关信号；可自动轮播同品牌其它型号，每个型号发一次开关。
+3. **按键抽验**：主开关有反应后不直接保存，而是再抽验几个按键——电视/机顶盒等抽音量、频道、方向键（最多 5 个），空调抽「制冷 26℃ / 制热 20℃ / 关机」状态帧。
+4. **确认**：全部正常 → 命名保存；有按键不对 → 直接换下一个型号继续试。
+
+空调全状态码表（如美的 1380/1381）也纳入同一套试码轮播：试的是「制冷 24℃ 自动风」代表帧，响了的型号再抽验，不需要先添加再测。
 
 语音接入速查：
 - 小米：小爱同学 App → 技能中心 → 小爱训练 → 话术「客厅灯打开」→ 执行「打开网址」→ 粘贴 `uniir://...` 链接（每动作一条训练）。
@@ -28,7 +37,7 @@
 python3 tools/fetch_codes.py
 
 ./gradlew assembleDebug        # 或用 Android Studio 直接打开
-./gradlew testDebugUnitTest    # 单元测试（60 个：协议黄金向量、解析器、码库、路由）
+./gradlew testDebugUnitTest    # 单元测试（62 个：协议黄金向量、解析器、码库、路由）
 ```
 
 `gradle-wrapper.properties` 的发行包地址已指向腾讯镜像；国内网络可直接 `./gradlew`。
@@ -43,7 +52,7 @@ app/src/main/java/com/zero/universalir/
 ├── core/model     DeviceType
 ├── data/codes     CodeLibrary（assets 索引 + 懒加载）
 ├── data/db        Room（devices / buttons）
-├── feature/*      首页、添加向导（含自动轮播试码）、遥控面板（通用/空调）、语音向导、设置
+├── feature/*      首页设备卡片、添加向导（试码轮播 + 按键抽验）、遥控面板（通用/空调）、语音向导、设置
 ├── voice          DeepLinkRouter、VoiceExecutor、深链接/广播入口、快捷方式
 └── ui             主题与导航
 tools/fetch_codes.py   码库拉取打包脚本（GitHub trees API + raw，缓存续传）
@@ -53,7 +62,7 @@ tools/fetch_codes.py   码库拉取打包脚本（GitHub trees API + raw，缓�
 
 - **小米/Redmi 红外口只有发射 LED，物理上无法学习**（官方学习功能在米家万能遥控器等外设上）。
 - **华为/荣耀**红外口有接收硬件，但学习封在系统应用内、无公开 API，第三方 app 不可复用。
-- `transmit()` 失败静默返回：UI 以 Snackbar 提示"已发送"，实际以设备响应为准。
+- `transmit()` 不返回设备端结果：本 App 会显示本次已下发的载波/帧数/时长，失败时给出原因；但红外是单向的，最终是否生效只能以设备响应为准（可将红外口对准另一台手机的摄像头观察是否有紫光）。
 - HarmonyOS NEXT（纯血鸿蒙）不能安装 APK。
 
 ## 后续路线
