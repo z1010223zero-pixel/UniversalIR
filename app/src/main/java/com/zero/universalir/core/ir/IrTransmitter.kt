@@ -29,8 +29,11 @@ class IrTransmitter @Inject constructor(
     private val manager: ConsumerIrManager? =
         context.getSystemService(Context.CONSUMER_IR_SERVICE) as? ConsumerIrManager
 
-    fun capability(): IrLogic.Capability {
-        val m = manager ?: return IrLogic.Capability(false, emptyList())
+    /**
+     * 硬件能力进程内只查一次：发射器是内置硬件，hasIrEmitter/载频区间不会中途变化。
+     */
+    private val capabilityOnce: IrLogic.Capability by lazy {
+        val m = manager ?: return@lazy IrLogic.Capability(false, emptyList())
         val ranges = try {
             m.carrierFrequencies?.map {
                 IrLogic.CarrierRange(it.minFrequency, it.maxFrequency)
@@ -38,8 +41,10 @@ class IrTransmitter @Inject constructor(
         } catch (_: Exception) {
             emptyList()
         }
-        return IrLogic.Capability(m.hasIrEmitter(), ranges)
+        IrLogic.Capability(m.hasIrEmitter(), ranges)
     }
+
+    fun capability(): IrLogic.Capability = capabilityOnce
 
     suspend fun transmit(signal: IrSignal): TransmitResult = withContext(Dispatchers.IO) {
         val m = manager ?: return@withContext TransmitResult.NoHardware
