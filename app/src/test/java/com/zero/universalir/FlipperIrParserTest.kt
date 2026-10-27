@@ -56,7 +56,7 @@ class FlipperIrParserTest {
 
     @Test
     fun `unsupported protocol returns null`() {
-        val text = sample.replace("protocol: NEC", "protocol: RC6")
+        val text = sample.replace("protocol: NEC", "protocol: JVC")
         val signals = FlipperIrParser().parse(text)
         assertNull(FlipperIrParser.renderParsed(signals[0]))
     }

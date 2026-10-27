@@ -1,0 +1,34 @@
+package com.zero.universalir
+
+import com.zero.universalir.data.codes.CodeLibrary
+import java.io.ByteArrayOutputStream
+import java.util.zip.GZIPOutputStream
+import kotlinx.serialization.json.Json
+import org.junit.Assert.assertEquals
+import org.junit.Test
+
+class CodeLibraryTest {
+
+    private val json = Json { ignoreUnknownKeys = true }
+
+    @Test
+    fun `index json is read as plain text`() {
+        val text = """
+            {"version":1,"sources":[],"entries":[
+              {"id":"e1","kind":"flipper","deviceType":"tv","brand":"B","model":"M","file":"e1.gz"}
+            ]}
+        """.trimIndent()
+        val decoded = CodeLibrary.decodeAsset("index.json", text.toByteArray(Charsets.UTF_8))
+        val index = json.decodeFromString(CodeLibrary.LibraryIndex.serializer(), decoded)
+        assertEquals(1, index.entries.size)
+        assertEquals("e1", index.entries[0].id)
+    }
+
+    @Test
+    fun `gz code table is gunzipped`() {
+        val text = "name: Power\ntype: parsed\nprotocol: NEC\naddress: 0x00\ncommand: 0x01\n"
+        val out = ByteArrayOutputStream()
+        GZIPOutputStream(out).use { it.write(text.toByteArray(Charsets.UTF_8)) }
+        assertEquals(text, CodeLibrary.decodeAsset("table.gz", out.toByteArray()))
+    }
+}

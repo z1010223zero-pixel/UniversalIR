@@ -49,14 +49,28 @@ class IrLogicTest {
     }
 
     @Test
-    fun `repeat frames insert gap between frames not after last`() {
+    fun `repeat frames merge gap into trailing space`() {
         val signal = com.zero.universalir.core.ir.IrSignal(
             38000, intArrayOf(2400, 600), repeat = 3,
         )
         val frames = signal.framesWithGap()
         assertEquals(3, frames.size)
-        assertEquals(3, frames[0].size) // 2400,600,45000
-        assertEquals(45_000, frames[0][2])
-        assertEquals(2, frames[2].size) // 最后一帧无 gap
+        // pattern 以 space 结尾：gap 并入帧尾 space，避免落到偶数下标变成 45ms 载波
+        assertEquals(2, frames[0].size)
+        assertEquals(45_600, frames[0][1])
+        assertEquals(2, frames[2].size)
+        assertEquals(600, frames[2][1])
+    }
+
+    @Test
+    fun `repeat frames append gap when pattern ends on mark`() {
+        val signal = com.zero.universalir.core.ir.IrSignal(
+            38000, intArrayOf(2400, 600, 560), repeat = 2,
+        )
+        val frames = signal.framesWithGap()
+        assertEquals(2, frames.size)
+        assertEquals(4, frames[0].size)
+        assertEquals(45_000, frames[0][3])
+        assertEquals(3, frames[1].size) // 最后一帧不追加
     }
 }
