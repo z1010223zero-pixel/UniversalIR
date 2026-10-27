@@ -69,7 +69,6 @@ import javax.inject.Inject
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.asStateFlow
-import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 
@@ -87,7 +86,7 @@ class RemoteViewModel @Inject constructor(
     val device = dao.deviceFlow(deviceId)
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), null)
 
-    val buttons = flow { emit(dao.buttons(deviceId)) }
+    val buttons = dao.buttonsFlow(deviceId)
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
 
     private val signalsByNameFlow = MutableStateFlow<Map<String, CodeLibrary.LibrarySignal>>(emptyMap())
@@ -491,25 +490,13 @@ private fun ChipRow(
 ) {
     Column {
         Text(label, style = MaterialTheme.typography.titleSmall)
-        Row(
-            horizontalArrangement = Arrangement.spacedBy(8.dp),
-            modifier = Modifier.fillMaxWidth().padding(top = 8.dp),
-        ) {
-            options.take(4).forEach { option ->
-                FilterChip(
-                    selected = selected == option,
-                    onClick = { onSelect(option) },
-                    enabled = enabled,
-                    label = { Text(labelOf(option)) },
-                )
-            }
-        }
-        if (options.size > 4) {
+        // 全部选项按 4 个一行排布，不做截断（个别码表风速/模式可能超过 8 个）
+        options.chunked(4).forEach { row ->
             Row(
                 horizontalArrangement = Arrangement.spacedBy(8.dp),
                 modifier = Modifier.fillMaxWidth().padding(top = 8.dp),
             ) {
-                options.drop(4).take(4).forEach { option ->
+                row.forEach { option ->
                     FilterChip(
                         selected = selected == option,
                         onClick = { onSelect(option) },
@@ -517,6 +504,7 @@ private fun ChipRow(
                         label = { Text(labelOf(option)) },
                     )
                 }
+                repeat(4 - row.size) { Spacer(Modifier.weight(1f)) }
             }
         }
     }

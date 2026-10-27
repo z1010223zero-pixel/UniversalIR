@@ -78,7 +78,7 @@ interface RemoteDao {
     suspend fun deleteDevice(d: RemoteDeviceEntity)
 
     @Query("SELECT * FROM buttons WHERE deviceId = :deviceId ORDER BY sortOrder")
-    suspend fun buttons(deviceId: Long): List<DeviceButtonEntity>
+    fun buttonsFlow(deviceId: Long): Flow<List<DeviceButtonEntity>>
 
     @Insert
     suspend fun insertButtons(buttons: List<DeviceButtonEntity>)
@@ -100,7 +100,8 @@ interface RemoteDao {
 @Database(
     entities = [RemoteDeviceEntity::class, DeviceButtonEntity::class],
     version = 1,
-    exportSchema = false,
+    // schema JSON 提交到 app/schemas/，为将来迁移留基准
+    exportSchema = true,
 )
 abstract class AppDatabase : RoomDatabase() {
     abstract fun dao(): RemoteDao
