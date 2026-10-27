@@ -11,9 +11,11 @@ import androidx.compose.ui.Modifier
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
 import com.zero.universalir.feature.add.AddDeviceScreen
 import com.zero.universalir.feature.home.HomeScreen
 import com.zero.universalir.feature.remote.RemotePanelScreen
@@ -85,16 +87,22 @@ fun AppRoot() {
                     onBack = { nav.popBackStack() },
                 )
             }
-            composable("remote/{id}") { entry ->
-                val id = entry.arguments?.getString("id")?.toLongOrNull() ?: 0L
+            composable(
+                "remote/{id}",
+                arguments = listOf(navArgument("id") { type = NavType.LongType }),
+            ) { entry ->
+                val id = entry.arguments?.getLong("id") ?: 0L
                 RemotePanelScreen(
                     deviceId = id,
                     onBack = { nav.popBackStack() },
                     onVoiceGuide = { nav.navigate("voice/$id") },
                 )
             }
-            composable("voice/{id}") { entry ->
-                val id = entry.arguments?.getString("id")?.toLongOrNull() ?: 0L
+            composable(
+                "voice/{id}",
+                arguments = listOf(navArgument("id") { type = NavType.LongType }),
+            ) { entry ->
+                val id = entry.arguments?.getLong("id") ?: 0L
                 VoiceGuideScreen(deviceId = id, onBack = { nav.popBackStack() })
             }
             composable("settings") {

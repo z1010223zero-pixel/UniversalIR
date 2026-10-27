@@ -72,8 +72,19 @@ class VoiceExecutor @Inject constructor(
         val entry = device.libraryFileId?.let { library.entry(it) }
             ?: return "设备「${device.name}」没有绑定码库"
         if (entry.kind == "smartir_climate") {
-            // 归一后交给 sendAc 按码表 operationModes 校验（标签本身是规范名时不再被误丢）
-            return sendAc(device, power = null, mode = DeepLinkRouter.normalizeMode(label), fan = null, temp = null)
+            // 空调没有离散按键：开/关走电源，模式名走 sendAc 的模式校验，其余明确报错。
+            DeepLinkRouter.parsePower(label)?.let {
+                return sendAc(device, power = it, mode = null, fan = null, temp = null)
+            }
+            val raw = label.trim()
+            if (raw.equals("power", true) || raw == "电源" || raw == "开关" || raw == "切换") {
+                return sendAc(device, power = !device.acPower, mode = null, fan = null, temp = null)
+            }
+            val mode = DeepLinkRouter.normalizeMode(raw)
+            if (mode in CLIMATE_MODES) {
+                return sendAc(device, power = null, mode = mode, fan = null, temp = null)
+            }
+            return "空调不支持按键「$label」，可用：开/关、制冷/制热/除湿/送风/自动"
         }
         val signals = try {
             library.loadFlipperSignals(entry)
@@ -176,5 +187,9 @@ class VoiceExecutor @Inject constructor(
     private fun isOffName(name: String): Boolean {
         val n = name.lowercase()
         return n == "off" || n.contains("关机") || n.contains("关闭") || n.contains("关")
+    }
+
+    private companion object {
+        val CLIMATE_MODES = setOf("cool", "heat", "dry", "fan_only", "auto", "off")
     }
 }
