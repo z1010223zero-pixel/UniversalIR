@@ -12,6 +12,10 @@ import com.zero.universalir.core.ir.IrSignal
 object Rc6Encoder {
     const val CARRIER_HZ = 36_000
     const val HALF_BIT_US = 444
+
+    /** RC6 mode 0 引导头：6 倍半位的 mark + 2 倍半位的 space；规范值 2666/889（半位取整为 444，勿用 2×444）。 */
+    private const val LEADER_MARK_US = 2_666
+    private const val LEADER_SPACE_US = 889
     private const val TOGGLE_INDEX = 4
     private const val BIT_COUNT = 21
 
@@ -21,7 +25,9 @@ object Rc6Encoder {
         data = data or (reverse8(address and 0xFF) shl 5)
         data = data or (reverse8(command and 0xFF) shl 13)
 
-        val halves = ArrayList<Pair<Int, Int>>(BIT_COUNT * 2)
+        val halves = ArrayList<Pair<Int, Int>>(BIT_COUNT * 2 + 2)
+        halves += LEADER_MARK_US to LEVEL_MARK
+        halves += LEADER_SPACE_US to LEVEL_SPACE
         for (i in 0 until BIT_COUNT) {
             val half = if (i == TOGGLE_INDEX) 2 * HALF_BIT_US else HALF_BIT_US
             val one = ((data shr i) and 1) == 1
