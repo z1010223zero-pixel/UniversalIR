@@ -2,9 +2,11 @@ package com.zero.universalir
 
 import com.zero.universalir.data.codes.CodeLibrary
 import java.io.ByteArrayOutputStream
+import java.io.File
 import java.util.zip.GZIPOutputStream
 import kotlinx.serialization.json.Json
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertTrue
 import org.junit.Test
 
 class CodeLibraryTest {
@@ -22,6 +24,18 @@ class CodeLibraryTest {
         val index = json.decodeFromString(CodeLibrary.LibraryIndex.serializer(), decoded)
         assertEquals(1, index.entries.size)
         assertEquals("e1", index.entries[0].id)
+    }
+
+    @Test
+    fun `bundled index parses strictly`() {
+        val file = File("src/main/assets/codes/index.json")
+        assertTrue("缺少内置索引：${file.absolutePath}", file.exists())
+        val index = json.decodeFromString(
+            CodeLibrary.LibraryIndex.serializer(),
+            file.readText(Charsets.UTF_8),
+        )
+        assertTrue(index.entries.isNotEmpty())
+        assertTrue(index.entries.any { it.minTemperature != null && it.maxTemperature != null })
     }
 
     @Test

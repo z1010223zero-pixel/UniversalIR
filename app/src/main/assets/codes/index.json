@@ -4826,8 +4826,8 @@
    "brand": "Panasonic",
    "model": "1020",
    "file": "smartir_ac_Panasonic_1020.gz",
-   "minTemperature": 16.0,
-   "maxTemperature": 30.0
+   "minTemperature": 16,
+   "maxTemperature": 30
   },
   {
    "id": "smartir_ac_Panasonic_1021",
@@ -4836,8 +4836,8 @@
    "brand": "Panasonic",
    "model": "1021",
    "file": "smartir_ac_Panasonic_1021.gz",
-   "minTemperature": 16.0,
-   "maxTemperature": 30.0
+   "minTemperature": 16,
+   "maxTemperature": 30
   },
   {
    "id": "smartir_ac_LG_1060",
@@ -4856,8 +4856,8 @@
    "brand": "LG",
    "model": "1061",
    "file": "smartir_ac_LG_1061.gz",
-   "minTemperature": 16.0,
-   "maxTemperature": 30.0
+   "minTemperature": 16,
+   "maxTemperature": 30
   },
   {
    "id": "smartir_ac_Hitachi_1080",
@@ -4866,8 +4866,8 @@
    "brand": "Hitachi",
    "model": "1080",
    "file": "smartir_ac_Hitachi_1080.gz",
-   "minTemperature": 16.0,
-   "maxTemperature": 30.0
+   "minTemperature": 16,
+   "maxTemperature": 30
   },
   {
    "id": "smartir_ac_Hitachi_1081",
@@ -4876,8 +4876,8 @@
    "brand": "Hitachi",
    "model": "1081",
    "file": "smartir_ac_Hitachi_1081.gz",
-   "minTemperature": 16.0,
-   "maxTemperature": 32.0
+   "minTemperature": 16,
+   "maxTemperature": 32
   },
   {
    "id": "smartir_ac_Daikin_1100",
@@ -4896,8 +4896,8 @@
    "brand": "Daikin",
    "model": "1101",
    "file": "smartir_ac_Daikin_1101.gz",
-   "minTemperature": 18.0,
-   "maxTemperature": 30.0
+   "minTemperature": 18,
+   "maxTemperature": 30
   },
   {
    "id": "smartir_ac_Mitsubishi_Electric_1120",
@@ -4906,8 +4906,8 @@
    "brand": "Mitsubishi Electric",
    "model": "1120",
    "file": "smartir_ac_Mitsubishi_Electric_1120.gz",
-   "minTemperature": 16.0,
-   "maxTemperature": 30.0
+   "minTemperature": 16,
+   "maxTemperature": 30
   },
   {
    "id": "smartir_ac_Mitsubishi_Electric_1121",
@@ -4916,8 +4916,8 @@
    "brand": "Mitsubishi Electric",
    "model": "1121",
    "file": "smartir_ac_Mitsubishi_Electric_1121.gz",
-   "minTemperature": 16.0,
-   "maxTemperature": 31.0
+   "minTemperature": 16,
+   "maxTemperature": 31
   },
   {
    "id": "smartir_ac_Mitsubishi_1122",
@@ -4956,8 +4956,8 @@
    "brand": "Carrier",
    "model": "1160",
    "file": "smartir_ac_Carrier_1160.gz",
-   "minTemperature": 17.0,
-   "maxTemperature": 30.0
+   "minTemperature": 17,
+   "maxTemperature": 30
   },
   {
    "id": "smartir_ac_Carrier_1161",
@@ -4976,8 +4976,8 @@
    "brand": "Gree",
    "model": "1180",
    "file": "smartir_ac_Gree_1180.gz",
-   "minTemperature": 16.0,
-   "maxTemperature": 30.0
+   "minTemperature": 16,
+   "maxTemperature": 30
   },
   {
    "id": "smartir_ac_Gree_1181",
@@ -4986,8 +4986,8 @@
    "brand": "Gree",
    "model": "1181",
    "file": "smartir_ac_Gree_1181.gz",
-   "minTemperature": 18.0,
-   "maxTemperature": 30.0
+   "minTemperature": 18,
+   "maxTemperature": 30
   },
   {
    "id": "smartir_ac_Toshiba_1260",
@@ -4996,8 +4996,8 @@
    "brand": "Toshiba",
    "model": "1260",
    "file": "smartir_ac_Toshiba_1260.gz",
-   "minTemperature": 17.0,
-   "maxTemperature": 30.0
+   "minTemperature": 17,
+   "maxTemperature": 30
   },
   {
    "id": "smartir_ac_Toshiba_1261",
@@ -5016,8 +5016,8 @@
    "brand": "Fujitsu",
    "model": "1280",
    "file": "smartir_ac_Fujitsu_1280.gz",
-   "minTemperature": 18.0,
-   "maxTemperature": 30.0
+   "minTemperature": 18,
+   "maxTemperature": 30
   },
   {
    "id": "smartir_ac_Fujitsu_1281",
@@ -5026,8 +5026,8 @@
    "brand": "Fujitsu",
    "model": "1281",
    "file": "smartir_ac_Fujitsu_1281.gz",
-   "minTemperature": 16.0,
-   "maxTemperature": 29.0
+   "minTemperature": 16,
+   "maxTemperature": 29
   },
   {
    "id": "smartir_ac_Sharp_1300",
@@ -5036,8 +5036,8 @@
    "brand": "Sharp",
    "model": "1300",
    "file": "smartir_ac_Sharp_1300.gz",
-   "minTemperature": 18.0,
-   "maxTemperature": 32.0
+   "minTemperature": 18,
+   "maxTemperature": 32
   },
   {
    "id": "smartir_ac_Sharp_1301",
@@ -5046,8 +5046,8 @@
    "brand": "Sharp",
    "model": "1301",
    "file": "smartir_ac_Sharp_1301.gz",
-   "minTemperature": 18.0,
-   "maxTemperature": 32.0
+   "minTemperature": 18,
+   "maxTemperature": 32
   },
   {
    "id": "smartir_ac_Haier_1320",
@@ -5056,8 +5056,8 @@
    "brand": "Haier",
    "model": "1320",
    "file": "smartir_ac_Haier_1320.gz",
-   "minTemperature": 16.0,
-   "maxTemperature": 30.0
+   "minTemperature": 16,
+   "maxTemperature": 30
   },
   {
    "id": "smartir_ac_Haier_1321",
@@ -5066,8 +5066,8 @@
    "brand": "Haier",
    "model": "1321",
    "file": "smartir_ac_Haier_1321.gz",
-   "minTemperature": 16.0,
-   "maxTemperature": 30.0
+   "minTemperature": 16,
+   "maxTemperature": 30
   },
   {
    "id": "smartir_ac_Midea_1380",
@@ -5076,8 +5076,8 @@
    "brand": "Midea",
    "model": "1380",
    "file": "smartir_ac_Midea_1380.gz",
-   "minTemperature": 18.0,
-   "maxTemperature": 30.0
+   "minTemperature": 18,
+   "maxTemperature": 30
   },
   {
    "id": "smartir_ac_Midea_1381",
@@ -5086,8 +5086,8 @@
    "brand": "Midea",
    "model": "1381",
    "file": "smartir_ac_Midea_1381.gz",
-   "minTemperature": 18.0,
-   "maxTemperature": 28.0
+   "minTemperature": 18,
+   "maxTemperature": 28
   },
   {
    "id": "smartir_ac_Samsung_1400",
@@ -5096,8 +5096,8 @@
    "brand": "Samsung",
    "model": "1400",
    "file": "smartir_ac_Samsung_1400.gz",
-   "minTemperature": 16.0,
-   "maxTemperature": 30.0
+   "minTemperature": 16,
+   "maxTemperature": 30
   },
   {
    "id": "smartir_ac_Samsung_1401",
@@ -5106,8 +5106,8 @@
    "brand": "Samsung",
    "model": "1401",
    "file": "smartir_ac_Samsung_1401.gz",
-   "minTemperature": 16.0,
-   "maxTemperature": 30.0
+   "minTemperature": 16,
+   "maxTemperature": 30
   },
   {
    "id": "smartir_ac_Hisense_1520",
@@ -5116,8 +5116,8 @@
    "brand": "Hisense",
    "model": "1520",
    "file": "smartir_ac_Hisense_1520.gz",
-   "minTemperature": 18.0,
-   "maxTemperature": 30.0
+   "minTemperature": 18,
+   "maxTemperature": 30
   },
   {
    "id": "smartir_ac_Hisense_1521",
@@ -5126,8 +5126,8 @@
    "brand": "Hisense",
    "model": "1521",
    "file": "smartir_ac_Hisense_1521.gz",
-   "minTemperature": 18.0,
-   "maxTemperature": 32.0
+   "minTemperature": 18,
+   "maxTemperature": 32
   },
   {
    "id": "smartir_ac_Chigo_1580",
@@ -5136,8 +5136,8 @@
    "brand": "Chigo",
    "model": "1580",
    "file": "smartir_ac_Chigo_1580.gz",
-   "minTemperature": 18.0,
-   "maxTemperature": 30.0
+   "minTemperature": 18,
+   "maxTemperature": 30
   },
   {
    "id": "smartir_ac_Chigo_1581",
@@ -5156,8 +5156,8 @@
    "brand": "Mitsubishi Heavy",
    "model": "1680",
    "file": "smartir_ac_Mitsubishi_Heavy_1680.gz",
-   "minTemperature": 18.0,
-   "maxTemperature": 30.0
+   "minTemperature": 18,
+   "maxTemperature": 30
   },
   {
    "id": "smartir_ac_Mitsubishi_Heavy_1681",
@@ -5166,8 +5166,8 @@
    "brand": "Mitsubishi Heavy",
    "model": "1681",
    "file": "smartir_ac_Mitsubishi_Heavy_1681.gz",
-   "minTemperature": 18.0,
-   "maxTemperature": 30.0
+   "minTemperature": 18,
+   "maxTemperature": 30
   },
   {
    "id": "smartir_ac_Mitsubishi_Heavy_Industries_1684",
@@ -5176,8 +5176,8 @@
    "brand": "Mitsubishi Heavy Industries",
    "model": "1684",
    "file": "smartir_ac_Mitsubishi_Heavy_Industries_1684.gz",
-   "minTemperature": 16.0,
-   "maxTemperature": 30.0
+   "minTemperature": 16,
+   "maxTemperature": 30
   },
   {
    "id": "smartir_ac_Ballu_1800",
@@ -5206,8 +5206,8 @@
    "brand": "TCL",
    "model": "1900",
    "file": "smartir_ac_TCL_1900.gz",
-   "minTemperature": 16.0,
-   "maxTemperature": 31.0
+   "minTemperature": 16,
+   "maxTemperature": 31
   },
   {
    "id": "smartir_ac_TCL_1901",
@@ -5216,8 +5216,8 @@
    "brand": "TCL",
    "model": "1901",
    "file": "smartir_ac_TCL_1901.gz",
-   "minTemperature": 16.0,
-   "maxTemperature": 31.0
+   "minTemperature": 16,
+   "maxTemperature": 31
   },
   {
    "id": "smartir_ac_AUX_1960",
@@ -5226,8 +5226,8 @@
    "brand": "AUX",
    "model": "1960",
    "file": "smartir_ac_AUX_1960.gz",
-   "minTemperature": 18.0,
-   "maxTemperature": 30.0
+   "minTemperature": 18,
+   "maxTemperature": 30
   },
   {
    "id": "smartir_ac_AUX_1961",
@@ -5236,8 +5236,8 @@
    "brand": "AUX",
    "model": "1961",
    "file": "smartir_ac_AUX_1961.gz",
-   "minTemperature": 16.0,
-   "maxTemperature": 32.0
+   "minTemperature": 16,
+   "maxTemperature": 32
   },
   {
    "id": "smartir_ac_Bosch_2740",
@@ -5246,8 +5246,8 @@
    "brand": "Bosch",
    "model": "2740",
    "file": "smartir_ac_Bosch_2740.gz",
-   "minTemperature": 16.0,
-   "maxTemperature": 30.0
+   "minTemperature": 16,
+   "maxTemperature": 30
   },
   {
    "id": "smartir_ac_Xiaomi_2780",
@@ -5256,8 +5256,8 @@
    "brand": "Xiaomi",
    "model": "2780",
    "file": "smartir_ac_Xiaomi_2780.gz",
-   "minTemperature": 16.0,
-   "maxTemperature": 31.0
+   "minTemperature": 16,
+   "maxTemperature": 31
   },
   {
    "id": "smartir_ac_ELGIN_2800",
@@ -5266,8 +5266,8 @@
    "brand": "ELGIN",
    "model": "2800",
    "file": "smartir_ac_ELGIN_2800.gz",
-   "minTemperature": 16.0,
-   "maxTemperature": 32.0
+   "minTemperature": 16,
+   "maxTemperature": 32
   },
   {
    "id": "smartir_ac_ELGIN_2801",
@@ -5276,8 +5276,8 @@
    "brand": "ELGIN",
    "model": "2801",
    "file": "smartir_ac_ELGIN_2801.gz",
-   "minTemperature": 17.0,
-   "maxTemperature": 30.0
+   "minTemperature": 17,
+   "maxTemperature": 30
   }
  ]
 }

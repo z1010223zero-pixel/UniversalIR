@@ -192,8 +192,8 @@ def fetch_smartir(entries: list):
             "brand": mfr,
             "model": model,
             "file": gz,
-            "minTemperature": meta.get("minTemperature", 16),
-            "maxTemperature": meta.get("maxTemperature", 30),
+            "minTemperature": int(float(meta.get("minTemperature", 16))),
+            "maxTemperature": int(float(meta.get("maxTemperature", 30))),
         })
     print(f"  climate: {len(per_brand)} 个品牌 {sum(per_brand.values())} 个文件")
 
