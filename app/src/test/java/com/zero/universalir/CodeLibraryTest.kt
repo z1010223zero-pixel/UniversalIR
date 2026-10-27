@@ -20,7 +20,7 @@ class CodeLibraryTest {
               {"id":"e1","kind":"flipper","deviceType":"tv","brand":"B","model":"M","file":"e1.gz"}
             ]}
         """.trimIndent()
-        val decoded = CodeLibrary.decodeAsset("index.json", text.toByteArray(Charsets.UTF_8))
+        val decoded = CodeLibrary.decodeAsset(text.toByteArray(Charsets.UTF_8))
         val index = json.decodeFromString(CodeLibrary.LibraryIndex.serializer(), decoded)
         assertEquals(1, index.entries.size)
         assertEquals("e1", index.entries[0].id)
@@ -43,6 +43,12 @@ class CodeLibraryTest {
         val text = "name: Power\ntype: parsed\nprotocol: NEC\naddress: 0x00\ncommand: 0x01\n"
         val out = ByteArrayOutputStream()
         GZIPOutputStream(out).use { it.write(text.toByteArray(Charsets.UTF_8)) }
-        assertEquals(text, CodeLibrary.decodeAsset("table.gz", out.toByteArray()))
+        assertEquals(text, CodeLibrary.decodeAsset(out.toByteArray()))
+    }
+
+    @Test
+    fun `plain text that aapt already ungzipped is read directly`() {
+        val text = "Filetype: IR signals file\nname: Power\nprotocol: Kaseikyo\n"
+        assertEquals(text, CodeLibrary.decodeAsset(text.toByteArray(Charsets.UTF_8)))
     }
 }

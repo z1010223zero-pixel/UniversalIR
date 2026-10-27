@@ -124,15 +124,22 @@ class CodeLibrary @Inject constructor(
         }
     }
 
-    private fun readAsset(path: String): String =
-        context.assets.open("codes/$path").use { input ->
-            decodeAsset(path, input.readBytes())
-        }
+    /**
+     * AAPT2 会把 assets 里的 .gz 解压并去掉后缀，索引仍记录源文件名（.gz），
+     * 所以两种路径都要试；内容按 gzip 魔数判断，不依赖文件名。
+     */
+    private fun readAsset(path: String): String {
+        val candidates = listOf("codes/$path", "codes/${path.removeSuffix(".gz")}")
+        val assetPath = candidates.firstOrNull {
+            runCatching { context.assets.open(it).close() }.isSuccess
+        } ?: candidates.first()
+        return context.assets.open(assetPath).use { decodeAsset(it.readBytes()) }
+    }
 
     companion object {
-        /** 只有码表文件是 gzip（.gz）；index.json 等索引是明文，按扩展名区分。 */
-        internal fun decodeAsset(path: String, bytes: ByteArray): String =
-            if (path.endsWith(".gz", ignoreCase = true)) {
+        /** 按魔数区分：gzip 解压，其余（index.json、aapt 已解压的码表）按 UTF-8 明文。 */
+        internal fun decodeAsset(bytes: ByteArray): String =
+            if (bytes.size >= 2 && bytes[0] == 0x1f.toByte() && bytes[1] == 0x8b.toByte()) {
                 GZIPInputStream(bytes.inputStream()).bufferedReader(Charsets.UTF_8).use { it.readText() }
             } else {
                 bytes.decodeToString()
